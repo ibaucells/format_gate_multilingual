@@ -1,0 +1,600 @@
+{"id": "sum_0091", "type": "sum", "subtype": "sum_ab", "expression": "216 + 305", "answer": "521", "meta": {"a": 216, "b": 305, "canonicalized": true}}
+{"id": "mix_0068", "type": "mix", "subtype": "mix_p0", "expression": "2 + 18 * 20", "answer": "362", "meta": {"a": 2, "b": 18, "c": 20, "has_parentheses": false}}
+{"id": "sub_0003", "type": "sub", "subtype": "sub_ab", "expression": "174 - 28", "answer": "146", "meta": {"a": 174, "b": 28}}
+{"id": "mix_0010", "type": "mix", "subtype": "mix_p0", "expression": "27 + 14 * 5", "answer": "97", "meta": {"a": 27, "b": 14, "c": 5, "has_parentheses": false}}
+{"id": "mul_0064", "type": "mul", "subtype": "mul_ab", "expression": "14 * 26", "answer": "364", "meta": {"a": 14, "b": 26, "canonicalized": true}}
+{"id": "mul_0044", "type": "mul", "subtype": "mul_ab", "expression": "-21 * -13", "answer": "273", "meta": {"a": -21, "b": -13, "canonicalized": true}}
+{"id": "mix_0037", "type": "mix", "subtype": "mix_p0", "expression": "10 + 27 * 7", "answer": "199", "meta": {"a": 10, "b": 27, "c": 7, "has_parentheses": false}}
+{"id": "eq_0097", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "5x + 21 = -214\nx", "answer": "-47", "meta": {"a": 5, "b": 21, "c": -214, "x": -47, "append_x_line": true}}
+{"id": "eq_0012", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-3x - 11 = -131\nx", "answer": "40", "meta": {"a": -3, "b": -11, "c": -131, "x": 40, "append_x_line": true}}
+{"id": "sum_0011", "type": "sum", "subtype": "sum_ab", "expression": "258 + 308", "answer": "566", "meta": {"a": 258, "b": 308, "canonicalized": true}}
+{"id": "mix_0082", "type": "mix", "subtype": "mix_p1", "expression": "(21 + 7) * 8", "answer": "224", "meta": {"a": 21, "b": 7, "c": 8, "has_parentheses": true}}
+{"id": "sum_0008", "type": "sum", "subtype": "sum_ab", "expression": "16 + 216", "answer": "232", "meta": {"a": 16, "b": 216, "canonicalized": true}}
+{"id": "mul_0036", "type": "mul", "subtype": "mul_ab", "expression": "12 * 22", "answer": "264", "meta": {"a": 12, "b": 22, "canonicalized": true}}
+{"id": "sum_0042", "type": "sum", "subtype": "sum_ab", "expression": "116 + 395", "answer": "511", "meta": {"a": 116, "b": 395, "canonicalized": true}}
+{"id": "mix_0085", "type": "mix", "subtype": "mix_p2", "expression": "2 * 1 - 5", "answer": "-3", "meta": {"a": 2, "b": 1, "c": 5, "has_parentheses": false}}
+{"id": "sum_0071", "type": "sum", "subtype": "sum_ab", "expression": "367 + 448", "answer": "815", "meta": {"a": 367, "b": 448, "canonicalized": true}}
+{"id": "eq_0043", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-x - 7 = -57\nx", "answer": "50", "meta": {"a": -1, "b": -7, "c": -57, "x": 50, "append_x_line": true}}
+{"id": "sum_0000", "type": "sum", "subtype": "sum_ab", "expression": "57 + 327", "answer": "384", "meta": {"a": 57, "b": 327, "canonicalized": true}}
+{"id": "mix_0066", "type": "mix", "subtype": "mix_p0", "expression": "30 + 27 * 15", "answer": "435", "meta": {"a": 30, "b": 27, "c": 15, "has_parentheses": false}}
+{"id": "sum_0097", "type": "sum", "subtype": "sum_ab", "expression": "5 + 482", "answer": "487", "meta": {"a": 5, "b": 482, "canonicalized": true}}
+{"id": "sub_0086", "type": "sub", "subtype": "sub_ab", "expression": "135 - 116", "answer": "19", "meta": {"a": 135, "b": 116}}
+{"id": "mix_0019", "type": "mix", "subtype": "mix_p0", "expression": "7 + 4 * 15", "answer": "67", "meta": {"a": 7, "b": 4, "c": 15, "has_parentheses": false}}
+{"id": "mix_0079", "type": "mix", "subtype": "mix_p2", "expression": "22 * 19 - 15", "answer": "403", "meta": {"a": 22, "b": 19, "c": 15, "has_parentheses": false}}
+{"id": "sum_0081", "type": "sum", "subtype": "sum_ab", "expression": "219 + 299", "answer": "518", "meta": {"a": 219, "b": 299, "canonicalized": true}}
+{"id": "sum_0083", "type": "sum", "subtype": "sum_ab", "expression": "185 + 204", "answer": "389", "meta": {"a": 185, "b": 204, "canonicalized": true}}
+{"id": "eq_0019", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "4x - 32 = 0\nx", "answer": "8", "meta": {"a": 4, "b": -32, "c": 0, "x": 8, "append_x_line": true}}
+{"id": "div_0046", "type": "div", "subtype": "div_int", "expression": "1247 / 29", "answer": "43", "meta": {"a": 1247, "b": 29, "q": 43}}
+{"id": "sub_0005", "type": "sub", "subtype": "sub_ab", "expression": "80 - 58", "answer": "22", "meta": {"a": 80, "b": 58}}
+{"id": "mix_0026", "type": "mix", "subtype": "mix_p1", "expression": "(18 + 22) * 20", "answer": "800", "meta": {"a": 18, "b": 22, "c": 20, "has_parentheses": true}}
+{"id": "eq_0079", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-5x - 11 = 179\nx", "answer": "-38", "meta": {"a": -5, "b": -11, "c": 179, "x": -38, "append_x_line": true}}
+{"id": "sub_0009", "type": "sub", "subtype": "sub_ab", "expression": "445 - 320", "answer": "125", "meta": {"a": 445, "b": 320}}
+{"id": "div_0021", "type": "div", "subtype": "div_int", "expression": "34 / 17", "answer": "2", "meta": {"a": 34, "b": 17, "q": 2}}
+{"id": "eq_0082", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-4x - 13 = 123\nx", "answer": "-34", "meta": {"a": -4, "b": -13, "c": 123, "x": -34, "append_x_line": true}}
+{"id": "div_0032", "type": "div", "subtype": "div_int", "expression": "1118 / 43", "answer": "26", "meta": {"a": 1118, "b": 43, "q": 26}}
+{"id": "eq_0096", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-2x + 10 = -62\nx", "answer": "36", "meta": {"a": -2, "b": 10, "c": -62, "x": 36, "append_x_line": true}}
+{"id": "mix_0001", "type": "mix", "subtype": "mix_p3", "expression": "27 * (28 - 18)", "answer": "270", "meta": {"a": 27, "b": 28, "c": 18, "has_parentheses": true}}
+{"id": "mix_0004", "type": "mix", "subtype": "mix_p3", "expression": "15 * (7 - 8)", "answer": "-15", "meta": {"a": 15, "b": 7, "c": 8, "has_parentheses": true}}
+{"id": "div_0042", "type": "div", "subtype": "div_int", "expression": "247 / 19", "answer": "13", "meta": {"a": 247, "b": 19, "q": 13}}
+{"id": "sub_0083", "type": "sub", "subtype": "sub_ab", "expression": "109 - 51", "answer": "58", "meta": {"a": 109, "b": 51}}
+{"id": "eq_0067", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-2x - 1 = 23\nx", "answer": "-12", "meta": {"a": -2, "b": -1, "c": 23, "x": -12, "append_x_line": true}}
+{"id": "eq_0054", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "x - 3 = -16\nx", "answer": "-13", "meta": {"a": 1, "b": -3, "c": -16, "x": -13, "append_x_line": true}}
+{"id": "sub_0082", "type": "sub", "subtype": "sub_ab", "expression": "248 - 123", "answer": "125", "meta": {"a": 248, "b": 123}}
+{"id": "div_0039", "type": "div", "subtype": "div_int", "expression": "468 / 12", "answer": "39", "meta": {"a": 468, "b": 12, "q": 39}}
+{"id": "eq_0081", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "x + 43 = 67\nx", "answer": "24", "meta": {"a": 1, "b": 43, "c": 67, "x": 24, "append_x_line": true}}
+{"id": "sum_0001", "type": "sum", "subtype": "sum_ab", "expression": "12 + 379", "answer": "391", "meta": {"a": 12, "b": 379, "canonicalized": true}}
+{"id": "sum_0022", "type": "sum", "subtype": "sum_ab", "expression": "142 + 174", "answer": "316", "meta": {"a": 142, "b": 174, "canonicalized": true}}
+{"id": "mix_0021", "type": "mix", "subtype": "mix_p1", "expression": "(22 + 8) * 11", "answer": "330", "meta": {"a": 22, "b": 8, "c": 11, "has_parentheses": true}}
+{"id": "div_0001", "type": "div", "subtype": "div_int", "expression": "1000 / 20", "answer": "50", "meta": {"a": 1000, "b": 20, "q": 50}}
+{"id": "mul_0091", "type": "mul", "subtype": "mul_ab", "expression": "-4 * 21", "answer": "-84", "meta": {"a": -4, "b": 21, "canonicalized": true}}
+{"id": "sum_0027", "type": "sum", "subtype": "sum_ab", "expression": "49 + 183", "answer": "232", "meta": {"a": 49, "b": 183, "canonicalized": true}}
+{"id": "sub_0022", "type": "sub", "subtype": "sub_ab", "expression": "290 - 40", "answer": "250", "meta": {"a": 290, "b": 40}}
+{"id": "eq_0014", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "3x - 35 = -143\nx", "answer": "-36", "meta": {"a": 3, "b": -35, "c": -143, "x": -36, "append_x_line": true}}
+{"id": "eq_0059", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "5x + 37 = 27\nx", "answer": "-2", "meta": {"a": 5, "b": 37, "c": 27, "x": -2, "append_x_line": true}}
+{"id": "mix_0072", "type": "mix", "subtype": "mix_p3", "expression": "24 * (16 - 12)", "answer": "96", "meta": {"a": 24, "b": 16, "c": 12, "has_parentheses": true}}
+{"id": "sub_0075", "type": "sub", "subtype": "sub_ab", "expression": "281 - 50", "answer": "231", "meta": {"a": 281, "b": 50}}
+{"id": "div_0002", "type": "div", "subtype": "div_int", "expression": "210 / 15", "answer": "14", "meta": {"a": 210, "b": 15, "q": 14}}
+{"id": "mul_0028", "type": "mul", "subtype": "mul_ab", "expression": "-26 * 26", "answer": "-676", "meta": {"a": -26, "b": 26, "canonicalized": true}}
+{"id": "div_0037", "type": "div", "subtype": "div_int", "expression": "1032 / 43", "answer": "24", "meta": {"a": 1032, "b": 43, "q": 24}}
+{"id": "sum_0007", "type": "sum", "subtype": "sum_ab", "expression": "44 + 302", "answer": "346", "meta": {"a": 44, "b": 302, "canonicalized": true}}
+{"id": "eq_0023", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "4x - 16 = 184\nx", "answer": "50", "meta": {"a": 4, "b": -16, "c": 184, "x": 50, "append_x_line": true}}
+{"id": "mul_0033", "type": "mul", "subtype": "mul_ab", "expression": "-11 * 9", "answer": "-99", "meta": {"a": -11, "b": 9, "canonicalized": true}}
+{"id": "mul_0063", "type": "mul", "subtype": "mul_ab", "expression": "-26 * 30", "answer": "-780", "meta": {"a": -26, "b": 30, "canonicalized": true}}
+{"id": "mix_0076", "type": "mix", "subtype": "mix_p0", "expression": "20 + 6 * 8", "answer": "68", "meta": {"a": 20, "b": 6, "c": 8, "has_parentheses": false}}
+{"id": "eq_0077", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "5x - 18 = -148\nx", "answer": "-26", "meta": {"a": 5, "b": -18, "c": -148, "x": -26, "append_x_line": true}}
+{"id": "div_0060", "type": "div", "subtype": "div_int", "expression": "145 / 5", "answer": "29", "meta": {"a": 145, "b": 5, "q": 29}}
+{"id": "div_0086", "type": "div", "subtype": "div_int", "expression": "1280 / 32", "answer": "40", "meta": {"a": 1280, "b": 32, "q": 40}}
+{"id": "sum_0006", "type": "sum", "subtype": "sum_ab", "expression": "279 + 456", "answer": "735", "meta": {"a": 279, "b": 456, "canonicalized": true}}
+{"id": "eq_0068", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-4x - 20 = -64\nx", "answer": "11", "meta": {"a": -4, "b": -20, "c": -64, "x": 11, "append_x_line": true}}
+{"id": "sub_0027", "type": "sub", "subtype": "sub_ab", "expression": "65 - 60", "answer": "5", "meta": {"a": 65, "b": 60}}
+{"id": "div_0047", "type": "div", "subtype": "div_int", "expression": "448 / 14", "answer": "32", "meta": {"a": 448, "b": 14, "q": 32}}
+{"id": "sub_0002", "type": "sub", "subtype": "sub_ab", "expression": "393 - 328", "answer": "65", "meta": {"a": 393, "b": 328}}
+{"id": "mix_0012", "type": "mix", "subtype": "mix_p3", "expression": "14 * (10 - 10)", "answer": "0", "meta": {"a": 14, "b": 10, "c": 10, "has_parentheses": true}}
+{"id": "sub_0072", "type": "sub", "subtype": "sub_ab", "expression": "127 - 19", "answer": "108", "meta": {"a": 127, "b": 19}}
+{"id": "div_0028", "type": "div", "subtype": "div_int", "expression": "800 / 40", "answer": "20", "meta": {"a": 800, "b": 40, "q": 20}}
+{"id": "sub_0063", "type": "sub", "subtype": "sub_ab", "expression": "334 - 330", "answer": "4", "meta": {"a": 334, "b": 330}}
+{"id": "mul_0081", "type": "mul", "subtype": "mul_ab", "expression": "9 * 17", "answer": "153", "meta": {"a": 9, "b": 17, "canonicalized": true}}
+{"id": "sum_0059", "type": "sum", "subtype": "sum_ab", "expression": "138 + 473", "answer": "611", "meta": {"a": 138, "b": 473, "canonicalized": true}}
+{"id": "mix_0016", "type": "mix", "subtype": "mix_p0", "expression": "7 + 20 * 2", "answer": "47", "meta": {"a": 7, "b": 20, "c": 2, "has_parentheses": false}}
+{"id": "mul_0075", "type": "mul", "subtype": "mul_ab", "expression": "-17 * -8", "answer": "136", "meta": {"a": -17, "b": -8, "canonicalized": true}}
+{"id": "mix_0039", "type": "mix", "subtype": "mix_p3", "expression": "24 * (14 - 18)", "answer": "-96", "meta": {"a": 24, "b": 14, "c": 18, "has_parentheses": true}}
+{"id": "mix_0044", "type": "mix", "subtype": "mix_p0", "expression": "16 + 30 * 6", "answer": "196", "meta": {"a": 16, "b": 30, "c": 6, "has_parentheses": false}}
+{"id": "sum_0060", "type": "sum", "subtype": "sum_ab", "expression": "327 + 352", "answer": "679", "meta": {"a": 327, "b": 352, "canonicalized": true}}
+{"id": "eq_0091", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "2x + 21 = 105\nx", "answer": "42", "meta": {"a": 2, "b": 21, "c": 105, "x": 42, "append_x_line": true}}
+{"id": "div_0061", "type": "div", "subtype": "div_int", "expression": "1080 / 27", "answer": "40", "meta": {"a": 1080, "b": 27, "q": 40}}
+{"id": "sum_0068", "type": "sum", "subtype": "sum_ab", "expression": "33 + 137", "answer": "170", "meta": {"a": 33, "b": 137, "canonicalized": true}}
+{"id": "sum_0029", "type": "sum", "subtype": "sum_ab", "expression": "135 + 309", "answer": "444", "meta": {"a": 135, "b": 309, "canonicalized": true}}
+{"id": "sum_0057", "type": "sum", "subtype": "sum_ab", "expression": "83 + 125", "answer": "208", "meta": {"a": 83, "b": 125, "canonicalized": true}}
+{"id": "sub_0096", "type": "sub", "subtype": "sub_ab", "expression": "299 - 244", "answer": "55", "meta": {"a": 299, "b": 244}}
+{"id": "mix_0046", "type": "mix", "subtype": "mix_p3", "expression": "17 * (24 - 7)", "answer": "289", "meta": {"a": 17, "b": 24, "c": 7, "has_parentheses": true}}
+{"id": "mix_0034", "type": "mix", "subtype": "mix_p2", "expression": "23 * 16 - 20", "answer": "348", "meta": {"a": 23, "b": 16, "c": 20, "has_parentheses": false}}
+{"id": "mix_0030", "type": "mix", "subtype": "mix_p0", "expression": "16 + 20 * 10", "answer": "216", "meta": {"a": 16, "b": 20, "c": 10, "has_parentheses": false}}
+{"id": "mix_0063", "type": "mix", "subtype": "mix_p2", "expression": "3 * 27 - 0", "answer": "81", "meta": {"a": 3, "b": 27, "c": 0, "has_parentheses": false}}
+{"id": "sub_0035", "type": "sub", "subtype": "sub_ab", "expression": "365 - 159", "answer": "206", "meta": {"a": 365, "b": 159}}
+{"id": "mul_0057", "type": "mul", "subtype": "mul_ab", "expression": "-22 * 10", "answer": "-220", "meta": {"a": -22, "b": 10, "canonicalized": true}}
+{"id": "sum_0005", "type": "sum", "subtype": "sum_ab", "expression": "346 + 379", "answer": "725", "meta": {"a": 346, "b": 379, "canonicalized": true}}
+{"id": "div_0030", "type": "div", "subtype": "div_int", "expression": "893 / 47", "answer": "19", "meta": {"a": 893, "b": 47, "q": 19}}
+{"id": "sub_0032", "type": "sub", "subtype": "sub_ab", "expression": "475 - 276", "answer": "199", "meta": {"a": 475, "b": 276}}
+{"id": "eq_0095", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "x - 37 = -39\nx", "answer": "-2", "meta": {"a": 1, "b": -37, "c": -39, "x": -2, "append_x_line": true}}
+{"id": "sub_0007", "type": "sub", "subtype": "sub_ab", "expression": "390 - 91", "answer": "299", "meta": {"a": 390, "b": 91}}
+{"id": "eq_0072", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-x - 49 = -49\nx", "answer": "0", "meta": {"a": -1, "b": -49, "c": -49, "x": 0, "append_x_line": true}}
+{"id": "sum_0088", "type": "sum", "subtype": "sum_ab", "expression": "56 + 78", "answer": "134", "meta": {"a": 56, "b": 78, "canonicalized": true}}
+{"id": "sub_0037", "type": "sub", "subtype": "sub_ab", "expression": "332 - 191", "answer": "141", "meta": {"a": 332, "b": 191}}
+{"id": "sub_0049", "type": "sub", "subtype": "sub_ab", "expression": "36 - 32", "answer": "4", "meta": {"a": 36, "b": 32}}
+{"id": "sub_0023", "type": "sub", "subtype": "sub_ab", "expression": "43 - 31", "answer": "12", "meta": {"a": 43, "b": 31}}
+{"id": "eq_0046", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "2x - 10 = 26\nx", "answer": "18", "meta": {"a": 2, "b": -10, "c": 26, "x": 18, "append_x_line": true}}
+{"id": "sum_0076", "type": "sum", "subtype": "sum_ab", "expression": "73 + 234", "answer": "307", "meta": {"a": 73, "b": 234, "canonicalized": true}}
+{"id": "eq_0022", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "2x - 7 = -37\nx", "answer": "-15", "meta": {"a": 2, "b": -7, "c": -37, "x": -15, "append_x_line": true}}
+{"id": "mul_0055", "type": "mul", "subtype": "mul_ab", "expression": "-30 * -28", "answer": "840", "meta": {"a": -30, "b": -28, "canonicalized": true}}
+{"id": "mix_0061", "type": "mix", "subtype": "mix_p2", "expression": "8 * 1 - 1", "answer": "7", "meta": {"a": 8, "b": 1, "c": 1, "has_parentheses": false}}
+{"id": "div_0052", "type": "div", "subtype": "div_int", "expression": "1720 / 43", "answer": "40", "meta": {"a": 1720, "b": 43, "q": 40}}
+{"id": "mix_0092", "type": "mix", "subtype": "mix_p0", "expression": "24 + 21 * 8", "answer": "192", "meta": {"a": 24, "b": 21, "c": 8, "has_parentheses": false}}
+{"id": "mul_0074", "type": "mul", "subtype": "mul_ab", "expression": "-28 * 27", "answer": "-756", "meta": {"a": -28, "b": 27, "canonicalized": true}}
+{"id": "sum_0067", "type": "sum", "subtype": "sum_ab", "expression": "161 + 205", "answer": "366", "meta": {"a": 161, "b": 205, "canonicalized": true}}
+{"id": "mul_0006", "type": "mul", "subtype": "mul_ab", "expression": "7 * 8", "answer": "56", "meta": {"a": 7, "b": 8, "canonicalized": true}}
+{"id": "sub_0006", "type": "sub", "subtype": "sub_ab", "expression": "497 - 256", "answer": "241", "meta": {"a": 497, "b": 256}}
+{"id": "sum_0069", "type": "sum", "subtype": "sum_ab", "expression": "108 + 467", "answer": "575", "meta": {"a": 108, "b": 467, "canonicalized": true}}
+{"id": "sub_0087", "type": "sub", "subtype": "sub_ab", "expression": "146 - 108", "answer": "38", "meta": {"a": 146, "b": 108}}
+{"id": "mul_0000", "type": "mul", "subtype": "mul_ab", "expression": "-26 * 8", "answer": "-208", "meta": {"a": -26, "b": 8, "canonicalized": true}}
+{"id": "sum_0012", "type": "sum", "subtype": "sum_ab", "expression": "13 + 287", "answer": "300", "meta": {"a": 13, "b": 287, "canonicalized": true}}
+{"id": "div_0089", "type": "div", "subtype": "div_int", "expression": "828 / 46", "answer": "18", "meta": {"a": 828, "b": 46, "q": 18}}
+{"id": "div_0083", "type": "div", "subtype": "div_int", "expression": "640 / 16", "answer": "40", "meta": {"a": 640, "b": 16, "q": 40}}
+{"id": "eq_0000", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-4x - 10 = -42\nx", "answer": "8", "meta": {"a": -4, "b": -10, "c": -42, "x": 8, "append_x_line": true}}
+{"id": "mul_0008", "type": "mul", "subtype": "mul_ab", "expression": "-25 * -4", "answer": "100", "meta": {"a": -25, "b": -4, "canonicalized": true}}
+{"id": "mix_0056", "type": "mix", "subtype": "mix_p2", "expression": "6 * 6 - 15", "answer": "21", "meta": {"a": 6, "b": 6, "c": 15, "has_parentheses": false}}
+{"id": "mul_0076", "type": "mul", "subtype": "mul_ab", "expression": "-15 * 13", "answer": "-195", "meta": {"a": -15, "b": 13, "canonicalized": true}}
+{"id": "div_0020", "type": "div", "subtype": "div_int", "expression": "444 / 37", "answer": "12", "meta": {"a": 444, "b": 37, "q": 12}}
+{"id": "sub_0069", "type": "sub", "subtype": "sub_ab", "expression": "229 - 35", "answer": "194", "meta": {"a": 229, "b": 35}}
+{"id": "mul_0077", "type": "mul", "subtype": "mul_ab", "expression": "-24 * 12", "answer": "-288", "meta": {"a": -24, "b": 12, "canonicalized": true}}
+{"id": "mix_0013", "type": "mix", "subtype": "mix_p2", "expression": "8 * 24 - 13", "answer": "179", "meta": {"a": 8, "b": 24, "c": 13, "has_parentheses": false}}
+{"id": "mul_0078", "type": "mul", "subtype": "mul_ab", "expression": "-8 * 19", "answer": "-152", "meta": {"a": -8, "b": 19, "canonicalized": true}}
+{"id": "div_0065", "type": "div", "subtype": "div_int", "expression": "410 / 10", "answer": "41", "meta": {"a": 410, "b": 10, "q": 41}}
+{"id": "sub_0055", "type": "sub", "subtype": "sub_ab", "expression": "242 - 206", "answer": "36", "meta": {"a": 242, "b": 206}}
+{"id": "eq_0086", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-x - 29 = -43\nx", "answer": "14", "meta": {"a": -1, "b": -29, "c": -43, "x": 14, "append_x_line": true}}
+{"id": "sum_0004", "type": "sum", "subtype": "sum_ab", "expression": "52 + 377", "answer": "429", "meta": {"a": 52, "b": 377, "canonicalized": true}}
+{"id": "div_0074", "type": "div", "subtype": "div_int", "expression": "1190 / 34", "answer": "35", "meta": {"a": 1190, "b": 34, "q": 35}}
+{"id": "div_0091", "type": "div", "subtype": "div_int", "expression": "175 / 35", "answer": "5", "meta": {"a": 175, "b": 35, "q": 5}}
+{"id": "div_0048", "type": "div", "subtype": "div_int", "expression": "1550 / 31", "answer": "50", "meta": {"a": 1550, "b": 31, "q": 50}}
+{"id": "div_0004", "type": "div", "subtype": "div_int", "expression": "325 / 13", "answer": "25", "meta": {"a": 325, "b": 13, "q": 25}}
+{"id": "sub_0071", "type": "sub", "subtype": "sub_ab", "expression": "142 - 118", "answer": "24", "meta": {"a": 142, "b": 118}}
+{"id": "sum_0032", "type": "sum", "subtype": "sum_ab", "expression": "63 + 274", "answer": "337", "meta": {"a": 63, "b": 274, "canonicalized": true}}
+{"id": "mul_0001", "type": "mul", "subtype": "mul_ab", "expression": "-26 * 13", "answer": "-338", "meta": {"a": -26, "b": 13, "canonicalized": true}}
+{"id": "sum_0096", "type": "sum", "subtype": "sum_ab", "expression": "283 + 440", "answer": "723", "meta": {"a": 283, "b": 440, "canonicalized": true}}
+{"id": "mix_0047", "type": "mix", "subtype": "mix_p3", "expression": "20 * (22 - 15)", "answer": "140", "meta": {"a": 20, "b": 22, "c": 15, "has_parentheses": true}}
+{"id": "mul_0060", "type": "mul", "subtype": "mul_ab", "expression": "5 * 15", "answer": "75", "meta": {"a": 5, "b": 15, "canonicalized": true}}
+{"id": "mix_0094", "type": "mix", "subtype": "mix_p2", "expression": "16 * 20 - 14", "answer": "306", "meta": {"a": 16, "b": 20, "c": 14, "has_parentheses": false}}
+{"id": "sub_0000", "type": "sub", "subtype": "sub_ab", "expression": "453 - 274", "answer": "179", "meta": {"a": 453, "b": 274}}
+{"id": "mix_0099", "type": "mix", "subtype": "mix_p0", "expression": "21 + 30 * 12", "answer": "381", "meta": {"a": 21, "b": 30, "c": 12, "has_parentheses": false}}
+{"id": "eq_0009", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "3x + 39 = -3\nx", "answer": "-14", "meta": {"a": 3, "b": 39, "c": -3, "x": -14, "append_x_line": true}}
+{"id": "mix_0089", "type": "mix", "subtype": "mix_p0", "expression": "14 + 2 * 19", "answer": "52", "meta": {"a": 14, "b": 2, "c": 19, "has_parentheses": false}}
+{"id": "sum_0020", "type": "sum", "subtype": "sum_ab", "expression": "81 + 412", "answer": "493", "meta": {"a": 81, "b": 412, "canonicalized": true}}
+{"id": "mul_0030", "type": "mul", "subtype": "mul_ab", "expression": "-20 * -12", "answer": "240", "meta": {"a": -20, "b": -12, "canonicalized": true}}
+{"id": "sub_0084", "type": "sub", "subtype": "sub_ab", "expression": "462 - 30", "answer": "432", "meta": {"a": 462, "b": 30}}
+{"id": "mix_0093", "type": "mix", "subtype": "mix_p3", "expression": "24 * (24 - 5)", "answer": "456", "meta": {"a": 24, "b": 24, "c": 5, "has_parentheses": true}}
+{"id": "sub_0077", "type": "sub", "subtype": "sub_ab", "expression": "276 - 7", "answer": "269", "meta": {"a": 276, "b": 7}}
+{"id": "sub_0098", "type": "sub", "subtype": "sub_ab", "expression": "29 - 16", "answer": "13", "meta": {"a": 29, "b": 16}}
+{"id": "div_0098", "type": "div", "subtype": "div_int", "expression": "81 / 27", "answer": "3", "meta": {"a": 81, "b": 27, "q": 3}}
+{"id": "sum_0024", "type": "sum", "subtype": "sum_ab", "expression": "390 + 490", "answer": "880", "meta": {"a": 390, "b": 490, "canonicalized": true}}
+{"id": "sum_0084", "type": "sum", "subtype": "sum_ab", "expression": "70 + 112", "answer": "182", "meta": {"a": 70, "b": 112, "canonicalized": true}}
+{"id": "eq_0030", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "x - 26 = -18\nx", "answer": "8", "meta": {"a": 1, "b": -26, "c": -18, "x": 8, "append_x_line": true}}
+{"id": "sum_0085", "type": "sum", "subtype": "sum_ab", "expression": "252 + 260", "answer": "512", "meta": {"a": 252, "b": 260, "canonicalized": true}}
+{"id": "div_0087", "type": "div", "subtype": "div_int", "expression": "272 / 16", "answer": "17", "meta": {"a": 272, "b": 16, "q": 17}}
+{"id": "sub_0053", "type": "sub", "subtype": "sub_ab", "expression": "67 - 60", "answer": "7", "meta": {"a": 67, "b": 60}}
+{"id": "mul_0067", "type": "mul", "subtype": "mul_ab", "expression": "-7 * 23", "answer": "-161", "meta": {"a": -7, "b": 23, "canonicalized": true}}
+{"id": "eq_0013", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-4x - 22 = -30\nx", "answer": "2", "meta": {"a": -4, "b": -22, "c": -30, "x": 2, "append_x_line": true}}
+{"id": "div_0034", "type": "div", "subtype": "div_int", "expression": "810 / 45", "answer": "18", "meta": {"a": 810, "b": 45, "q": 18}}
+{"id": "div_0068", "type": "div", "subtype": "div_int", "expression": "528 / 12", "answer": "44", "meta": {"a": 528, "b": 12, "q": 44}}
+{"id": "sum_0095", "type": "sum", "subtype": "sum_ab", "expression": "128 + 497", "answer": "625", "meta": {"a": 128, "b": 497, "canonicalized": true}}
+{"id": "eq_0065", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "3x - 6 = -129\nx", "answer": "-41", "meta": {"a": 3, "b": -6, "c": -129, "x": -41, "append_x_line": true}}
+{"id": "mul_0073", "type": "mul", "subtype": "mul_ab", "expression": "20 * 25", "answer": "500", "meta": {"a": 20, "b": 25, "canonicalized": true}}
+{"id": "sub_0056", "type": "sub", "subtype": "sub_ab", "expression": "208 - 48", "answer": "160", "meta": {"a": 208, "b": 48}}
+{"id": "eq_0040", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-5x + 42 = 2\nx", "answer": "8", "meta": {"a": -5, "b": 42, "c": 2, "x": 8, "append_x_line": true}}
+{"id": "eq_0035", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "2x + 34 = 30\nx", "answer": "-2", "meta": {"a": 2, "b": 34, "c": 30, "x": -2, "append_x_line": true}}
+{"id": "mul_0070", "type": "mul", "subtype": "mul_ab", "expression": "-28 * -22", "answer": "616", "meta": {"a": -28, "b": -22, "canonicalized": true}}
+{"id": "mul_0024", "type": "mul", "subtype": "mul_ab", "expression": "-17 * 4", "answer": "-68", "meta": {"a": -17, "b": 4, "canonicalized": true}}
+{"id": "sum_0063", "type": "sum", "subtype": "sum_ab", "expression": "393 + 431", "answer": "824", "meta": {"a": 393, "b": 431, "canonicalized": true}}
+{"id": "eq_0088", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "x - 36 = 9\nx", "answer": "45", "meta": {"a": 1, "b": -36, "c": 9, "x": 45, "append_x_line": true}}
+{"id": "mul_0053", "type": "mul", "subtype": "mul_ab", "expression": "-3 * 10", "answer": "-30", "meta": {"a": -3, "b": 10, "canonicalized": true}}
+{"id": "mix_0051", "type": "mix", "subtype": "mix_p3", "expression": "17 * (16 - 11)", "answer": "85", "meta": {"a": 17, "b": 16, "c": 11, "has_parentheses": true}}
+{"id": "sub_0099", "type": "sub", "subtype": "sub_ab", "expression": "41 - 11", "answer": "30", "meta": {"a": 41, "b": 11}}
+{"id": "mul_0097", "type": "mul", "subtype": "mul_ab", "expression": "-6 * 25", "answer": "-150", "meta": {"a": -6, "b": 25, "canonicalized": true}}
+{"id": "eq_0042", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-4x + 10 = 134\nx", "answer": "-31", "meta": {"a": -4, "b": 10, "c": 134, "x": -31, "append_x_line": true}}
+{"id": "mix_0045", "type": "mix", "subtype": "mix_p3", "expression": "7 * (23 - 13)", "answer": "70", "meta": {"a": 7, "b": 23, "c": 13, "has_parentheses": true}}
+{"id": "div_0062", "type": "div", "subtype": "div_int", "expression": "2024 / 46", "answer": "44", "meta": {"a": 2024, "b": 46, "q": 44}}
+{"id": "eq_0033", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-5x - 10 = -20\nx", "answer": "2", "meta": {"a": -5, "b": -10, "c": -20, "x": 2, "append_x_line": true}}
+{"id": "mul_0034", "type": "mul", "subtype": "mul_ab", "expression": "11 * 21", "answer": "231", "meta": {"a": 11, "b": 21, "canonicalized": true}}
+{"id": "eq_0051", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-4x + 6 = 158\nx", "answer": "-38", "meta": {"a": -4, "b": 6, "c": 158, "x": -38, "append_x_line": true}}
+{"id": "sub_0021", "type": "sub", "subtype": "sub_ab", "expression": "123 - 112", "answer": "11", "meta": {"a": 123, "b": 112}}
+{"id": "mul_0052", "type": "mul", "subtype": "mul_ab", "expression": "-27 * -25", "answer": "675", "meta": {"a": -27, "b": -25, "canonicalized": true}}
+{"id": "mul_0029", "type": "mul", "subtype": "mul_ab", "expression": "-15 * -7", "answer": "105", "meta": {"a": -15, "b": -7, "canonicalized": true}}
+{"id": "mix_0053", "type": "mix", "subtype": "mix_p2", "expression": "22 * 14 - 8", "answer": "300", "meta": {"a": 22, "b": 14, "c": 8, "has_parentheses": false}}
+{"id": "mix_0002", "type": "mix", "subtype": "mix_p2", "expression": "15 * 0 - 11", "answer": "-11", "meta": {"a": 15, "b": 0, "c": 11, "has_parentheses": false}}
+{"id": "sub_0046", "type": "sub", "subtype": "sub_ab", "expression": "30 - 7", "answer": "23", "meta": {"a": 30, "b": 7}}
+{"id": "mul_0009", "type": "mul", "subtype": "mul_ab", "expression": "7 * 12", "answer": "84", "meta": {"a": 7, "b": 12, "canonicalized": true}}
+{"id": "div_0088", "type": "div", "subtype": "div_int", "expression": "116 / 29", "answer": "4", "meta": {"a": 116, "b": 29, "q": 4}}
+{"id": "div_0057", "type": "div", "subtype": "div_int", "expression": "117 / 13", "answer": "9", "meta": {"a": 117, "b": 13, "q": 9}}
+{"id": "sub_0041", "type": "sub", "subtype": "sub_ab", "expression": "32 - 21", "answer": "11", "meta": {"a": 32, "b": 21}}
+{"id": "mul_0037", "type": "mul", "subtype": "mul_ab", "expression": "-11 * 5", "answer": "-55", "meta": {"a": -11, "b": 5, "canonicalized": true}}
+{"id": "mix_0058", "type": "mix", "subtype": "mix_p2", "expression": "3 * 26 - 6", "answer": "72", "meta": {"a": 3, "b": 26, "c": 6, "has_parentheses": false}}
+{"id": "sum_0098", "type": "sum", "subtype": "sum_ab", "expression": "348 + 369", "answer": "717", "meta": {"a": 348, "b": 369, "canonicalized": true}}
+{"id": "div_0072", "type": "div", "subtype": "div_int", "expression": "240 / 30", "answer": "8", "meta": {"a": 240, "b": 30, "q": 8}}
+{"id": "sub_0052", "type": "sub", "subtype": "sub_ab", "expression": "109 - 69", "answer": "40", "meta": {"a": 109, "b": 69}}
+{"id": "div_0025", "type": "div", "subtype": "div_int", "expression": "299 / 13", "answer": "23", "meta": {"a": 299, "b": 13, "q": 23}}
+{"id": "eq_0064", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "4x - 30 = -86\nx", "answer": "-14", "meta": {"a": 4, "b": -30, "c": -86, "x": -14, "append_x_line": true}}
+{"id": "sub_0065", "type": "sub", "subtype": "sub_ab", "expression": "206 - 186", "answer": "20", "meta": {"a": 206, "b": 186}}
+{"id": "mul_0047", "type": "mul", "subtype": "mul_ab", "expression": "-17 * -9", "answer": "153", "meta": {"a": -17, "b": -9, "canonicalized": true}}
+{"id": "eq_0018", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "3x - 19 = 14\nx", "answer": "11", "meta": {"a": 3, "b": -19, "c": 14, "x": 11, "append_x_line": true}}
+{"id": "sum_0094", "type": "sum", "subtype": "sum_ab", "expression": "239 + 270", "answer": "509", "meta": {"a": 239, "b": 270, "canonicalized": true}}
+{"id": "mul_0015", "type": "mul", "subtype": "mul_ab", "expression": "-14 * -5", "answer": "70", "meta": {"a": -14, "b": -5, "canonicalized": true}}
+{"id": "mix_0011", "type": "mix", "subtype": "mix_p1", "expression": "(8 + 12) * 10", "answer": "200", "meta": {"a": 8, "b": 12, "c": 10, "has_parentheses": true}}
+{"id": "div_0096", "type": "div", "subtype": "div_int", "expression": "567 / 27", "answer": "21", "meta": {"a": 567, "b": 27, "q": 21}}
+{"id": "eq_0069", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "5x - 5 = -15\nx", "answer": "-2", "meta": {"a": 5, "b": -5, "c": -15, "x": -2, "append_x_line": true}}
+{"id": "div_0050", "type": "div", "subtype": "div_int", "expression": "215 / 43", "answer": "5", "meta": {"a": 215, "b": 43, "q": 5}}
+{"id": "sum_0018", "type": "sum", "subtype": "sum_ab", "expression": "414 + 445", "answer": "859", "meta": {"a": 414, "b": 445, "canonicalized": true}}
+{"id": "eq_0026", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "3x - 31 = 71\nx", "answer": "34", "meta": {"a": 3, "b": -31, "c": 71, "x": 34, "append_x_line": true}}
+{"id": "sum_0090", "type": "sum", "subtype": "sum_ab", "expression": "348 + 405", "answer": "753", "meta": {"a": 348, "b": 405, "canonicalized": true}}
+{"id": "div_0082", "type": "div", "subtype": "div_int", "expression": "816 / 17", "answer": "48", "meta": {"a": 816, "b": 17, "q": 48}}
+{"id": "eq_0044", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "2x + 33 = 91\nx", "answer": "29", "meta": {"a": 2, "b": 33, "c": 91, "x": 29, "append_x_line": true}}
+{"id": "div_0015", "type": "div", "subtype": "div_int", "expression": "1053 / 39", "answer": "27", "meta": {"a": 1053, "b": 39, "q": 27}}
+{"id": "mul_0098", "type": "mul", "subtype": "mul_ab", "expression": "-28 * 24", "answer": "-672", "meta": {"a": -28, "b": 24, "canonicalized": true}}
+{"id": "sum_0077", "type": "sum", "subtype": "sum_ab", "expression": "71 + 135", "answer": "206", "meta": {"a": 71, "b": 135, "canonicalized": true}}
+{"id": "sub_0061", "type": "sub", "subtype": "sub_ab", "expression": "442 - 373", "answer": "69", "meta": {"a": 442, "b": 373}}
+{"id": "div_0026", "type": "div", "subtype": "div_int", "expression": "112 / 28", "answer": "4", "meta": {"a": 112, "b": 28, "q": 4}}
+{"id": "mix_0080", "type": "mix", "subtype": "mix_p2", "expression": "1 * 7 - 9", "answer": "-2", "meta": {"a": 1, "b": 7, "c": 9, "has_parentheses": false}}
+{"id": "sum_0017", "type": "sum", "subtype": "sum_ab", "expression": "142 + 301", "answer": "443", "meta": {"a": 142, "b": 301, "canonicalized": true}}
+{"id": "div_0023", "type": "div", "subtype": "div_int", "expression": "1505 / 35", "answer": "43", "meta": {"a": 1505, "b": 35, "q": 43}}
+{"id": "eq_0093", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "3x - 3 = -108\nx", "answer": "-35", "meta": {"a": 3, "b": -3, "c": -108, "x": -35, "append_x_line": true}}
+{"id": "div_0049", "type": "div", "subtype": "div_int", "expression": "480 / 48", "answer": "10", "meta": {"a": 480, "b": 48, "q": 10}}
+{"id": "eq_0010", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-4x - 47 = -95\nx", "answer": "12", "meta": {"a": -4, "b": -47, "c": -95, "x": 12, "append_x_line": true}}
+{"id": "mix_0038", "type": "mix", "subtype": "mix_p1", "expression": "(8 + 28) * 14", "answer": "504", "meta": {"a": 8, "b": 28, "c": 14, "has_parentheses": true}}
+{"id": "sum_0082", "type": "sum", "subtype": "sum_ab", "expression": "298 + 459", "answer": "757", "meta": {"a": 298, "b": 459, "canonicalized": true}}
+{"id": "div_0056", "type": "div", "subtype": "div_int", "expression": "280 / 20", "answer": "14", "meta": {"a": 280, "b": 20, "q": 14}}
+{"id": "sub_0062", "type": "sub", "subtype": "sub_ab", "expression": "27 - 21", "answer": "6", "meta": {"a": 27, "b": 21}}
+{"id": "mix_0097", "type": "mix", "subtype": "mix_p1", "expression": "(10 + 10) * 3", "answer": "60", "meta": {"a": 10, "b": 10, "c": 3, "has_parentheses": true}}
+{"id": "mul_0039", "type": "mul", "subtype": "mul_ab", "expression": "-24 * 30", "answer": "-720", "meta": {"a": -24, "b": 30, "canonicalized": true}}
+{"id": "mul_0025", "type": "mul", "subtype": "mul_ab", "expression": "-14 * 2", "answer": "-28", "meta": {"a": -14, "b": 2, "canonicalized": true}}
+{"id": "eq_0073", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-5x + 27 = -83\nx", "answer": "22", "meta": {"a": -5, "b": 27, "c": -83, "x": 22, "append_x_line": true}}
+{"id": "mix_0005", "type": "mix", "subtype": "mix_p2", "expression": "15 * 0 - 12", "answer": "-12", "meta": {"a": 15, "b": 0, "c": 12, "has_parentheses": false}}
+{"id": "mul_0088", "type": "mul", "subtype": "mul_ab", "expression": "-19 * 17", "answer": "-323", "meta": {"a": -19, "b": 17, "canonicalized": true}}
+{"id": "div_0027", "type": "div", "subtype": "div_int", "expression": "903 / 43", "answer": "21", "meta": {"a": 903, "b": 43, "q": 21}}
+{"id": "sub_0044", "type": "sub", "subtype": "sub_ab", "expression": "301 - 112", "answer": "189", "meta": {"a": 301, "b": 112}}
+{"id": "sub_0093", "type": "sub", "subtype": "sub_ab", "expression": "296 - 277", "answer": "19", "meta": {"a": 296, "b": 277}}
+{"id": "eq_0090", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-2x + 36 = -56\nx", "answer": "46", "meta": {"a": -2, "b": 36, "c": -56, "x": 46, "append_x_line": true}}
+{"id": "sub_0026", "type": "sub", "subtype": "sub_ab", "expression": "272 - 64", "answer": "208", "meta": {"a": 272, "b": 64}}
+{"id": "mul_0092", "type": "mul", "subtype": "mul_ab", "expression": "12 * 25", "answer": "300", "meta": {"a": 12, "b": 25, "canonicalized": true}}
+{"id": "sub_0097", "type": "sub", "subtype": "sub_ab", "expression": "257 - 80", "answer": "177", "meta": {"a": 257, "b": 80}}
+{"id": "eq_0032", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-2x + 49 = 51\nx", "answer": "-1", "meta": {"a": -2, "b": 49, "c": 51, "x": -1, "append_x_line": true}}
+{"id": "mix_0088", "type": "mix", "subtype": "mix_p3", "expression": "22 * (12 - 8)", "answer": "88", "meta": {"a": 22, "b": 12, "c": 8, "has_parentheses": true}}
+{"id": "sum_0019", "type": "sum", "subtype": "sum_ab", "expression": "3 + 388", "answer": "391", "meta": {"a": 3, "b": 388, "canonicalized": true}}
+{"id": "div_0012", "type": "div", "subtype": "div_int", "expression": "187 / 17", "answer": "11", "meta": {"a": 187, "b": 17, "q": 11}}
+{"id": "mul_0050", "type": "mul", "subtype": "mul_ab", "expression": "-14 * 27", "answer": "-378", "meta": {"a": -14, "b": 27, "canonicalized": true}}
+{"id": "div_0053", "type": "div", "subtype": "div_int", "expression": "840 / 40", "answer": "21", "meta": {"a": 840, "b": 40, "q": 21}}
+{"id": "mul_0066", "type": "mul", "subtype": "mul_ab", "expression": "-28 * 4", "answer": "-112", "meta": {"a": -28, "b": 4, "canonicalized": true}}
+{"id": "div_0017", "type": "div", "subtype": "div_int", "expression": "567 / 21", "answer": "27", "meta": {"a": 567, "b": 21, "q": 27}}
+{"id": "eq_0017", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-x + 3 = -37\nx", "answer": "40", "meta": {"a": -1, "b": 3, "c": -37, "x": 40, "append_x_line": true}}
+{"id": "mix_0077", "type": "mix", "subtype": "mix_p0", "expression": "5 + 7 * 5", "answer": "40", "meta": {"a": 5, "b": 7, "c": 5, "has_parentheses": false}}
+{"id": "sub_0031", "type": "sub", "subtype": "sub_ab", "expression": "493 - 108", "answer": "385", "meta": {"a": 493, "b": 108}}
+{"id": "sum_0074", "type": "sum", "subtype": "sum_ab", "expression": "202 + 452", "answer": "654", "meta": {"a": 202, "b": 452, "canonicalized": true}}
+{"id": "sum_0052", "type": "sum", "subtype": "sum_ab", "expression": "359 + 479", "answer": "838", "meta": {"a": 359, "b": 479, "canonicalized": true}}
+{"id": "sub_0020", "type": "sub", "subtype": "sub_ab", "expression": "122 - 7", "answer": "115", "meta": {"a": 122, "b": 7}}
+{"id": "mix_0095", "type": "mix", "subtype": "mix_p3", "expression": "5 * (18 - 13)", "answer": "25", "meta": {"a": 5, "b": 18, "c": 13, "has_parentheses": true}}
+{"id": "eq_0066", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-x + 31 = 6\nx", "answer": "25", "meta": {"a": -1, "b": 31, "c": 6, "x": 25, "append_x_line": true}}
+{"id": "eq_0029", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "4x - 2 = 186\nx", "answer": "47", "meta": {"a": 4, "b": -2, "c": 186, "x": 47, "append_x_line": true}}
+{"id": "eq_0089", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-4x - 32 = -68\nx", "answer": "9", "meta": {"a": -4, "b": -32, "c": -68, "x": 9, "append_x_line": true}}
+{"id": "mul_0065", "type": "mul", "subtype": "mul_ab", "expression": "-21 * 27", "answer": "-567", "meta": {"a": -21, "b": 27, "canonicalized": true}}
+{"id": "div_0094", "type": "div", "subtype": "div_int", "expression": "598 / 46", "answer": "13", "meta": {"a": 598, "b": 46, "q": 13}}
+{"id": "mul_0061", "type": "mul", "subtype": "mul_ab", "expression": "-3 * 5", "answer": "-15", "meta": {"a": -3, "b": 5, "canonicalized": true}}
+{"id": "eq_0085", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "x + 17 = 36\nx", "answer": "19", "meta": {"a": 1, "b": 17, "c": 36, "x": 19, "append_x_line": true}}
+{"id": "sum_0086", "type": "sum", "subtype": "sum_ab", "expression": "46 + 386", "answer": "432", "meta": {"a": 46, "b": 386, "canonicalized": true}}
+{"id": "sub_0070", "type": "sub", "subtype": "sub_ab", "expression": "216 - 46", "answer": "170", "meta": {"a": 216, "b": 46}}
+{"id": "sub_0013", "type": "sub", "subtype": "sub_ab", "expression": "390 - 82", "answer": "308", "meta": {"a": 390, "b": 82}}
+{"id": "div_0077", "type": "div", "subtype": "div_int", "expression": "1840 / 40", "answer": "46", "meta": {"a": 1840, "b": 40, "q": 46}}
+{"id": "mix_0035", "type": "mix", "subtype": "mix_p3", "expression": "19 * (25 - 17)", "answer": "152", "meta": {"a": 19, "b": 25, "c": 17, "has_parentheses": true}}
+{"id": "div_0022", "type": "div", "subtype": "div_int", "expression": "1242 / 46", "answer": "27", "meta": {"a": 1242, "b": 46, "q": 27}}
+{"id": "sum_0040", "type": "sum", "subtype": "sum_ab", "expression": "35 + 360", "answer": "395", "meta": {"a": 35, "b": 360, "canonicalized": true}}
+{"id": "mul_0068", "type": "mul", "subtype": "mul_ab", "expression": "5 * 7", "answer": "35", "meta": {"a": 5, "b": 7, "canonicalized": true}}
+{"id": "eq_0020", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-2x + 26 = 28\nx", "answer": "-1", "meta": {"a": -2, "b": 26, "c": 28, "x": -1, "append_x_line": true}}
+{"id": "mul_0079", "type": "mul", "subtype": "mul_ab", "expression": "5 * 26", "answer": "130", "meta": {"a": 5, "b": 26, "canonicalized": true}}
+{"id": "sub_0024", "type": "sub", "subtype": "sub_ab", "expression": "417 - 35", "answer": "382", "meta": {"a": 417, "b": 35}}
+{"id": "sum_0054", "type": "sum", "subtype": "sum_ab", "expression": "36 + 311", "answer": "347", "meta": {"a": 36, "b": 311, "canonicalized": true}}
+{"id": "mul_0096", "type": "mul", "subtype": "mul_ab", "expression": "-24 * 14", "answer": "-336", "meta": {"a": -24, "b": 14, "canonicalized": true}}
+{"id": "sum_0045", "type": "sum", "subtype": "sum_ab", "expression": "51 + 443", "answer": "494", "meta": {"a": 51, "b": 443, "canonicalized": true}}
+{"id": "sub_0085", "type": "sub", "subtype": "sub_ab", "expression": "84 - 48", "answer": "36", "meta": {"a": 84, "b": 48}}
+{"id": "mul_0094", "type": "mul", "subtype": "mul_ab", "expression": "-15 * -13", "answer": "195", "meta": {"a": -15, "b": -13, "canonicalized": true}}
+{"id": "sum_0087", "type": "sum", "subtype": "sum_ab", "expression": "24 + 440", "answer": "464", "meta": {"a": 24, "b": 440, "canonicalized": true}}
+{"id": "mix_0020", "type": "mix", "subtype": "mix_p3", "expression": "18 * (30 - 6)", "answer": "432", "meta": {"a": 18, "b": 30, "c": 6, "has_parentheses": true}}
+{"id": "sum_0010", "type": "sum", "subtype": "sum_ab", "expression": "111 + 119", "answer": "230", "meta": {"a": 111, "b": 119, "canonicalized": true}}
+{"id": "div_0054", "type": "div", "subtype": "div_int", "expression": "288 / 6", "answer": "48", "meta": {"a": 288, "b": 6, "q": 48}}
+{"id": "mix_0071", "type": "mix", "subtype": "mix_p1", "expression": "(19 + 19) * 19", "answer": "722", "meta": {"a": 19, "b": 19, "c": 19, "has_parentheses": true}}
+{"id": "div_0013", "type": "div", "subtype": "div_int", "expression": "608 / 38", "answer": "16", "meta": {"a": 608, "b": 38, "q": 16}}
+{"id": "mul_0013", "type": "mul", "subtype": "mul_ab", "expression": "12 * 15", "answer": "180", "meta": {"a": 12, "b": 15, "canonicalized": true}}
+{"id": "mul_0007", "type": "mul", "subtype": "mul_ab", "expression": "-28 * 9", "answer": "-252", "meta": {"a": -28, "b": 9, "canonicalized": true}}
+{"id": "div_0095", "type": "div", "subtype": "div_int", "expression": "130 / 5", "answer": "26", "meta": {"a": 130, "b": 5, "q": 26}}
+{"id": "mix_0050", "type": "mix", "subtype": "mix_p3", "expression": "21 * (18 - 11)", "answer": "147", "meta": {"a": 21, "b": 18, "c": 11, "has_parentheses": true}}
+{"id": "sum_0039", "type": "sum", "subtype": "sum_ab", "expression": "98 + 295", "answer": "393", "meta": {"a": 98, "b": 295, "canonicalized": true}}
+{"id": "mul_0035", "type": "mul", "subtype": "mul_ab", "expression": "-30 * 3", "answer": "-90", "meta": {"a": -30, "b": 3, "canonicalized": true}}
+{"id": "sum_0009", "type": "sum", "subtype": "sum_ab", "expression": "15 + 47", "answer": "62", "meta": {"a": 15, "b": 47, "canonicalized": true}}
+{"id": "mul_0023", "type": "mul", "subtype": "mul_ab", "expression": "-26 * -24", "answer": "624", "meta": {"a": -26, "b": -24, "canonicalized": true}}
+{"id": "eq_0055", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-3x - 19 = -34\nx", "answer": "5", "meta": {"a": -3, "b": -19, "c": -34, "x": 5, "append_x_line": true}}
+{"id": "mul_0003", "type": "mul", "subtype": "mul_ab", "expression": "-23 * -5", "answer": "115", "meta": {"a": -23, "b": -5, "canonicalized": true}}
+{"id": "sum_0036", "type": "sum", "subtype": "sum_ab", "expression": "321 + 424", "answer": "745", "meta": {"a": 321, "b": 424, "canonicalized": true}}
+{"id": "mix_0022", "type": "mix", "subtype": "mix_p1", "expression": "(19 + 19) * 3", "answer": "114", "meta": {"a": 19, "b": 19, "c": 3, "has_parentheses": true}}
+{"id": "eq_0075", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-2x + 27 = -71\nx", "answer": "49", "meta": {"a": -2, "b": 27, "c": -71, "x": 49, "append_x_line": true}}
+{"id": "eq_0039", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-4x + 17 = -7\nx", "answer": "6", "meta": {"a": -4, "b": 17, "c": -7, "x": 6, "append_x_line": true}}
+{"id": "sub_0017", "type": "sub", "subtype": "sub_ab", "expression": "57 - 23", "answer": "34", "meta": {"a": 57, "b": 23}}
+{"id": "mul_0072", "type": "mul", "subtype": "mul_ab", "expression": "27 * 29", "answer": "783", "meta": {"a": 27, "b": 29, "canonicalized": true}}
+{"id": "eq_0060", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "3x + 24 = -36\nx", "answer": "-20", "meta": {"a": 3, "b": 24, "c": -36, "x": -20, "append_x_line": true}}
+{"id": "mix_0032", "type": "mix", "subtype": "mix_p3", "expression": "13 * (30 - 11)", "answer": "247", "meta": {"a": 13, "b": 30, "c": 11, "has_parentheses": true}}
+{"id": "sum_0089", "type": "sum", "subtype": "sum_ab", "expression": "81 + 321", "answer": "402", "meta": {"a": 81, "b": 321, "canonicalized": true}}
+{"id": "eq_0031", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-2x + 23 = -55\nx", "answer": "39", "meta": {"a": -2, "b": 23, "c": -55, "x": 39, "append_x_line": true}}
+{"id": "mul_0054", "type": "mul", "subtype": "mul_ab", "expression": "-13 * 23", "answer": "-299", "meta": {"a": -13, "b": 23, "canonicalized": true}}
+{"id": "mix_0091", "type": "mix", "subtype": "mix_p0", "expression": "0 + 2 * 7", "answer": "14", "meta": {"a": 0, "b": 2, "c": 7, "has_parentheses": false}}
+{"id": "sum_0061", "type": "sum", "subtype": "sum_ab", "expression": "112 + 285", "answer": "397", "meta": {"a": 112, "b": 285, "canonicalized": true}}
+{"id": "sub_0067", "type": "sub", "subtype": "sub_ab", "expression": "127 - 49", "answer": "78", "meta": {"a": 127, "b": 49}}
+{"id": "eq_0041", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "2x + 33 = -31\nx", "answer": "-32", "meta": {"a": 2, "b": 33, "c": -31, "x": -32, "append_x_line": true}}
+{"id": "mix_0048", "type": "mix", "subtype": "mix_p2", "expression": "25 * 0 - 2", "answer": "-2", "meta": {"a": 25, "b": 0, "c": 2, "has_parentheses": false}}
+{"id": "eq_0049", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-x - 21 = -1\nx", "answer": "-20", "meta": {"a": -1, "b": -21, "c": -1, "x": -20, "append_x_line": true}}
+{"id": "mix_0009", "type": "mix", "subtype": "mix_p1", "expression": "(2 + 20) * 13", "answer": "286", "meta": {"a": 2, "b": 20, "c": 13, "has_parentheses": true}}
+{"id": "sub_0054", "type": "sub", "subtype": "sub_ab", "expression": "124 - 100", "answer": "24", "meta": {"a": 124, "b": 100}}
+{"id": "sub_0004", "type": "sub", "subtype": "sub_ab", "expression": "150 - 111", "answer": "39", "meta": {"a": 150, "b": 111}}
+{"id": "div_0075", "type": "div", "subtype": "div_int", "expression": "780 / 39", "answer": "20", "meta": {"a": 780, "b": 39, "q": 20}}
+{"id": "sum_0028", "type": "sum", "subtype": "sum_ab", "expression": "176 + 433", "answer": "609", "meta": {"a": 176, "b": 433, "canonicalized": true}}
+{"id": "div_0006", "type": "div", "subtype": "div_int", "expression": "245 / 5", "answer": "49", "meta": {"a": 245, "b": 5, "q": 49}}
+{"id": "mul_0002", "type": "mul", "subtype": "mul_ab", "expression": "-15 * 25", "answer": "-375", "meta": {"a": -15, "b": 25, "canonicalized": true}}
+{"id": "eq_0037", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-3x + 14 = 152\nx", "answer": "-46", "meta": {"a": -3, "b": 14, "c": 152, "x": -46, "append_x_line": true}}
+{"id": "sum_0023", "type": "sum", "subtype": "sum_ab", "expression": "79 + 110", "answer": "189", "meta": {"a": 79, "b": 110, "canonicalized": true}}
+{"id": "sub_0057", "type": "sub", "subtype": "sub_ab", "expression": "48 - 6", "answer": "42", "meta": {"a": 48, "b": 6}}
+{"id": "mul_0069", "type": "mul", "subtype": "mul_ab", "expression": "-21 * -3", "answer": "63", "meta": {"a": -21, "b": -3, "canonicalized": true}}
+{"id": "eq_0052", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-x - 47 = -18\nx", "answer": "-29", "meta": {"a": -1, "b": -47, "c": -18, "x": -29, "append_x_line": true}}
+{"id": "div_0003", "type": "div", "subtype": "div_int", "expression": "84 / 2", "answer": "42", "meta": {"a": 84, "b": 2, "q": 42}}
+{"id": "sub_0045", "type": "sub", "subtype": "sub_ab", "expression": "362 - 323", "answer": "39", "meta": {"a": 362, "b": 323}}
+{"id": "sum_0056", "type": "sum", "subtype": "sum_ab", "expression": "273 + 373", "answer": "646", "meta": {"a": 273, "b": 373, "canonicalized": true}}
+{"id": "eq_0084", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-3x + 50 = 125\nx", "answer": "-25", "meta": {"a": -3, "b": 50, "c": 125, "x": -25, "append_x_line": true}}
+{"id": "sub_0076", "type": "sub", "subtype": "sub_ab", "expression": "25 - 20", "answer": "5", "meta": {"a": 25, "b": 20}}
+{"id": "mix_0000", "type": "mix", "subtype": "mix_p0", "expression": "12 + 28 * 18", "answer": "516", "meta": {"a": 12, "b": 28, "c": 18, "has_parentheses": false}}
+{"id": "mul_0062", "type": "mul", "subtype": "mul_ab", "expression": "-30 * -23", "answer": "690", "meta": {"a": -30, "b": -23, "canonicalized": true}}
+{"id": "div_0063", "type": "div", "subtype": "div_int", "expression": "775 / 25", "answer": "31", "meta": {"a": 775, "b": 25, "q": 31}}
+{"id": "div_0044", "type": "div", "subtype": "div_int", "expression": "840 / 42", "answer": "20", "meta": {"a": 840, "b": 42, "q": 20}}
+{"id": "eq_0070", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-x + 39 = 16\nx", "answer": "23", "meta": {"a": -1, "b": 39, "c": 16, "x": 23, "append_x_line": true}}
+{"id": "mix_0041", "type": "mix", "subtype": "mix_p2", "expression": "5 * 15 - 6", "answer": "69", "meta": {"a": 5, "b": 15, "c": 6, "has_parentheses": false}}
+{"id": "div_0010", "type": "div", "subtype": "div_int", "expression": "735 / 35", "answer": "21", "meta": {"a": 735, "b": 35, "q": 21}}
+{"id": "mul_0048", "type": "mul", "subtype": "mul_ab", "expression": "10 * 13", "answer": "130", "meta": {"a": 10, "b": 13, "canonicalized": true}}
+{"id": "eq_0056", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "2x + 22 = 56\nx", "answer": "17", "meta": {"a": 2, "b": 22, "c": 56, "x": 17, "append_x_line": true}}
+{"id": "div_0038", "type": "div", "subtype": "div_int", "expression": "2068 / 44", "answer": "47", "meta": {"a": 2068, "b": 44, "q": 47}}
+{"id": "eq_0016", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-x + 15 = -26\nx", "answer": "41", "meta": {"a": -1, "b": 15, "c": -26, "x": 41, "append_x_line": true}}
+{"id": "div_0080", "type": "div", "subtype": "div_int", "expression": "517 / 11", "answer": "47", "meta": {"a": 517, "b": 11, "q": 47}}
+{"id": "mix_0098", "type": "mix", "subtype": "mix_p2", "expression": "10 * 13 - 15", "answer": "115", "meta": {"a": 10, "b": 13, "c": 15, "has_parentheses": false}}
+{"id": "div_0099", "type": "div", "subtype": "div_int", "expression": "364 / 14", "answer": "26", "meta": {"a": 364, "b": 14, "q": 26}}
+{"id": "sum_0025", "type": "sum", "subtype": "sum_ab", "expression": "52 + 172", "answer": "224", "meta": {"a": 52, "b": 172, "canonicalized": true}}
+{"id": "div_0016", "type": "div", "subtype": "div_int", "expression": "1058 / 23", "answer": "46", "meta": {"a": 1058, "b": 23, "q": 46}}
+{"id": "div_0058", "type": "div", "subtype": "div_int", "expression": "480 / 16", "answer": "30", "meta": {"a": 480, "b": 16, "q": 30}}
+{"id": "mix_0008", "type": "mix", "subtype": "mix_p0", "expression": "29 + 12 * 18", "answer": "245", "meta": {"a": 29, "b": 12, "c": 18, "has_parentheses": false}}
+{"id": "eq_0076", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-2x + 31 = 41\nx", "answer": "-5", "meta": {"a": -2, "b": 31, "c": 41, "x": -5, "append_x_line": true}}
+{"id": "mix_0040", "type": "mix", "subtype": "mix_p2", "expression": "10 * 0 - 15", "answer": "-15", "meta": {"a": 10, "b": 0, "c": 15, "has_parentheses": false}}
+{"id": "mix_0084", "type": "mix", "subtype": "mix_p1", "expression": "(20 + 4) * 8", "answer": "192", "meta": {"a": 20, "b": 4, "c": 8, "has_parentheses": true}}
+{"id": "mul_0090", "type": "mul", "subtype": "mul_ab", "expression": "20 * 29", "answer": "580", "meta": {"a": 20, "b": 29, "canonicalized": true}}
+{"id": "mix_0086", "type": "mix", "subtype": "mix_p2", "expression": "19 * 23 - 18", "answer": "419", "meta": {"a": 19, "b": 23, "c": 18, "has_parentheses": false}}
+{"id": "mix_0014", "type": "mix", "subtype": "mix_p0", "expression": "26 + 2 * 15", "answer": "56", "meta": {"a": 26, "b": 2, "c": 15, "has_parentheses": false}}
+{"id": "sub_0089", "type": "sub", "subtype": "sub_ab", "expression": "338 - 249", "answer": "89", "meta": {"a": 338, "b": 249}}
+{"id": "sum_0080", "type": "sum", "subtype": "sum_ab", "expression": "134 + 382", "answer": "516", "meta": {"a": 134, "b": 382, "canonicalized": true}}
+{"id": "sub_0074", "type": "sub", "subtype": "sub_ab", "expression": "441 - 438", "answer": "3", "meta": {"a": 441, "b": 438}}
+{"id": "mix_0057", "type": "mix", "subtype": "mix_p2", "expression": "23 * 18 - 16", "answer": "398", "meta": {"a": 23, "b": 18, "c": 16, "has_parentheses": false}}
+{"id": "mul_0014", "type": "mul", "subtype": "mul_ab", "expression": "-15 * -10", "answer": "150", "meta": {"a": -15, "b": -10, "canonicalized": true}}
+{"id": "sub_0092", "type": "sub", "subtype": "sub_ab", "expression": "495 - 29", "answer": "466", "meta": {"a": 495, "b": 29}}
+{"id": "eq_0002", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "2x + 15 = 111\nx", "answer": "48", "meta": {"a": 2, "b": 15, "c": 111, "x": 48, "append_x_line": true}}
+{"id": "mix_0083", "type": "mix", "subtype": "mix_p1", "expression": "(13 + 3) * 17", "answer": "272", "meta": {"a": 13, "b": 3, "c": 17, "has_parentheses": true}}
+{"id": "mix_0042", "type": "mix", "subtype": "mix_p2", "expression": "25 * 8 - 10", "answer": "190", "meta": {"a": 25, "b": 8, "c": 10, "has_parentheses": false}}
+{"id": "eq_0034", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "3x + 40 = 175\nx", "answer": "45", "meta": {"a": 3, "b": 40, "c": 175, "x": 45, "append_x_line": true}}
+{"id": "mix_0090", "type": "mix", "subtype": "mix_p2", "expression": "28 * 13 - 10", "answer": "354", "meta": {"a": 28, "b": 13, "c": 10, "has_parentheses": false}}
+{"id": "sum_0072", "type": "sum", "subtype": "sum_ab", "expression": "108 + 161", "answer": "269", "meta": {"a": 108, "b": 161, "canonicalized": true}}
+{"id": "sum_0035", "type": "sum", "subtype": "sum_ab", "expression": "150 + 282", "answer": "432", "meta": {"a": 150, "b": 282, "canonicalized": true}}
+{"id": "eq_0008", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "4x - 34 = -98\nx", "answer": "-16", "meta": {"a": 4, "b": -34, "c": -98, "x": -16, "append_x_line": true}}
+{"id": "div_0085", "type": "div", "subtype": "div_int", "expression": "1650 / 50", "answer": "33", "meta": {"a": 1650, "b": 50, "q": 33}}
+{"id": "mul_0089", "type": "mul", "subtype": "mul_ab", "expression": "-9 * 29", "answer": "-261", "meta": {"a": -9, "b": 29, "canonicalized": true}}
+{"id": "sum_0073", "type": "sum", "subtype": "sum_ab", "expression": "255 + 335", "answer": "590", "meta": {"a": 255, "b": 335, "canonicalized": true}}
+{"id": "mix_0073", "type": "mix", "subtype": "mix_p3", "expression": "29 * (14 - 9)", "answer": "145", "meta": {"a": 29, "b": 14, "c": 9, "has_parentheses": true}}
+{"id": "sum_0003", "type": "sum", "subtype": "sum_ab", "expression": "71 + 114", "answer": "185", "meta": {"a": 71, "b": 114, "canonicalized": true}}
+{"id": "mix_0003", "type": "mix", "subtype": "mix_p1", "expression": "(24 + 12) * 13", "answer": "468", "meta": {"a": 24, "b": 12, "c": 13, "has_parentheses": true}}
+{"id": "eq_0021", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-3x - 42 = -87\nx", "answer": "15", "meta": {"a": -3, "b": -42, "c": -87, "x": 15, "append_x_line": true}}
+{"id": "eq_0080", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "3x - 46 = 104\nx", "answer": "50", "meta": {"a": 3, "b": -46, "c": 104, "x": 50, "append_x_line": true}}
+{"id": "eq_0099", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-4x + 31 = -97\nx", "answer": "32", "meta": {"a": -4, "b": 31, "c": -97, "x": 32, "append_x_line": true}}
+{"id": "sub_0039", "type": "sub", "subtype": "sub_ab", "expression": "231 - 30", "answer": "201", "meta": {"a": 231, "b": 30}}
+{"id": "sum_0092", "type": "sum", "subtype": "sum_ab", "expression": "32 + 197", "answer": "229", "meta": {"a": 32, "b": 197, "canonicalized": true}}
+{"id": "sum_0014", "type": "sum", "subtype": "sum_ab", "expression": "332 + 359", "answer": "691", "meta": {"a": 332, "b": 359, "canonicalized": true}}
+{"id": "sub_0036", "type": "sub", "subtype": "sub_ab", "expression": "204 - 171", "answer": "33", "meta": {"a": 204, "b": 171}}
+{"id": "div_0055", "type": "div", "subtype": "div_int", "expression": "688 / 16", "answer": "43", "meta": {"a": 688, "b": 16, "q": 43}}
+{"id": "eq_0062", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-x + 8 = -23\nx", "answer": "31", "meta": {"a": -1, "b": 8, "c": -23, "x": 31, "append_x_line": true}}
+{"id": "mix_0096", "type": "mix", "subtype": "mix_p3", "expression": "2 * (15 - 11)", "answer": "8", "meta": {"a": 2, "b": 15, "c": 11, "has_parentheses": true}}
+{"id": "sum_0013", "type": "sum", "subtype": "sum_ab", "expression": "101 + 366", "answer": "467", "meta": {"a": 101, "b": 366, "canonicalized": true}}
+{"id": "mul_0085", "type": "mul", "subtype": "mul_ab", "expression": "21 * 21", "answer": "441", "meta": {"a": 21, "b": 21, "canonicalized": true}}
+{"id": "div_0029", "type": "div", "subtype": "div_int", "expression": "301 / 43", "answer": "7", "meta": {"a": 301, "b": 43, "q": 7}}
+{"id": "div_0045", "type": "div", "subtype": "div_int", "expression": "840 / 30", "answer": "28", "meta": {"a": 840, "b": 30, "q": 28}}
+{"id": "div_0014", "type": "div", "subtype": "div_int", "expression": "18 / 3", "answer": "6", "meta": {"a": 18, "b": 3, "q": 6}}
+{"id": "div_0018", "type": "div", "subtype": "div_int", "expression": "1248 / 39", "answer": "32", "meta": {"a": 1248, "b": 39, "q": 32}}
+{"id": "div_0092", "type": "div", "subtype": "div_int", "expression": "360 / 15", "answer": "24", "meta": {"a": 360, "b": 15, "q": 24}}
+{"id": "mix_0027", "type": "mix", "subtype": "mix_p0", "expression": "3 + 22 * 9", "answer": "201", "meta": {"a": 3, "b": 22, "c": 9, "has_parentheses": false}}
+{"id": "mul_0019", "type": "mul", "subtype": "mul_ab", "expression": "18 * 29", "answer": "522", "meta": {"a": 18, "b": 29, "canonicalized": true}}
+{"id": "sub_0015", "type": "sub", "subtype": "sub_ab", "expression": "306 - 165", "answer": "141", "meta": {"a": 306, "b": 165}}
+{"id": "mul_0093", "type": "mul", "subtype": "mul_ab", "expression": "17 * 21", "answer": "357", "meta": {"a": 17, "b": 21, "canonicalized": true}}
+{"id": "sub_0042", "type": "sub", "subtype": "sub_ab", "expression": "10 - 9", "answer": "1", "meta": {"a": 10, "b": 9}}
+{"id": "div_0090", "type": "div", "subtype": "div_int", "expression": "440 / 22", "answer": "20", "meta": {"a": 440, "b": 22, "q": 20}}
+{"id": "mix_0074", "type": "mix", "subtype": "mix_p0", "expression": "9 + 18 * 19", "answer": "351", "meta": {"a": 9, "b": 18, "c": 19, "has_parentheses": false}}
+{"id": "sub_0088", "type": "sub", "subtype": "sub_ab", "expression": "356 - 284", "answer": "72", "meta": {"a": 356, "b": 284}}
+{"id": "eq_0025", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "5x + 24 = -36\nx", "answer": "-12", "meta": {"a": 5, "b": 24, "c": -36, "x": -12, "append_x_line": true}}
+{"id": "sub_0079", "type": "sub", "subtype": "sub_ab", "expression": "474 - 385", "answer": "89", "meta": {"a": 474, "b": 385}}
+{"id": "eq_0005", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "x + 29 = 45\nx", "answer": "16", "meta": {"a": 1, "b": 29, "c": 45, "x": 16, "append_x_line": true}}
+{"id": "sub_0014", "type": "sub", "subtype": "sub_ab", "expression": "276 - 271", "answer": "5", "meta": {"a": 276, "b": 271}}
+{"id": "mul_0046", "type": "mul", "subtype": "mul_ab", "expression": "-17 * 15", "answer": "-255", "meta": {"a": -17, "b": 15, "canonicalized": true}}
+{"id": "eq_0045", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "x + 36 = -4\nx", "answer": "-40", "meta": {"a": 1, "b": 36, "c": -4, "x": -40, "append_x_line": true}}
+{"id": "sum_0079", "type": "sum", "subtype": "sum_ab", "expression": "275 + 287", "answer": "562", "meta": {"a": 275, "b": 287, "canonicalized": true}}
+{"id": "sub_0008", "type": "sub", "subtype": "sub_ab", "expression": "259 - 54", "answer": "205", "meta": {"a": 259, "b": 54}}
+{"id": "mul_0059", "type": "mul", "subtype": "mul_ab", "expression": "-2 * 17", "answer": "-34", "meta": {"a": -2, "b": 17, "canonicalized": true}}
+{"id": "mul_0095", "type": "mul", "subtype": "mul_ab", "expression": "-20 * 20", "answer": "-400", "meta": {"a": -20, "b": 20, "canonicalized": true}}
+{"id": "eq_0027", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "4x + 11 = 39\nx", "answer": "7", "meta": {"a": 4, "b": 11, "c": 39, "x": 7, "append_x_line": true}}
+{"id": "sub_0080", "type": "sub", "subtype": "sub_ab", "expression": "434 - 121", "answer": "313", "meta": {"a": 434, "b": 121}}
+{"id": "sub_0059", "type": "sub", "subtype": "sub_ab", "expression": "181 - 108", "answer": "73", "meta": {"a": 181, "b": 108}}
+{"id": "div_0007", "type": "div", "subtype": "div_int", "expression": "396 / 18", "answer": "22", "meta": {"a": 396, "b": 18, "q": 22}}
+{"id": "sub_0047", "type": "sub", "subtype": "sub_ab", "expression": "34 - 2", "answer": "32", "meta": {"a": 34, "b": 2}}
+{"id": "eq_0036", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-3x + 13 = -86\nx", "answer": "33", "meta": {"a": -3, "b": 13, "c": -86, "x": 33, "append_x_line": true}}
+{"id": "mix_0067", "type": "mix", "subtype": "mix_p3", "expression": "26 * (2 - 12)", "answer": "-260", "meta": {"a": 26, "b": 2, "c": 12, "has_parentheses": true}}
+{"id": "mul_0016", "type": "mul", "subtype": "mul_ab", "expression": "-22 * 12", "answer": "-264", "meta": {"a": -22, "b": 12, "canonicalized": true}}
+{"id": "div_0084", "type": "div", "subtype": "div_int", "expression": "882 / 18", "answer": "49", "meta": {"a": 882, "b": 18, "q": 49}}
+{"id": "mix_0070", "type": "mix", "subtype": "mix_p3", "expression": "2 * (7 - 3)", "answer": "8", "meta": {"a": 2, "b": 7, "c": 3, "has_parentheses": true}}
+{"id": "sub_0081", "type": "sub", "subtype": "sub_ab", "expression": "85 - 52", "answer": "33", "meta": {"a": 85, "b": 52}}
+{"id": "eq_0087", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "3x - 13 = -67\nx", "answer": "-18", "meta": {"a": 3, "b": -13, "c": -67, "x": -18, "append_x_line": true}}
+{"id": "eq_0011", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "5x - 20 = 130\nx", "answer": "30", "meta": {"a": 5, "b": -20, "c": 130, "x": 30, "append_x_line": true}}
+{"id": "div_0043", "type": "div", "subtype": "div_int", "expression": "1400 / 28", "answer": "50", "meta": {"a": 1400, "b": 28, "q": 50}}
+{"id": "sub_0068", "type": "sub", "subtype": "sub_ab", "expression": "97 - 68", "answer": "29", "meta": {"a": 97, "b": 68}}
+{"id": "mix_0028", "type": "mix", "subtype": "mix_p2", "expression": "25 * 18 - 1", "answer": "449", "meta": {"a": 25, "b": 18, "c": 1, "has_parentheses": false}}
+{"id": "mul_0087", "type": "mul", "subtype": "mul_ab", "expression": "-29 * -4", "answer": "116", "meta": {"a": -29, "b": -4, "canonicalized": true}}
+{"id": "div_0000", "type": "div", "subtype": "div_int", "expression": "660 / 30", "answer": "22", "meta": {"a": 660, "b": 30, "q": 22}}
+{"id": "sum_0030", "type": "sum", "subtype": "sum_ab", "expression": "22 + 413", "answer": "435", "meta": {"a": 22, "b": 413, "canonicalized": true}}
+{"id": "mul_0084", "type": "mul", "subtype": "mul_ab", "expression": "-20 * 25", "answer": "-500", "meta": {"a": -20, "b": 25, "canonicalized": true}}
+{"id": "sum_0066", "type": "sum", "subtype": "sum_ab", "expression": "16 + 412", "answer": "428", "meta": {"a": 16, "b": 412, "canonicalized": true}}
+{"id": "mix_0015", "type": "mix", "subtype": "mix_p2", "expression": "23 * 17 - 1", "answer": "390", "meta": {"a": 23, "b": 17, "c": 1, "has_parentheses": false}}
+{"id": "sub_0090", "type": "sub", "subtype": "sub_ab", "expression": "79 - 24", "answer": "55", "meta": {"a": 79, "b": 24}}
+{"id": "div_0078", "type": "div", "subtype": "div_int", "expression": "891 / 33", "answer": "27", "meta": {"a": 891, "b": 33, "q": 27}}
+{"id": "div_0081", "type": "div", "subtype": "div_int", "expression": "868 / 31", "answer": "28", "meta": {"a": 868, "b": 31, "q": 28}}
+{"id": "sum_0049", "type": "sum", "subtype": "sum_ab", "expression": "83 + 189", "answer": "272", "meta": {"a": 83, "b": 189, "canonicalized": true}}
+{"id": "eq_0047", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "3x + 19 = 109\nx", "answer": "30", "meta": {"a": 3, "b": 19, "c": 109, "x": 30, "append_x_line": true}}
+{"id": "sum_0047", "type": "sum", "subtype": "sum_ab", "expression": "232 + 325", "answer": "557", "meta": {"a": 232, "b": 325, "canonicalized": true}}
+{"id": "sum_0043", "type": "sum", "subtype": "sum_ab", "expression": "40 + 148", "answer": "188", "meta": {"a": 40, "b": 148, "canonicalized": true}}
+{"id": "mix_0025", "type": "mix", "subtype": "mix_p0", "expression": "12 + 30 * 6", "answer": "192", "meta": {"a": 12, "b": 30, "c": 6, "has_parentheses": false}}
+{"id": "eq_0094", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-x + 24 = -12\nx", "answer": "36", "meta": {"a": -1, "b": 24, "c": -12, "x": 36, "append_x_line": true}}
+{"id": "sum_0034", "type": "sum", "subtype": "sum_ab", "expression": "40 + 193", "answer": "233", "meta": {"a": 40, "b": 193, "canonicalized": true}}
+{"id": "mul_0042", "type": "mul", "subtype": "mul_ab", "expression": "-24 * 26", "answer": "-624", "meta": {"a": -24, "b": 26, "canonicalized": true}}
+{"id": "eq_0006", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "3x + 30 = 168\nx", "answer": "46", "meta": {"a": 3, "b": 30, "c": 168, "x": 46, "append_x_line": true}}
+{"id": "sum_0078", "type": "sum", "subtype": "sum_ab", "expression": "126 + 381", "answer": "507", "meta": {"a": 126, "b": 381, "canonicalized": true}}
+{"id": "sub_0091", "type": "sub", "subtype": "sub_ab", "expression": "151 - 55", "answer": "96", "meta": {"a": 151, "b": 55}}
+{"id": "sub_0030", "type": "sub", "subtype": "sub_ab", "expression": "270 - 216", "answer": "54", "meta": {"a": 270, "b": 216}}
+{"id": "div_0040", "type": "div", "subtype": "div_int", "expression": "703 / 37", "answer": "19", "meta": {"a": 703, "b": 37, "q": 19}}
+{"id": "mix_0052", "type": "mix", "subtype": "mix_p2", "expression": "23 * 17 - 10", "answer": "381", "meta": {"a": 23, "b": 17, "c": 10, "has_parentheses": false}}
+{"id": "eq_0007", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-5x - 24 = -54\nx", "answer": "6", "meta": {"a": -5, "b": -24, "c": -54, "x": 6, "append_x_line": true}}
+{"id": "sub_0060", "type": "sub", "subtype": "sub_ab", "expression": "210 - 119", "answer": "91", "meta": {"a": 210, "b": 119}}
+{"id": "sum_0048", "type": "sum", "subtype": "sum_ab", "expression": "186 + 427", "answer": "613", "meta": {"a": 186, "b": 427, "canonicalized": true}}
+{"id": "div_0073", "type": "div", "subtype": "div_int", "expression": "1260 / 30", "answer": "42", "meta": {"a": 1260, "b": 30, "q": 42}}
+{"id": "eq_0048", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "5x - 42 = -272\nx", "answer": "-46", "meta": {"a": 5, "b": -42, "c": -272, "x": -46, "append_x_line": true}}
+{"id": "mul_0004", "type": "mul", "subtype": "mul_ab", "expression": "26 * 30", "answer": "780", "meta": {"a": 26, "b": 30, "canonicalized": true}}
+{"id": "mix_0081", "type": "mix", "subtype": "mix_p0", "expression": "22 + 27 * 14", "answer": "400", "meta": {"a": 22, "b": 27, "c": 14, "has_parentheses": false}}
+{"id": "mix_0023", "type": "mix", "subtype": "mix_p0", "expression": "30 + 9 * 3", "answer": "57", "meta": {"a": 30, "b": 9, "c": 3, "has_parentheses": false}}
+{"id": "sub_0073", "type": "sub", "subtype": "sub_ab", "expression": "226 - 206", "answer": "20", "meta": {"a": 226, "b": 206}}
+{"id": "mul_0011", "type": "mul", "subtype": "mul_ab", "expression": "-10 * 29", "answer": "-290", "meta": {"a": -10, "b": 29, "canonicalized": true}}
+{"id": "eq_0024", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-x + 42 = 92\nx", "answer": "-50", "meta": {"a": -1, "b": 42, "c": 92, "x": -50, "append_x_line": true}}
+{"id": "eq_0071", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-5x + 34 = 99\nx", "answer": "-13", "meta": {"a": -5, "b": 34, "c": 99, "x": -13, "append_x_line": true}}
+{"id": "mul_0031", "type": "mul", "subtype": "mul_ab", "expression": "-2 * 23", "answer": "-46", "meta": {"a": -2, "b": 23, "canonicalized": true}}
+{"id": "mix_0078", "type": "mix", "subtype": "mix_p3", "expression": "5 * (0 - 13)", "answer": "-65", "meta": {"a": 5, "b": 0, "c": 13, "has_parentheses": true}}
+{"id": "sub_0010", "type": "sub", "subtype": "sub_ab", "expression": "152 - 129", "answer": "23", "meta": {"a": 152, "b": 129}}
+{"id": "mix_0043", "type": "mix", "subtype": "mix_p0", "expression": "28 + 19 * 8", "answer": "180", "meta": {"a": 28, "b": 19, "c": 8, "has_parentheses": false}}
+{"id": "div_0069", "type": "div", "subtype": "div_int", "expression": "986 / 34", "answer": "29", "meta": {"a": 986, "b": 34, "q": 29}}
+{"id": "eq_0061", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-2x + 9 = 73\nx", "answer": "-32", "meta": {"a": -2, "b": 9, "c": 73, "x": -32, "append_x_line": true}}
+{"id": "div_0093", "type": "div", "subtype": "div_int", "expression": "405 / 45", "answer": "9", "meta": {"a": 405, "b": 45, "q": 9}}
+{"id": "mix_0049", "type": "mix", "subtype": "mix_p2", "expression": "7 * 12 - 7", "answer": "77", "meta": {"a": 7, "b": 12, "c": 7, "has_parentheses": false}}
+{"id": "div_0033", "type": "div", "subtype": "div_int", "expression": "525 / 21", "answer": "25", "meta": {"a": 525, "b": 21, "q": 25}}
+{"id": "div_0035", "type": "div", "subtype": "div_int", "expression": "288 / 36", "answer": "8", "meta": {"a": 288, "b": 36, "q": 8}}
+{"id": "mix_0036", "type": "mix", "subtype": "mix_p2", "expression": "14 * 13 - 18", "answer": "164", "meta": {"a": 14, "b": 13, "c": 18, "has_parentheses": false}}
+{"id": "sum_0058", "type": "sum", "subtype": "sum_ab", "expression": "194 + 236", "answer": "430", "meta": {"a": 194, "b": 236, "canonicalized": true}}
+{"id": "div_0059", "type": "div", "subtype": "div_int", "expression": "1960 / 40", "answer": "49", "meta": {"a": 1960, "b": 40, "q": 49}}
+{"id": "mix_0006", "type": "mix", "subtype": "mix_p1", "expression": "(21 + 21) * 12", "answer": "504", "meta": {"a": 21, "b": 21, "c": 12, "has_parentheses": true}}
+{"id": "sum_0050", "type": "sum", "subtype": "sum_ab", "expression": "107 + 181", "answer": "288", "meta": {"a": 107, "b": 181, "canonicalized": true}}
+{"id": "mul_0020", "type": "mul", "subtype": "mul_ab", "expression": "-26 * 29", "answer": "-754", "meta": {"a": -26, "b": 29, "canonicalized": true}}
+{"id": "eq_0098", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "5x - 22 = -67\nx", "answer": "-9", "meta": {"a": 5, "b": -22, "c": -67, "x": -9, "append_x_line": true}}
+{"id": "mul_0058", "type": "mul", "subtype": "mul_ab", "expression": "-20 * -14", "answer": "280", "meta": {"a": -20, "b": -14, "canonicalized": true}}
+{"id": "mul_0032", "type": "mul", "subtype": "mul_ab", "expression": "4 * 15", "answer": "60", "meta": {"a": 4, "b": 15, "canonicalized": true}}
+{"id": "sub_0050", "type": "sub", "subtype": "sub_ab", "expression": "121 - 35", "answer": "86", "meta": {"a": 121, "b": 35}}
+{"id": "eq_0028", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "x + 20 = 14\nx", "answer": "-6", "meta": {"a": 1, "b": 20, "c": 14, "x": -6, "append_x_line": true}}
+{"id": "div_0005", "type": "div", "subtype": "div_int", "expression": "374 / 22", "answer": "17", "meta": {"a": 374, "b": 22, "q": 17}}
+{"id": "sub_0095", "type": "sub", "subtype": "sub_ab", "expression": "29 - 1", "answer": "28", "meta": {"a": 29, "b": 1}}
+{"id": "sub_0066", "type": "sub", "subtype": "sub_ab", "expression": "173 - 27", "answer": "146", "meta": {"a": 173, "b": 27}}
+{"id": "eq_0003", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "4x + 9 = -191\nx", "answer": "-50", "meta": {"a": 4, "b": 9, "c": -191, "x": -50, "append_x_line": true}}
+{"id": "mul_0080", "type": "mul", "subtype": "mul_ab", "expression": "-4 * 25", "answer": "-100", "meta": {"a": -4, "b": 25, "canonicalized": true}}
+{"id": "mul_0099", "type": "mul", "subtype": "mul_ab", "expression": "-18 * 22", "answer": "-396", "meta": {"a": -18, "b": 22, "canonicalized": true}}
+{"id": "div_0024", "type": "div", "subtype": "div_int", "expression": "2016 / 48", "answer": "42", "meta": {"a": 2016, "b": 48, "q": 42}}
+{"id": "div_0019", "type": "div", "subtype": "div_int", "expression": "192 / 8", "answer": "24", "meta": {"a": 192, "b": 8, "q": 24}}
+{"id": "sub_0040", "type": "sub", "subtype": "sub_ab", "expression": "126 - 28", "answer": "98", "meta": {"a": 126, "b": 28}}
+{"id": "sum_0064", "type": "sum", "subtype": "sum_ab", "expression": "28 + 397", "answer": "425", "meta": {"a": 28, "b": 397, "canonicalized": true}}
+{"id": "eq_0074", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "3x - 14 = 121\nx", "answer": "45", "meta": {"a": 3, "b": -14, "c": 121, "x": 45, "append_x_line": true}}
+{"id": "sum_0075", "type": "sum", "subtype": "sum_ab", "expression": "329 + 468", "answer": "797", "meta": {"a": 329, "b": 468, "canonicalized": true}}
+{"id": "eq_0092", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-x + 18 = 67\nx", "answer": "-49", "meta": {"a": -1, "b": 18, "c": 67, "x": -49, "append_x_line": true}}
+{"id": "sub_0064", "type": "sub", "subtype": "sub_ab", "expression": "50 - 3", "answer": "47", "meta": {"a": 50, "b": 3}}
+{"id": "sum_0041", "type": "sum", "subtype": "sum_ab", "expression": "23 + 338", "answer": "361", "meta": {"a": 23, "b": 338, "canonicalized": true}}
+{"id": "mix_0060", "type": "mix", "subtype": "mix_p1", "expression": "(0 + 22) * 17", "answer": "374", "meta": {"a": 0, "b": 22, "c": 17, "has_parentheses": true}}
+{"id": "sum_0037", "type": "sum", "subtype": "sum_ab", "expression": "316 + 453", "answer": "769", "meta": {"a": 316, "b": 453, "canonicalized": true}}
+{"id": "mul_0027", "type": "mul", "subtype": "mul_ab", "expression": "-8 * 26", "answer": "-208", "meta": {"a": -8, "b": 26, "canonicalized": true}}
+{"id": "eq_0058", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-4x + 28 = 140\nx", "answer": "-28", "meta": {"a": -4, "b": 28, "c": 140, "x": -28, "append_x_line": true}}
+{"id": "div_0064", "type": "div", "subtype": "div_int", "expression": "390 / 26", "answer": "15", "meta": {"a": 390, "b": 26, "q": 15}}
+{"id": "mul_0051", "type": "mul", "subtype": "mul_ab", "expression": "24 * 28", "answer": "672", "meta": {"a": 24, "b": 28, "canonicalized": true}}
+{"id": "sum_0055", "type": "sum", "subtype": "sum_ab", "expression": "87 + 325", "answer": "412", "meta": {"a": 87, "b": 325, "canonicalized": true}}
+{"id": "div_0051", "type": "div", "subtype": "div_int", "expression": "608 / 19", "answer": "32", "meta": {"a": 608, "b": 19, "q": 32}}
+{"id": "mul_0018", "type": "mul", "subtype": "mul_ab", "expression": "-10 * -1", "answer": "10", "meta": {"a": -10, "b": -1, "canonicalized": true}}
+{"id": "mul_0005", "type": "mul", "subtype": "mul_ab", "expression": "-15 * 6", "answer": "-90", "meta": {"a": -15, "b": 6, "canonicalized": true}}
+{"id": "mix_0033", "type": "mix", "subtype": "mix_p1", "expression": "(22 + 4) * 13", "answer": "338", "meta": {"a": 22, "b": 4, "c": 13, "has_parentheses": true}}
+{"id": "mul_0045", "type": "mul", "subtype": "mul_ab", "expression": "-12 * 8", "answer": "-96", "meta": {"a": -12, "b": 8, "canonicalized": true}}
+{"id": "eq_0063", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-5x + 9 = 99\nx", "answer": "-18", "meta": {"a": -5, "b": 9, "c": 99, "x": -18, "append_x_line": true}}
+{"id": "sum_0031", "type": "sum", "subtype": "sum_ab", "expression": "235 + 373", "answer": "608", "meta": {"a": 235, "b": 373, "canonicalized": true}}
+{"id": "mix_0069", "type": "mix", "subtype": "mix_p2", "expression": "4 * 4 - 18", "answer": "-2", "meta": {"a": 4, "b": 4, "c": 18, "has_parentheses": false}}
+{"id": "div_0008", "type": "div", "subtype": "div_int", "expression": "1344 / 42", "answer": "32", "meta": {"a": 1344, "b": 42, "q": 32}}
+{"id": "sum_0044", "type": "sum", "subtype": "sum_ab", "expression": "119 + 437", "answer": "556", "meta": {"a": 119, "b": 437, "canonicalized": true}}
+{"id": "mul_0026", "type": "mul", "subtype": "mul_ab", "expression": "-22 * 29", "answer": "-638", "meta": {"a": -22, "b": 29, "canonicalized": true}}
+{"id": "eq_0015", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-3x + 13 = -83\nx", "answer": "32", "meta": {"a": -3, "b": 13, "c": -83, "x": 32, "append_x_line": true}}
+{"id": "mix_0062", "type": "mix", "subtype": "mix_p3", "expression": "22 * (30 - 4)", "answer": "572", "meta": {"a": 22, "b": 30, "c": 4, "has_parentheses": true}}
+{"id": "sub_0011", "type": "sub", "subtype": "sub_ab", "expression": "311 - 101", "answer": "210", "meta": {"a": 311, "b": 101}}
+{"id": "div_0070", "type": "div", "subtype": "div_int", "expression": "140 / 4", "answer": "35", "meta": {"a": 140, "b": 4, "q": 35}}
+{"id": "mix_0059", "type": "mix", "subtype": "mix_p2", "expression": "7 * 11 - 5", "answer": "72", "meta": {"a": 7, "b": 11, "c": 5, "has_parentheses": false}}
+{"id": "mix_0087", "type": "mix", "subtype": "mix_p2", "expression": "14 * 3 - 14", "answer": "28", "meta": {"a": 14, "b": 3, "c": 14, "has_parentheses": false}}
+{"id": "sum_0065", "type": "sum", "subtype": "sum_ab", "expression": "117 + 420", "answer": "537", "meta": {"a": 117, "b": 420, "canonicalized": true}}
+{"id": "sub_0016", "type": "sub", "subtype": "sub_ab", "expression": "250 - 4", "answer": "246", "meta": {"a": 250, "b": 4}}
+{"id": "mix_0031", "type": "mix", "subtype": "mix_p0", "expression": "27 + 13 * 15", "answer": "222", "meta": {"a": 27, "b": 13, "c": 15, "has_parentheses": false}}
+{"id": "sub_0029", "type": "sub", "subtype": "sub_ab", "expression": "84 - 33", "answer": "51", "meta": {"a": 84, "b": 33}}
+{"id": "sum_0053", "type": "sum", "subtype": "sum_ab", "expression": "331 + 349", "answer": "680", "meta": {"a": 331, "b": 349, "canonicalized": true}}
+{"id": "mul_0071", "type": "mul", "subtype": "mul_ab", "expression": "-11 * -7", "answer": "77", "meta": {"a": -11, "b": -7, "canonicalized": true}}
+{"id": "eq_0038", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "x - 38 = -13\nx", "answer": "25", "meta": {"a": 1, "b": -38, "c": -13, "x": 25, "append_x_line": true}}
+{"id": "sum_0016", "type": "sum", "subtype": "sum_ab", "expression": "112 + 229", "answer": "341", "meta": {"a": 112, "b": 229, "canonicalized": true}}
+{"id": "div_0031", "type": "div", "subtype": "div_int", "expression": "627 / 33", "answer": "19", "meta": {"a": 627, "b": 33, "q": 19}}
+{"id": "mul_0043", "type": "mul", "subtype": "mul_ab", "expression": "5 * 17", "answer": "85", "meta": {"a": 5, "b": 17, "canonicalized": true}}
+{"id": "div_0066", "type": "div", "subtype": "div_int", "expression": "343 / 7", "answer": "49", "meta": {"a": 343, "b": 7, "q": 49}}
+{"id": "sum_0015", "type": "sum", "subtype": "sum_ab", "expression": "214 + 279", "answer": "493", "meta": {"a": 214, "b": 279, "canonicalized": true}}
+{"id": "sub_0034", "type": "sub", "subtype": "sub_ab", "expression": "353 - 102", "answer": "251", "meta": {"a": 353, "b": 102}}
+{"id": "sum_0026", "type": "sum", "subtype": "sum_ab", "expression": "47 + 194", "answer": "241", "meta": {"a": 47, "b": 194, "canonicalized": true}}
+{"id": "sub_0012", "type": "sub", "subtype": "sub_ab", "expression": "78 - 47", "answer": "31", "meta": {"a": 78, "b": 47}}
+{"id": "sub_0078", "type": "sub", "subtype": "sub_ab", "expression": "496 - 47", "answer": "449", "meta": {"a": 496, "b": 47}}
+{"id": "mul_0056", "type": "mul", "subtype": "mul_ab", "expression": "-9 * 19", "answer": "-171", "meta": {"a": -9, "b": 19, "canonicalized": true}}
+{"id": "sub_0033", "type": "sub", "subtype": "sub_ab", "expression": "386 - 373", "answer": "13", "meta": {"a": 386, "b": 373}}
+{"id": "sub_0048", "type": "sub", "subtype": "sub_ab", "expression": "440 - 169", "answer": "271", "meta": {"a": 440, "b": 169}}
+{"id": "mul_0083", "type": "mul", "subtype": "mul_ab", "expression": "-15 * 29", "answer": "-435", "meta": {"a": -15, "b": 29, "canonicalized": true}}
+{"id": "sum_0002", "type": "sum", "subtype": "sum_ab", "expression": "125 + 140", "answer": "265", "meta": {"a": 125, "b": 140, "canonicalized": true}}
+{"id": "sub_0051", "type": "sub", "subtype": "sub_ab", "expression": "342 - 248", "answer": "94", "meta": {"a": 342, "b": 248}}
+{"id": "div_0036", "type": "div", "subtype": "div_int", "expression": "338 / 13", "answer": "26", "meta": {"a": 338, "b": 13, "q": 26}}
+{"id": "mul_0038", "type": "mul", "subtype": "mul_ab", "expression": "12 * 29", "answer": "348", "meta": {"a": 12, "b": 29, "canonicalized": true}}
+{"id": "mul_0021", "type": "mul", "subtype": "mul_ab", "expression": "-30 * -1", "answer": "30", "meta": {"a": -30, "b": -1, "canonicalized": true}}
+{"id": "mul_0012", "type": "mul", "subtype": "mul_ab", "expression": "-17 * -14", "answer": "238", "meta": {"a": -17, "b": -14, "canonicalized": true}}
+{"id": "sum_0070", "type": "sum", "subtype": "sum_ab", "expression": "290 + 482", "answer": "772", "meta": {"a": 290, "b": 482, "canonicalized": true}}
+{"id": "mul_0010", "type": "mul", "subtype": "mul_ab", "expression": "3 * 6", "answer": "18", "meta": {"a": 3, "b": 6, "canonicalized": true}}
+{"id": "sub_0028", "type": "sub", "subtype": "sub_ab", "expression": "484 - 281", "answer": "203", "meta": {"a": 484, "b": 281}}
+{"id": "mul_0049", "type": "mul", "subtype": "mul_ab", "expression": "-14 * 24", "answer": "-336", "meta": {"a": -14, "b": 24, "canonicalized": true}}
+{"id": "div_0041", "type": "div", "subtype": "div_int", "expression": "910 / 26", "answer": "35", "meta": {"a": 910, "b": 26, "q": 35}}
+{"id": "sum_0051", "type": "sum", "subtype": "sum_ab", "expression": "136 + 343", "answer": "479", "meta": {"a": 136, "b": 343, "canonicalized": true}}
+{"id": "sum_0021", "type": "sum", "subtype": "sum_ab", "expression": "216 + 357", "answer": "573", "meta": {"a": 216, "b": 357, "canonicalized": true}}
+{"id": "mul_0017", "type": "mul", "subtype": "mul_ab", "expression": "-11 * 11", "answer": "-121", "meta": {"a": -11, "b": 11, "canonicalized": true}}
+{"id": "sum_0093", "type": "sum", "subtype": "sum_ab", "expression": "195 + 305", "answer": "500", "meta": {"a": 195, "b": 305, "canonicalized": true}}
+{"id": "mix_0065", "type": "mix", "subtype": "mix_p2", "expression": "5 * 30 - 1", "answer": "149", "meta": {"a": 5, "b": 30, "c": 1, "has_parentheses": false}}
+{"id": "sub_0025", "type": "sub", "subtype": "sub_ab", "expression": "500 - 389", "answer": "111", "meta": {"a": 500, "b": 389}}
+{"id": "sub_0094", "type": "sub", "subtype": "sub_ab", "expression": "31 - 20", "answer": "11", "meta": {"a": 31, "b": 20}}
+{"id": "mul_0082", "type": "mul", "subtype": "mul_ab", "expression": "-21 * 29", "answer": "-609", "meta": {"a": -21, "b": 29, "canonicalized": true}}
+{"id": "mix_0007", "type": "mix", "subtype": "mix_p0", "expression": "26 + 14 * 4", "answer": "82", "meta": {"a": 26, "b": 14, "c": 4, "has_parentheses": false}}
+{"id": "sum_0062", "type": "sum", "subtype": "sum_ab", "expression": "166 + 350", "answer": "516", "meta": {"a": 166, "b": 350, "canonicalized": true}}
+{"id": "div_0067", "type": "div", "subtype": "div_int", "expression": "392 / 28", "answer": "14", "meta": {"a": 392, "b": 28, "q": 14}}
+{"id": "eq_0057", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-3x - 29 = -140\nx", "answer": "37", "meta": {"a": -3, "b": -29, "c": -140, "x": 37, "append_x_line": true}}
+{"id": "div_0076", "type": "div", "subtype": "div_int", "expression": "1372 / 49", "answer": "28", "meta": {"a": 1372, "b": 49, "q": 28}}
+{"id": "eq_0078", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-3x + 30 = -78\nx", "answer": "36", "meta": {"a": -3, "b": 30, "c": -78, "x": 36, "append_x_line": true}}
+{"id": "div_0071", "type": "div", "subtype": "div_int", "expression": "112 / 16", "answer": "7", "meta": {"a": 112, "b": 16, "q": 7}}
+{"id": "mul_0041", "type": "mul", "subtype": "mul_ab", "expression": "-23 * -14", "answer": "322", "meta": {"a": -23, "b": -14, "canonicalized": true}}
+{"id": "mix_0055", "type": "mix", "subtype": "mix_p1", "expression": "(10 + 3) * 17", "answer": "221", "meta": {"a": 10, "b": 3, "c": 17, "has_parentheses": true}}
+{"id": "mix_0054", "type": "mix", "subtype": "mix_p1", "expression": "(8 + 7) * 3", "answer": "45", "meta": {"a": 8, "b": 7, "c": 3, "has_parentheses": true}}
+{"id": "mul_0022", "type": "mul", "subtype": "mul_ab", "expression": "6 * 9", "answer": "54", "meta": {"a": 6, "b": 9, "canonicalized": true}}
+{"id": "eq_0083", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "2x - 28 = -46\nx", "answer": "-9", "meta": {"a": 2, "b": -28, "c": -46, "x": -9, "append_x_line": true}}
+{"id": "sum_0033", "type": "sum", "subtype": "sum_ab", "expression": "472 + 498", "answer": "970", "meta": {"a": 472, "b": 498, "canonicalized": true}}
+{"id": "mul_0086", "type": "mul", "subtype": "mul_ab", "expression": "-19 * 26", "answer": "-494", "meta": {"a": -19, "b": 26, "canonicalized": true}}
+{"id": "mix_0017", "type": "mix", "subtype": "mix_p1", "expression": "(24 + 0) * 7", "answer": "168", "meta": {"a": 24, "b": 0, "c": 7, "has_parentheses": true}}
+{"id": "eq_0001", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "x - 36 = -54\nx", "answer": "-18", "meta": {"a": 1, "b": -36, "c": -54, "x": -18, "append_x_line": true}}
+{"id": "sub_0001", "type": "sub", "subtype": "sub_ab", "expression": "384 - 136", "answer": "248", "meta": {"a": 384, "b": 136}}
+{"id": "mix_0024", "type": "mix", "subtype": "mix_p3", "expression": "29 * (9 - 18)", "answer": "-261", "meta": {"a": 29, "b": 9, "c": 18, "has_parentheses": true}}
+{"id": "sub_0058", "type": "sub", "subtype": "sub_ab", "expression": "337 - 220", "answer": "117", "meta": {"a": 337, "b": 220}}
+{"id": "mix_0029", "type": "mix", "subtype": "mix_p0", "expression": "17 + 13 * 11", "answer": "160", "meta": {"a": 17, "b": 13, "c": 11, "has_parentheses": false}}
+{"id": "eq_0053", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "x - 43 = -88\nx", "answer": "-45", "meta": {"a": 1, "b": -43, "c": -88, "x": -45, "append_x_line": true}}
+{"id": "div_0079", "type": "div", "subtype": "div_int", "expression": "1008 / 36", "answer": "28", "meta": {"a": 1008, "b": 36, "q": 28}}
+{"id": "mix_0064", "type": "mix", "subtype": "mix_p2", "expression": "15 * 15 - 14", "answer": "211", "meta": {"a": 15, "b": 15, "c": 14, "has_parentheses": false}}
+{"id": "div_0097", "type": "div", "subtype": "div_int", "expression": "1015 / 35", "answer": "29", "meta": {"a": 1015, "b": 35, "q": 29}}
+{"id": "sub_0038", "type": "sub", "subtype": "sub_ab", "expression": "224 - 132", "answer": "92", "meta": {"a": 224, "b": 132}}
+{"id": "eq_0050", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-4x + 5 = -175\nx", "answer": "45", "meta": {"a": -4, "b": 5, "c": -175, "x": 45, "append_x_line": true}}
+{"id": "mul_0040", "type": "mul", "subtype": "mul_ab", "expression": "-22 * 26", "answer": "-572", "meta": {"a": -22, "b": 26, "canonicalized": true}}
+{"id": "sum_0099", "type": "sum", "subtype": "sum_ab", "expression": "58 + 349", "answer": "407", "meta": {"a": 58, "b": 349, "canonicalized": true}}
+{"id": "sub_0018", "type": "sub", "subtype": "sub_ab", "expression": "449 - 425", "answer": "24", "meta": {"a": 449, "b": 425}}
+{"id": "eq_0004", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-5x - 26 = -36\nx", "answer": "2", "meta": {"a": -5, "b": -26, "c": -36, "x": 2, "append_x_line": true}}
+{"id": "div_0011", "type": "div", "subtype": "div_int", "expression": "14 / 2", "answer": "7", "meta": {"a": 14, "b": 2, "q": 7}}
+{"id": "sum_0038", "type": "sum", "subtype": "sum_ab", "expression": "185 + 441", "answer": "626", "meta": {"a": 185, "b": 441, "canonicalized": true}}
+{"id": "sum_0046", "type": "sum", "subtype": "sum_ab", "expression": "142 + 194", "answer": "336", "meta": {"a": 142, "b": 194, "canonicalized": true}}
+{"id": "sub_0043", "type": "sub", "subtype": "sub_ab", "expression": "283 - 117", "answer": "166", "meta": {"a": 283, "b": 117}}
+{"id": "sub_0019", "type": "sub", "subtype": "sub_ab", "expression": "413 - 157", "answer": "256", "meta": {"a": 413, "b": 157}}
+{"id": "mix_0018", "type": "mix", "subtype": "mix_p1", "expression": "(26 + 0) * 19", "answer": "494", "meta": {"a": 26, "b": 0, "c": 19, "has_parentheses": true}}
+{"id": "div_0009", "type": "div", "subtype": "div_int", "expression": "1118 / 26", "answer": "43", "meta": {"a": 1118, "b": 26, "q": 43}}
+{"id": "mix_0075", "type": "mix", "subtype": "mix_p1", "expression": "(19 + 30) * 3", "answer": "147", "meta": {"a": 19, "b": 30, "c": 3, "has_parentheses": true}}

@@ -1,0 +1,17 @@
+# Runtime dependencies used by the evaluation and analysis scripts.
+# For the original full environment freeze, see requirements-full.txt.
+jinja2
+matplotlib
+numpy
+pandas
+pyarrow
+seaborn
+torch
+tqdm
+transformers
+
+# Common tokenizer/model extras for Hugging Face causal LMs.
+accelerate
+protobuf
+safetensors
+sentencepiece

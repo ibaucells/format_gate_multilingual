@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "format_gate_multilingual"
+version = "0.1.0"
+description = "Evaluation and analysis code for multilingual format-gated arithmetic failures in LLMs"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.setuptools]
+packages = [
+    "format_gate_multilingual",
+    "format_gate_multilingual.analysis",
+    "format_gate_multilingual.analysis.behavioral",
+    "format_gate_multilingual.analysis.cosine",
+    "format_gate_multilingual.analysis.first_token",
+    "format_gate_multilingual.analysis.logit_lens",
+    "format_gate_multilingual.analysis.steering",
+    "format_gate_multilingual.data",
+    "format_gate_multilingual.evaluation",
+]
+
+[tool.setuptools.package-dir]
+"format_gate_multilingual" = "."
+"format_gate_multilingual.analysis" = "analysis"
+"format_gate_multilingual.analysis.behavioral" = "analysis/behavioral"
+"format_gate_multilingual.analysis.cosine" = "analysis/cosine"
+"format_gate_multilingual.analysis.first_token" = "analysis/first_token"
+"format_gate_multilingual.analysis.logit_lens" = "analysis/logit_lens"
+"format_gate_multilingual.analysis.steering" = "analysis/steering"
+"format_gate_multilingual.data" = "data"
+"format_gate_multilingual.evaluation" = "evaluation"

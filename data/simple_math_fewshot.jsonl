@@ -1,0 +1,300 @@
+{"id": "sum_0000", "type": "sum", "subtype": "sum_ab", "expression": "26 + 137", "answer": "163", "meta": {"a": 26, "b": 137, "canonicalized": true}}
+{"id": "sum_0001", "type": "sum", "subtype": "sum_ab", "expression": "44 + 393", "answer": "437", "meta": {"a": 44, "b": 393, "canonicalized": true}}
+{"id": "sum_0002", "type": "sum", "subtype": "sum_ab", "expression": "136 + 208", "answer": "344", "meta": {"a": 136, "b": 208, "canonicalized": true}}
+{"id": "sum_0003", "type": "sum", "subtype": "sum_ab", "expression": "55 + 429", "answer": "484", "meta": {"a": 55, "b": 429, "canonicalized": true}}
+{"id": "sum_0004", "type": "sum", "subtype": "sum_ab", "expression": "447 + 461", "answer": "908", "meta": {"a": 447, "b": 461, "canonicalized": true}}
+{"id": "sum_0005", "type": "sum", "subtype": "sum_ab", "expression": "19 + 194", "answer": "213", "meta": {"a": 19, "b": 194, "canonicalized": true}}
+{"id": "sum_0006", "type": "sum", "subtype": "sum_ab", "expression": "274 + 287", "answer": "561", "meta": {"a": 274, "b": 287, "canonicalized": true}}
+{"id": "sum_0007", "type": "sum", "subtype": "sum_ab", "expression": "170 + 174", "answer": "344", "meta": {"a": 170, "b": 174, "canonicalized": true}}
+{"id": "sum_0008", "type": "sum", "subtype": "sum_ab", "expression": "26 + 436", "answer": "462", "meta": {"a": 26, "b": 436, "canonicalized": true}}
+{"id": "sum_0009", "type": "sum", "subtype": "sum_ab", "expression": "69 + 81", "answer": "150", "meta": {"a": 69, "b": 81, "canonicalized": true}}
+{"id": "sum_0010", "type": "sum", "subtype": "sum_ab", "expression": "172 + 287", "answer": "459", "meta": {"a": 172, "b": 287, "canonicalized": true}}
+{"id": "sum_0011", "type": "sum", "subtype": "sum_ab", "expression": "170 + 359", "answer": "529", "meta": {"a": 170, "b": 359, "canonicalized": true}}
+{"id": "sum_0013", "type": "sum", "subtype": "sum_ab", "expression": "223 + 396", "answer": "619", "meta": {"a": 223, "b": 396, "canonicalized": true}}
+{"id": "sum_0014", "type": "sum", "subtype": "sum_ab", "expression": "44 + 449", "answer": "493", "meta": {"a": 44, "b": 449, "canonicalized": true}}
+{"id": "sum_0015", "type": "sum", "subtype": "sum_ab", "expression": "193 + 305", "answer": "498", "meta": {"a": 193, "b": 305, "canonicalized": true}}
+{"id": "sum_0016", "type": "sum", "subtype": "sum_ab", "expression": "3 + 35", "answer": "38", "meta": {"a": 3, "b": 35, "canonicalized": true}}
+{"id": "sum_0017", "type": "sum", "subtype": "sum_ab", "expression": "161 + 374", "answer": "535", "meta": {"a": 161, "b": 374, "canonicalized": true}}
+{"id": "sum_0018", "type": "sum", "subtype": "sum_ab", "expression": "52 + 229", "answer": "281", "meta": {"a": 52, "b": 229, "canonicalized": true}}
+{"id": "sum_0019", "type": "sum", "subtype": "sum_ab", "expression": "22 + 463", "answer": "485", "meta": {"a": 22, "b": 463, "canonicalized": true}}
+{"id": "sum_0020", "type": "sum", "subtype": "sum_ab", "expression": "47 + 341", "answer": "388", "meta": {"a": 47, "b": 341, "canonicalized": true}}
+{"id": "sum_0021", "type": "sum", "subtype": "sum_ab", "expression": "64 + 72", "answer": "136", "meta": {"a": 64, "b": 72, "canonicalized": true}}
+{"id": "sum_0022", "type": "sum", "subtype": "sum_ab", "expression": "404 + 464", "answer": "868", "meta": {"a": 404, "b": 464, "canonicalized": true}}
+{"id": "sum_0023", "type": "sum", "subtype": "sum_ab", "expression": "10 + 149", "answer": "159", "meta": {"a": 10, "b": 149, "canonicalized": true}}
+{"id": "sum_0024", "type": "sum", "subtype": "sum_ab", "expression": "220 + 466", "answer": "686", "meta": {"a": 220, "b": 466, "canonicalized": true}}
+{"id": "sum_0025", "type": "sum", "subtype": "sum_ab", "expression": "244 + 293", "answer": "537", "meta": {"a": 244, "b": 293, "canonicalized": true}}
+{"id": "sum_0026", "type": "sum", "subtype": "sum_ab", "expression": "135 + 240", "answer": "375", "meta": {"a": 135, "b": 240, "canonicalized": true}}
+{"id": "sum_0027", "type": "sum", "subtype": "sum_ab", "expression": "18 + 428", "answer": "446", "meta": {"a": 18, "b": 428, "canonicalized": true}}
+{"id": "sum_0028", "type": "sum", "subtype": "sum_ab", "expression": "156 + 393", "answer": "549", "meta": {"a": 156, "b": 393, "canonicalized": true}}
+{"id": "sum_0029", "type": "sum", "subtype": "sum_ab", "expression": "175 + 267", "answer": "442", "meta": {"a": 175, "b": 267, "canonicalized": true}}
+{"id": "sum_0030", "type": "sum", "subtype": "sum_ab", "expression": "247 + 410", "answer": "657", "meta": {"a": 247, "b": 410, "canonicalized": true}}
+{"id": "sum_0031", "type": "sum", "subtype": "sum_ab", "expression": "105 + 420", "answer": "525", "meta": {"a": 105, "b": 420, "canonicalized": true}}
+{"id": "sum_0032", "type": "sum", "subtype": "sum_ab", "expression": "311 + 327", "answer": "638", "meta": {"a": 311, "b": 327, "canonicalized": true}}
+{"id": "sum_0033", "type": "sum", "subtype": "sum_ab", "expression": "269 + 289", "answer": "558", "meta": {"a": 269, "b": 289, "canonicalized": true}}
+{"id": "sum_0034", "type": "sum", "subtype": "sum_ab", "expression": "414 + 491", "answer": "905", "meta": {"a": 414, "b": 491, "canonicalized": true}}
+{"id": "sum_0035", "type": "sum", "subtype": "sum_ab", "expression": "6 + 161", "answer": "167", "meta": {"a": 6, "b": 161, "canonicalized": true}}
+{"id": "sum_0036", "type": "sum", "subtype": "sum_ab", "expression": "203 + 457", "answer": "660", "meta": {"a": 203, "b": 457, "canonicalized": true}}
+{"id": "sum_0037", "type": "sum", "subtype": "sum_ab", "expression": "330 + 393", "answer": "723", "meta": {"a": 330, "b": 393, "canonicalized": true}}
+{"id": "sum_0038", "type": "sum", "subtype": "sum_ab", "expression": "222 + 262", "answer": "484", "meta": {"a": 222, "b": 262, "canonicalized": true}}
+{"id": "sum_0039", "type": "sum", "subtype": "sum_ab", "expression": "275 + 350", "answer": "625", "meta": {"a": 275, "b": 350, "canonicalized": true}}
+{"id": "sum_0040", "type": "sum", "subtype": "sum_ab", "expression": "326 + 407", "answer": "733", "meta": {"a": 326, "b": 407, "canonicalized": true}}
+{"id": "sum_0041", "type": "sum", "subtype": "sum_ab", "expression": "305 + 341", "answer": "646", "meta": {"a": 305, "b": 341, "canonicalized": true}}
+{"id": "sum_0042", "type": "sum", "subtype": "sum_ab", "expression": "426 + 455", "answer": "881", "meta": {"a": 426, "b": 455, "canonicalized": true}}
+{"id": "sum_0043", "type": "sum", "subtype": "sum_ab", "expression": "248 + 266", "answer": "514", "meta": {"a": 248, "b": 266, "canonicalized": true}}
+{"id": "sum_0044", "type": "sum", "subtype": "sum_ab", "expression": "214 + 342", "answer": "556", "meta": {"a": 214, "b": 342, "canonicalized": true}}
+{"id": "sum_0045", "type": "sum", "subtype": "sum_ab", "expression": "191 + 261", "answer": "452", "meta": {"a": 191, "b": 261, "canonicalized": true}}
+{"id": "sum_0046", "type": "sum", "subtype": "sum_ab", "expression": "16 + 433", "answer": "449", "meta": {"a": 16, "b": 433, "canonicalized": true}}
+{"id": "sum_0047", "type": "sum", "subtype": "sum_ab", "expression": "330 + 386", "answer": "716", "meta": {"a": 330, "b": 386, "canonicalized": true}}
+{"id": "sum_0048", "type": "sum", "subtype": "sum_ab", "expression": "92 + 371", "answer": "463", "meta": {"a": 92, "b": 371, "canonicalized": true}}
+{"id": "sum_0049", "type": "sum", "subtype": "sum_ab", "expression": "42 + 419", "answer": "461", "meta": {"a": 42, "b": 419, "canonicalized": true}}
+{"id": "sum_0050", "type": "sum", "subtype": "sum_ab", "expression": "249 + 467", "answer": "716", "meta": {"a": 249, "b": 467, "canonicalized": true}}
+{"id": "sub_0000", "type": "sub", "subtype": "sub_ab", "expression": "44 - 2", "answer": "42", "meta": {"a": 44, "b": 2}}
+{"id": "sub_0001", "type": "sub", "subtype": "sub_ab", "expression": "110 - 19", "answer": "91", "meta": {"a": 110, "b": 19}}
+{"id": "sub_0002", "type": "sub", "subtype": "sub_ab", "expression": "336 - 329", "answer": "7", "meta": {"a": 336, "b": 329}}
+{"id": "sub_0003", "type": "sub", "subtype": "sub_ab", "expression": "69 - 38", "answer": "31", "meta": {"a": 69, "b": 38}}
+{"id": "sub_0004", "type": "sub", "subtype": "sub_ab", "expression": "186 - 130", "answer": "56", "meta": {"a": 186, "b": 130}}
+{"id": "sub_0005", "type": "sub", "subtype": "sub_ab", "expression": "215 - 180", "answer": "35", "meta": {"a": 215, "b": 180}}
+{"id": "sub_0006", "type": "sub", "subtype": "sub_ab", "expression": "134 - 72", "answer": "62", "meta": {"a": 134, "b": 72}}
+{"id": "sub_0007", "type": "sub", "subtype": "sub_ab", "expression": "210 - 47", "answer": "163", "meta": {"a": 210, "b": 47}}
+{"id": "sub_0008", "type": "sub", "subtype": "sub_ab", "expression": "273 - 270", "answer": "3", "meta": {"a": 273, "b": 270}}
+{"id": "sub_0009", "type": "sub", "subtype": "sub_ab", "expression": "432 - 338", "answer": "94", "meta": {"a": 432, "b": 338}}
+{"id": "sub_0010", "type": "sub", "subtype": "sub_ab", "expression": "474 - 281", "answer": "193", "meta": {"a": 474, "b": 281}}
+{"id": "sub_0011", "type": "sub", "subtype": "sub_ab", "expression": "455 - 297", "answer": "158", "meta": {"a": 455, "b": 297}}
+{"id": "sub_0012", "type": "sub", "subtype": "sub_ab", "expression": "309 - 73", "answer": "236", "meta": {"a": 309, "b": 73}}
+{"id": "sub_0013", "type": "sub", "subtype": "sub_ab", "expression": "266 - 51", "answer": "215", "meta": {"a": 266, "b": 51}}
+{"id": "sub_0014", "type": "sub", "subtype": "sub_ab", "expression": "232 - 167", "answer": "65", "meta": {"a": 232, "b": 167}}
+{"id": "sub_0015", "type": "sub", "subtype": "sub_ab", "expression": "126 - 80", "answer": "46", "meta": {"a": 126, "b": 80}}
+{"id": "sub_0016", "type": "sub", "subtype": "sub_ab", "expression": "408 - 282", "answer": "126", "meta": {"a": 408, "b": 282}}
+{"id": "sub_0017", "type": "sub", "subtype": "sub_ab", "expression": "245 - 7", "answer": "238", "meta": {"a": 245, "b": 7}}
+{"id": "sub_0018", "type": "sub", "subtype": "sub_ab", "expression": "190 - 75", "answer": "115", "meta": {"a": 190, "b": 75}}
+{"id": "sub_0019", "type": "sub", "subtype": "sub_ab", "expression": "413 - 385", "answer": "28", "meta": {"a": 413, "b": 385}}
+{"id": "sub_0020", "type": "sub", "subtype": "sub_ab", "expression": "238 - 95", "answer": "143", "meta": {"a": 238, "b": 95}}
+{"id": "sub_0021", "type": "sub", "subtype": "sub_ab", "expression": "331 - 145", "answer": "186", "meta": {"a": 331, "b": 145}}
+{"id": "sub_0022", "type": "sub", "subtype": "sub_ab", "expression": "426 - 275", "answer": "151", "meta": {"a": 426, "b": 275}}
+{"id": "sub_0023", "type": "sub", "subtype": "sub_ab", "expression": "390 - 288", "answer": "102", "meta": {"a": 390, "b": 288}}
+{"id": "sub_0024", "type": "sub", "subtype": "sub_ab", "expression": "300 - 173", "answer": "127", "meta": {"a": 300, "b": 173}}
+{"id": "sub_0025", "type": "sub", "subtype": "sub_ab", "expression": "101 - 21", "answer": "80", "meta": {"a": 101, "b": 21}}
+{"id": "sub_0026", "type": "sub", "subtype": "sub_ab", "expression": "20 - 11", "answer": "9", "meta": {"a": 20, "b": 11}}
+{"id": "sub_0027", "type": "sub", "subtype": "sub_ab", "expression": "26 - 18", "answer": "8", "meta": {"a": 26, "b": 18}}
+{"id": "sub_0028", "type": "sub", "subtype": "sub_ab", "expression": "49 - 31", "answer": "18", "meta": {"a": 49, "b": 31}}
+{"id": "sub_0029", "type": "sub", "subtype": "sub_ab", "expression": "410 - 190", "answer": "220", "meta": {"a": 410, "b": 190}}
+{"id": "sub_0030", "type": "sub", "subtype": "sub_ab", "expression": "386 - 215", "answer": "171", "meta": {"a": 386, "b": 215}}
+{"id": "sub_0031", "type": "sub", "subtype": "sub_ab", "expression": "339 - 90", "answer": "249", "meta": {"a": 339, "b": 90}}
+{"id": "sub_0032", "type": "sub", "subtype": "sub_ab", "expression": "462 - 53", "answer": "409", "meta": {"a": 462, "b": 53}}
+{"id": "sub_0033", "type": "sub", "subtype": "sub_ab", "expression": "500 - 336", "answer": "164", "meta": {"a": 500, "b": 336}}
+{"id": "sub_0034", "type": "sub", "subtype": "sub_ab", "expression": "316 - 37", "answer": "279", "meta": {"a": 316, "b": 37}}
+{"id": "sub_0035", "type": "sub", "subtype": "sub_ab", "expression": "118 - 73", "answer": "45", "meta": {"a": 118, "b": 73}}
+{"id": "sub_0036", "type": "sub", "subtype": "sub_ab", "expression": "196 - 34", "answer": "162", "meta": {"a": 196, "b": 34}}
+{"id": "sub_0037", "type": "sub", "subtype": "sub_ab", "expression": "259 - 50", "answer": "209", "meta": {"a": 259, "b": 50}}
+{"id": "sub_0038", "type": "sub", "subtype": "sub_ab", "expression": "390 - 249", "answer": "141", "meta": {"a": 390, "b": 249}}
+{"id": "sub_0039", "type": "sub", "subtype": "sub_ab", "expression": "477 - 269", "answer": "208", "meta": {"a": 477, "b": 269}}
+{"id": "sub_0040", "type": "sub", "subtype": "sub_ab", "expression": "387 - 118", "answer": "269", "meta": {"a": 387, "b": 118}}
+{"id": "sub_0041", "type": "sub", "subtype": "sub_ab", "expression": "450 - 321", "answer": "129", "meta": {"a": 450, "b": 321}}
+{"id": "sub_0042", "type": "sub", "subtype": "sub_ab", "expression": "407 - 268", "answer": "139", "meta": {"a": 407, "b": 268}}
+{"id": "sub_0043", "type": "sub", "subtype": "sub_ab", "expression": "254 - 85", "answer": "169", "meta": {"a": 254, "b": 85}}
+{"id": "sub_0044", "type": "sub", "subtype": "sub_ab", "expression": "161 - 154", "answer": "7", "meta": {"a": 161, "b": 154}}
+{"id": "sub_0045", "type": "sub", "subtype": "sub_ab", "expression": "323 - 213", "answer": "110", "meta": {"a": 323, "b": 213}}
+{"id": "sub_0046", "type": "sub", "subtype": "sub_ab", "expression": "402 - 390", "answer": "12", "meta": {"a": 402, "b": 390}}
+{"id": "sub_0047", "type": "sub", "subtype": "sub_ab", "expression": "332 - 136", "answer": "196", "meta": {"a": 332, "b": 136}}
+{"id": "sub_0048", "type": "sub", "subtype": "sub_ab", "expression": "172 - 123", "answer": "49", "meta": {"a": 172, "b": 123}}
+{"id": "sub_0049", "type": "sub", "subtype": "sub_ab", "expression": "90 - 30", "answer": "60", "meta": {"a": 90, "b": 30}}
+{"id": "mul_0000", "type": "mul", "subtype": "mul_ab", "expression": "10 * 11", "answer": "110", "meta": {"a": 10, "b": 11, "canonicalized": true}}
+{"id": "mul_0001", "type": "mul", "subtype": "mul_ab", "expression": "25 * 29", "answer": "725", "meta": {"a": 25, "b": 29, "canonicalized": true}}
+{"id": "mul_0002", "type": "mul", "subtype": "mul_ab", "expression": "6 * 30", "answer": "180", "meta": {"a": 6, "b": 30, "canonicalized": true}}
+{"id": "mul_0004", "type": "mul", "subtype": "mul_ab", "expression": "-18 * 19", "answer": "-342", "meta": {"a": -18, "b": 19, "canonicalized": true}}
+{"id": "mul_0005", "type": "mul", "subtype": "mul_ab", "expression": "-16 * 20", "answer": "-320", "meta": {"a": -16, "b": 20, "canonicalized": true}}
+{"id": "mul_0006", "type": "mul", "subtype": "mul_ab", "expression": "-1 * 11", "answer": "-11", "meta": {"a": -1, "b": 11, "canonicalized": true}}
+{"id": "mul_0007", "type": "mul", "subtype": "mul_ab", "expression": "-26 * -10", "answer": "260", "meta": {"a": -26, "b": -10, "canonicalized": true}}
+{"id": "mul_0008", "type": "mul", "subtype": "mul_ab", "expression": "25 * 26", "answer": "650", "meta": {"a": 25, "b": 26, "canonicalized": true}}
+{"id": "mul_0009", "type": "mul", "subtype": "mul_ab", "expression": "-15 * -2", "answer": "30", "meta": {"a": -15, "b": -2, "canonicalized": true}}
+{"id": "mul_0010", "type": "mul", "subtype": "mul_ab", "expression": "-15 * -5", "answer": "75", "meta": {"a": -15, "b": -5, "canonicalized": true}}
+{"id": "mul_0011", "type": "mul", "subtype": "mul_ab", "expression": "-6 * 14", "answer": "-84", "meta": {"a": -6, "b": 14, "canonicalized": true}}
+{"id": "mul_0012", "type": "mul", "subtype": "mul_ab", "expression": "-11 * -10", "answer": "110", "meta": {"a": -11, "b": -10, "canonicalized": true}}
+{"id": "mul_0013", "type": "mul", "subtype": "mul_ab", "expression": "4 * 18", "answer": "72", "meta": {"a": 4, "b": 18, "canonicalized": true}}
+{"id": "mul_0014", "type": "mul", "subtype": "mul_ab", "expression": "4 * 28", "answer": "112", "meta": {"a": 4, "b": 28, "canonicalized": true}}
+{"id": "mul_0015", "type": "mul", "subtype": "mul_ab", "expression": "15 * 30", "answer": "450", "meta": {"a": 15, "b": 30, "canonicalized": true}}
+{"id": "mul_0016", "type": "mul", "subtype": "mul_ab", "expression": "-13 * 12", "answer": "-156", "meta": {"a": -13, "b": 12, "canonicalized": true}}
+{"id": "mul_0019", "type": "mul", "subtype": "mul_ab", "expression": "-29 * 16", "answer": "-464", "meta": {"a": -29, "b": 16, "canonicalized": true}}
+{"id": "mul_0020", "type": "mul", "subtype": "mul_ab", "expression": "3 * 16", "answer": "48", "meta": {"a": 3, "b": 16, "canonicalized": true}}
+{"id": "mul_0021", "type": "mul", "subtype": "mul_ab", "expression": "-24 * -2", "answer": "48", "meta": {"a": -24, "b": -2, "canonicalized": true}}
+{"id": "mul_0022", "type": "mul", "subtype": "mul_ab", "expression": "-22 * 13", "answer": "-286", "meta": {"a": -22, "b": 13, "canonicalized": true}}
+{"id": "mul_0023", "type": "mul", "subtype": "mul_ab", "expression": "-3 * 26", "answer": "-78", "meta": {"a": -3, "b": 26, "canonicalized": true}}
+{"id": "mul_0025", "type": "mul", "subtype": "mul_ab", "expression": "-1 * 16", "answer": "-16", "meta": {"a": -1, "b": 16, "canonicalized": true}}
+{"id": "mul_0026", "type": "mul", "subtype": "mul_ab", "expression": "-23 * 25", "answer": "-575", "meta": {"a": -23, "b": 25, "canonicalized": true}}
+{"id": "mul_0027", "type": "mul", "subtype": "mul_ab", "expression": "-13 * 26", "answer": "-338", "meta": {"a": -13, "b": 26, "canonicalized": true}}
+{"id": "mul_0028", "type": "mul", "subtype": "mul_ab", "expression": "-22 * 21", "answer": "-462", "meta": {"a": -22, "b": 21, "canonicalized": true}}
+{"id": "mul_0029", "type": "mul", "subtype": "mul_ab", "expression": "-25 * -15", "answer": "375", "meta": {"a": -25, "b": -15, "canonicalized": true}}
+{"id": "mul_0030", "type": "mul", "subtype": "mul_ab", "expression": "-24 * 9", "answer": "-216", "meta": {"a": -24, "b": 9, "canonicalized": true}}
+{"id": "mul_0031", "type": "mul", "subtype": "mul_ab", "expression": "7 * 23", "answer": "161", "meta": {"a": 7, "b": 23, "canonicalized": true}}
+{"id": "mul_0032", "type": "mul", "subtype": "mul_ab", "expression": "-12 * 29", "answer": "-348", "meta": {"a": -12, "b": 29, "canonicalized": true}}
+{"id": "mul_0033", "type": "mul", "subtype": "mul_ab", "expression": "-22 * -9", "answer": "198", "meta": {"a": -22, "b": -9, "canonicalized": true}}
+{"id": "mul_0035", "type": "mul", "subtype": "mul_ab", "expression": "-3 * 13", "answer": "-39", "meta": {"a": -3, "b": 13, "canonicalized": true}}
+{"id": "mul_0036", "type": "mul", "subtype": "mul_ab", "expression": "-25 * -12", "answer": "300", "meta": {"a": -25, "b": -12, "canonicalized": true}}
+{"id": "mul_0037", "type": "mul", "subtype": "mul_ab", "expression": "-15 * 28", "answer": "-420", "meta": {"a": -15, "b": 28, "canonicalized": true}}
+{"id": "mul_0038", "type": "mul", "subtype": "mul_ab", "expression": "6 * 25", "answer": "150", "meta": {"a": 6, "b": 25, "canonicalized": true}}
+{"id": "mul_0039", "type": "mul", "subtype": "mul_ab", "expression": "-27 * 17", "answer": "-459", "meta": {"a": -27, "b": 17, "canonicalized": true}}
+{"id": "mul_0040", "type": "mul", "subtype": "mul_ab", "expression": "3 * 26", "answer": "78", "meta": {"a": 3, "b": 26, "canonicalized": true}}
+{"id": "mul_0041", "type": "mul", "subtype": "mul_ab", "expression": "-7 * -5", "answer": "35", "meta": {"a": -7, "b": -5, "canonicalized": true}}
+{"id": "mul_0042", "type": "mul", "subtype": "mul_ab", "expression": "-3 * 19", "answer": "-57", "meta": {"a": -3, "b": 19, "canonicalized": true}}
+{"id": "mul_0043", "type": "mul", "subtype": "mul_ab", "expression": "10 * 22", "answer": "220", "meta": {"a": 10, "b": 22, "canonicalized": true}}
+{"id": "mul_0044", "type": "mul", "subtype": "mul_ab", "expression": "-28 * -14", "answer": "392", "meta": {"a": -28, "b": -14, "canonicalized": true}}
+{"id": "mul_0045", "type": "mul", "subtype": "mul_ab", "expression": "24 * 25", "answer": "600", "meta": {"a": 24, "b": 25, "canonicalized": true}}
+{"id": "mul_0046", "type": "mul", "subtype": "mul_ab", "expression": "-16 * -12", "answer": "192", "meta": {"a": -16, "b": -12, "canonicalized": true}}
+{"id": "mul_0047", "type": "mul", "subtype": "mul_ab", "expression": "-1 * 12", "answer": "-12", "meta": {"a": -1, "b": 12, "canonicalized": true}}
+{"id": "mul_0049", "type": "mul", "subtype": "mul_ab", "expression": "-26 * -1", "answer": "26", "meta": {"a": -26, "b": -1, "canonicalized": true}}
+{"id": "mul_0050", "type": "mul", "subtype": "mul_ab", "expression": "-17 * -17", "answer": "289", "meta": {"a": -17, "b": -17, "canonicalized": true}}
+{"id": "mul_0051", "type": "mul", "subtype": "mul_ab", "expression": "13 * 25", "answer": "325", "meta": {"a": 13, "b": 25, "canonicalized": true}}
+{"id": "mul_0052", "type": "mul", "subtype": "mul_ab", "expression": "-20 * 2", "answer": "-40", "meta": {"a": -20, "b": 2, "canonicalized": true}}
+{"id": "mul_0053", "type": "mul", "subtype": "mul_ab", "expression": "-22 * -11", "answer": "242", "meta": {"a": -22, "b": -11, "canonicalized": true}}
+{"id": "mul_0054", "type": "mul", "subtype": "mul_ab", "expression": "-19 * -10", "answer": "190", "meta": {"a": -19, "b": -10, "canonicalized": true}}
+{"id": "mul_0055", "type": "mul", "subtype": "mul_ab", "expression": "-8 * -5", "answer": "40", "meta": {"a": -8, "b": -5, "canonicalized": true}}
+{"id": "div_0000", "type": "div", "subtype": "div_int", "expression": "2400 / 50", "answer": "48", "meta": {"a": 2400, "b": 50, "q": 48}}
+{"id": "div_0001", "type": "div", "subtype": "div_int", "expression": "644 / 14", "answer": "46", "meta": {"a": 644, "b": 14, "q": 46}}
+{"id": "div_0002", "type": "div", "subtype": "div_int", "expression": "1200 / 30", "answer": "40", "meta": {"a": 1200, "b": 30, "q": 40}}
+{"id": "div_0003", "type": "div", "subtype": "div_int", "expression": "174 / 6", "answer": "29", "meta": {"a": 174, "b": 6, "q": 29}}
+{"id": "div_0004", "type": "div", "subtype": "div_int", "expression": "147 / 21", "answer": "7", "meta": {"a": 147, "b": 21, "q": 7}}
+{"id": "div_0005", "type": "div", "subtype": "div_int", "expression": "184 / 8", "answer": "23", "meta": {"a": 184, "b": 8, "q": 23}}
+{"id": "div_0006", "type": "div", "subtype": "div_int", "expression": "319 / 29", "answer": "11", "meta": {"a": 319, "b": 29, "q": 11}}
+{"id": "div_0007", "type": "div", "subtype": "div_int", "expression": "20 / 5", "answer": "4", "meta": {"a": 20, "b": 5, "q": 4}}
+{"id": "div_0008", "type": "div", "subtype": "div_int", "expression": "690 / 15", "answer": "46", "meta": {"a": 690, "b": 15, "q": 46}}
+{"id": "div_0009", "type": "div", "subtype": "div_int", "expression": "141 / 3", "answer": "47", "meta": {"a": 141, "b": 3, "q": 47}}
+{"id": "div_0010", "type": "div", "subtype": "div_int", "expression": "1034 / 22", "answer": "47", "meta": {"a": 1034, "b": 22, "q": 47}}
+{"id": "div_0012", "type": "div", "subtype": "div_int", "expression": "96 / 8", "answer": "12", "meta": {"a": 96, "b": 8, "q": 12}}
+{"id": "div_0013", "type": "div", "subtype": "div_int", "expression": "84 / 21", "answer": "4", "meta": {"a": 84, "b": 21, "q": 4}}
+{"id": "div_0014", "type": "div", "subtype": "div_int", "expression": "589 / 19", "answer": "31", "meta": {"a": 589, "b": 19, "q": 31}}
+{"id": "div_0015", "type": "div", "subtype": "div_int", "expression": "588 / 14", "answer": "42", "meta": {"a": 588, "b": 14, "q": 42}}
+{"id": "div_0016", "type": "div", "subtype": "div_int", "expression": "819 / 39", "answer": "21", "meta": {"a": 819, "b": 39, "q": 21}}
+{"id": "div_0017", "type": "div", "subtype": "div_int", "expression": "2303 / 49", "answer": "47", "meta": {"a": 2303, "b": 49, "q": 47}}
+{"id": "div_0018", "type": "div", "subtype": "div_int", "expression": "754 / 26", "answer": "29", "meta": {"a": 754, "b": 26, "q": 29}}
+{"id": "div_0019", "type": "div", "subtype": "div_int", "expression": "1080 / 40", "answer": "27", "meta": {"a": 1080, "b": 40, "q": 27}}
+{"id": "div_0020", "type": "div", "subtype": "div_int", "expression": "650 / 13", "answer": "50", "meta": {"a": 650, "b": 13, "q": 50}}
+{"id": "div_0021", "type": "div", "subtype": "div_int", "expression": "108 / 6", "answer": "18", "meta": {"a": 108, "b": 6, "q": 18}}
+{"id": "div_0022", "type": "div", "subtype": "div_int", "expression": "120 / 8", "answer": "15", "meta": {"a": 120, "b": 8, "q": 15}}
+{"id": "div_0023", "type": "div", "subtype": "div_int", "expression": "560 / 40", "answer": "14", "meta": {"a": 560, "b": 40, "q": 14}}
+{"id": "div_0024", "type": "div", "subtype": "div_int", "expression": "76 / 19", "answer": "4", "meta": {"a": 76, "b": 19, "q": 4}}
+{"id": "div_0025", "type": "div", "subtype": "div_int", "expression": "360 / 9", "answer": "40", "meta": {"a": 360, "b": 9, "q": 40}}
+{"id": "div_0026", "type": "div", "subtype": "div_int", "expression": "81 / 3", "answer": "27", "meta": {"a": 81, "b": 3, "q": 27}}
+{"id": "div_0027", "type": "div", "subtype": "div_int", "expression": "1100 / 25", "answer": "44", "meta": {"a": 1100, "b": 25, "q": 44}}
+{"id": "div_0028", "type": "div", "subtype": "div_int", "expression": "1350 / 50", "answer": "27", "meta": {"a": 1350, "b": 50, "q": 27}}
+{"id": "div_0029", "type": "div", "subtype": "div_int", "expression": "270 / 10", "answer": "27", "meta": {"a": 270, "b": 10, "q": 27}}
+{"id": "div_0030", "type": "div", "subtype": "div_int", "expression": "437 / 19", "answer": "23", "meta": {"a": 437, "b": 19, "q": 23}}
+{"id": "div_0031", "type": "div", "subtype": "div_int", "expression": "988 / 26", "answer": "38", "meta": {"a": 988, "b": 26, "q": 38}}
+{"id": "div_0032", "type": "div", "subtype": "div_int", "expression": "814 / 22", "answer": "37", "meta": {"a": 814, "b": 22, "q": 37}}
+{"id": "div_0033", "type": "div", "subtype": "div_int", "expression": "686 / 14", "answer": "49", "meta": {"a": 686, "b": 14, "q": 49}}
+{"id": "div_0034", "type": "div", "subtype": "div_int", "expression": "352 / 32", "answer": "11", "meta": {"a": 352, "b": 32, "q": 11}}
+{"id": "div_0035", "type": "div", "subtype": "div_int", "expression": "1440 / 30", "answer": "48", "meta": {"a": 1440, "b": 30, "q": 48}}
+{"id": "div_0036", "type": "div", "subtype": "div_int", "expression": "408 / 17", "answer": "24", "meta": {"a": 408, "b": 17, "q": 24}}
+{"id": "div_0037", "type": "div", "subtype": "div_int", "expression": "980 / 49", "answer": "20", "meta": {"a": 980, "b": 49, "q": 20}}
+{"id": "div_0038", "type": "div", "subtype": "div_int", "expression": "66 / 22", "answer": "3", "meta": {"a": 66, "b": 22, "q": 3}}
+{"id": "div_0039", "type": "div", "subtype": "div_int", "expression": "598 / 26", "answer": "23", "meta": {"a": 598, "b": 26, "q": 23}}
+{"id": "div_0040", "type": "div", "subtype": "div_int", "expression": "1591 / 43", "answer": "37", "meta": {"a": 1591, "b": 43, "q": 37}}
+{"id": "div_0041", "type": "div", "subtype": "div_int", "expression": "288 / 18", "answer": "16", "meta": {"a": 288, "b": 18, "q": 16}}
+{"id": "div_0042", "type": "div", "subtype": "div_int", "expression": "1300 / 26", "answer": "50", "meta": {"a": 1300, "b": 26, "q": 50}}
+{"id": "div_0043", "type": "div", "subtype": "div_int", "expression": "330 / 33", "answer": "10", "meta": {"a": 330, "b": 33, "q": 10}}
+{"id": "div_0045", "type": "div", "subtype": "div_int", "expression": "50 / 25", "answer": "2", "meta": {"a": 50, "b": 25, "q": 2}}
+{"id": "div_0046", "type": "div", "subtype": "div_int", "expression": "306 / 9", "answer": "34", "meta": {"a": 306, "b": 9, "q": 34}}
+{"id": "div_0047", "type": "div", "subtype": "div_int", "expression": "160 / 16", "answer": "10", "meta": {"a": 160, "b": 16, "q": 10}}
+{"id": "div_0048", "type": "div", "subtype": "div_int", "expression": "651 / 31", "answer": "21", "meta": {"a": 651, "b": 31, "q": 21}}
+{"id": "div_0049", "type": "div", "subtype": "div_int", "expression": "532 / 38", "answer": "14", "meta": {"a": 532, "b": 38, "q": 14}}
+{"id": "div_0050", "type": "div", "subtype": "div_int", "expression": "527 / 17", "answer": "31", "meta": {"a": 527, "b": 17, "q": 31}}
+{"id": "div_0051", "type": "div", "subtype": "div_int", "expression": "252 / 18", "answer": "14", "meta": {"a": 252, "b": 18, "q": 14}}
+{"id": "mix_0000", "type": "mix", "subtype": "mix_p3", "expression": "29 * (2 - 3)", "answer": "-29", "meta": {"a": 29, "b": 2, "c": 3, "has_parentheses": true}}
+{"id": "mix_0001", "type": "mix", "subtype": "mix_p1", "expression": "(23 + 19) * 20", "answer": "840", "meta": {"a": 23, "b": 19, "c": 20, "has_parentheses": true}}
+{"id": "mix_0002", "type": "mix", "subtype": "mix_p0", "expression": "13 + 5 * 3", "answer": "28", "meta": {"a": 13, "b": 5, "c": 3, "has_parentheses": false}}
+{"id": "mix_0003", "type": "mix", "subtype": "mix_p1", "expression": "(13 + 5) * 19", "answer": "342", "meta": {"a": 13, "b": 5, "c": 19, "has_parentheses": true}}
+{"id": "mix_0004", "type": "mix", "subtype": "mix_p3", "expression": "10 * (28 - 3)", "answer": "250", "meta": {"a": 10, "b": 28, "c": 3, "has_parentheses": true}}
+{"id": "mix_0005", "type": "mix", "subtype": "mix_p0", "expression": "14 + 3 * 12", "answer": "50", "meta": {"a": 14, "b": 3, "c": 12, "has_parentheses": false}}
+{"id": "mix_0006", "type": "mix", "subtype": "mix_p3", "expression": "25 * (13 - 9)", "answer": "100", "meta": {"a": 25, "b": 13, "c": 9, "has_parentheses": true}}
+{"id": "mix_0007", "type": "mix", "subtype": "mix_p1", "expression": "(9 + 8) * 15", "answer": "255", "meta": {"a": 9, "b": 8, "c": 15, "has_parentheses": true}}
+{"id": "mix_0008", "type": "mix", "subtype": "mix_p0", "expression": "15 + 28 * 11", "answer": "323", "meta": {"a": 15, "b": 28, "c": 11, "has_parentheses": false}}
+{"id": "mix_0009", "type": "mix", "subtype": "mix_p0", "expression": "17 + 1 * 17", "answer": "34", "meta": {"a": 17, "b": 1, "c": 17, "has_parentheses": false}}
+{"id": "mix_0010", "type": "mix", "subtype": "mix_p2", "expression": "25 * 7 - 9", "answer": "166", "meta": {"a": 25, "b": 7, "c": 9, "has_parentheses": false}}
+{"id": "mix_0011", "type": "mix", "subtype": "mix_p0", "expression": "19 + 18 * 14", "answer": "271", "meta": {"a": 19, "b": 18, "c": 14, "has_parentheses": false}}
+{"id": "mix_0012", "type": "mix", "subtype": "mix_p2", "expression": "18 * 20 - 18", "answer": "342", "meta": {"a": 18, "b": 20, "c": 18, "has_parentheses": false}}
+{"id": "mix_0013", "type": "mix", "subtype": "mix_p3", "expression": "30 * (30 - 15)", "answer": "450", "meta": {"a": 30, "b": 30, "c": 15, "has_parentheses": true}}
+{"id": "mix_0014", "type": "mix", "subtype": "mix_p2", "expression": "0 * 16 - 14", "answer": "-14", "meta": {"a": 0, "b": 16, "c": 14, "has_parentheses": false}}
+{"id": "mix_0015", "type": "mix", "subtype": "mix_p3", "expression": "6 * (25 - 18)", "answer": "42", "meta": {"a": 6, "b": 25, "c": 18, "has_parentheses": true}}
+{"id": "mix_0016", "type": "mix", "subtype": "mix_p0", "expression": "26 + 29 * 2", "answer": "84", "meta": {"a": 26, "b": 29, "c": 2, "has_parentheses": false}}
+{"id": "mix_0017", "type": "mix", "subtype": "mix_p2", "expression": "14 * 29 - 15", "answer": "391", "meta": {"a": 14, "b": 29, "c": 15, "has_parentheses": false}}
+{"id": "mix_0018", "type": "mix", "subtype": "mix_p0", "expression": "1 + 6 * 19", "answer": "115", "meta": {"a": 1, "b": 6, "c": 19, "has_parentheses": false}}
+{"id": "mix_0019", "type": "mix", "subtype": "mix_p3", "expression": "10 * (10 - 11)", "answer": "-10", "meta": {"a": 10, "b": 10, "c": 11, "has_parentheses": true}}
+{"id": "mix_0020", "type": "mix", "subtype": "mix_p1", "expression": "(17 + 25) * 8", "answer": "336", "meta": {"a": 17, "b": 25, "c": 8, "has_parentheses": true}}
+{"id": "mix_0021", "type": "mix", "subtype": "mix_p1", "expression": "(23 + 19) * 8", "answer": "336", "meta": {"a": 23, "b": 19, "c": 8, "has_parentheses": true}}
+{"id": "mix_0022", "type": "mix", "subtype": "mix_p0", "expression": "12 + 18 * 14", "answer": "264", "meta": {"a": 12, "b": 18, "c": 14, "has_parentheses": false}}
+{"id": "mix_0023", "type": "mix", "subtype": "mix_p2", "expression": "30 * 6 - 4", "answer": "176", "meta": {"a": 30, "b": 6, "c": 4, "has_parentheses": false}}
+{"id": "mix_0024", "type": "mix", "subtype": "mix_p3", "expression": "23 * (12 - 2)", "answer": "230", "meta": {"a": 23, "b": 12, "c": 2, "has_parentheses": true}}
+{"id": "mix_0025", "type": "mix", "subtype": "mix_p2", "expression": "24 * 21 - 18", "answer": "486", "meta": {"a": 24, "b": 21, "c": 18, "has_parentheses": false}}
+{"id": "mix_0026", "type": "mix", "subtype": "mix_p2", "expression": "8 * 7 - 5", "answer": "51", "meta": {"a": 8, "b": 7, "c": 5, "has_parentheses": false}}
+{"id": "mix_0027", "type": "mix", "subtype": "mix_p1", "expression": "(29 + 12) * 16", "answer": "656", "meta": {"a": 29, "b": 12, "c": 16, "has_parentheses": true}}
+{"id": "mix_0028", "type": "mix", "subtype": "mix_p3", "expression": "15 * (1 - 11)", "answer": "-150", "meta": {"a": 15, "b": 1, "c": 11, "has_parentheses": true}}
+{"id": "mix_0029", "type": "mix", "subtype": "mix_p3", "expression": "14 * (0 - 19)", "answer": "-266", "meta": {"a": 14, "b": 0, "c": 19, "has_parentheses": true}}
+{"id": "mix_0030", "type": "mix", "subtype": "mix_p3", "expression": "1 * (0 - 15)", "answer": "-15", "meta": {"a": 1, "b": 0, "c": 15, "has_parentheses": true}}
+{"id": "mix_0031", "type": "mix", "subtype": "mix_p0", "expression": "2 + 29 * 7", "answer": "205", "meta": {"a": 2, "b": 29, "c": 7, "has_parentheses": false}}
+{"id": "mix_0032", "type": "mix", "subtype": "mix_p3", "expression": "9 * (3 - 6)", "answer": "-27", "meta": {"a": 9, "b": 3, "c": 6, "has_parentheses": true}}
+{"id": "mix_0033", "type": "mix", "subtype": "mix_p1", "expression": "(1 + 1) * 2", "answer": "4", "meta": {"a": 1, "b": 1, "c": 2, "has_parentheses": true}}
+{"id": "mix_0034", "type": "mix", "subtype": "mix_p0", "expression": "10 + 27 * 2", "answer": "64", "meta": {"a": 10, "b": 27, "c": 2, "has_parentheses": false}}
+{"id": "mix_0035", "type": "mix", "subtype": "mix_p2", "expression": "15 * 21 - 18", "answer": "297", "meta": {"a": 15, "b": 21, "c": 18, "has_parentheses": false}}
+{"id": "mix_0036", "type": "mix", "subtype": "mix_p3", "expression": "6 * (26 - 10)", "answer": "96", "meta": {"a": 6, "b": 26, "c": 10, "has_parentheses": true}}
+{"id": "mix_0037", "type": "mix", "subtype": "mix_p1", "expression": "(16 + 12) * 3", "answer": "84", "meta": {"a": 16, "b": 12, "c": 3, "has_parentheses": true}}
+{"id": "mix_0038", "type": "mix", "subtype": "mix_p0", "expression": "28 + 11 * 18", "answer": "226", "meta": {"a": 28, "b": 11, "c": 18, "has_parentheses": false}}
+{"id": "mix_0039", "type": "mix", "subtype": "mix_p1", "expression": "(24 + 0) * 20", "answer": "480", "meta": {"a": 24, "b": 0, "c": 20, "has_parentheses": true}}
+{"id": "mix_0040", "type": "mix", "subtype": "mix_p1", "expression": "(14 + 6) * 5", "answer": "100", "meta": {"a": 14, "b": 6, "c": 5, "has_parentheses": true}}
+{"id": "mix_0041", "type": "mix", "subtype": "mix_p0", "expression": "19 + 2 * 11", "answer": "41", "meta": {"a": 19, "b": 2, "c": 11, "has_parentheses": false}}
+{"id": "mix_0042", "type": "mix", "subtype": "mix_p0", "expression": "18 + 8 * 6", "answer": "66", "meta": {"a": 18, "b": 8, "c": 6, "has_parentheses": false}}
+{"id": "mix_0043", "type": "mix", "subtype": "mix_p3", "expression": "4 * (9 - 0)", "answer": "36", "meta": {"a": 4, "b": 9, "c": 0, "has_parentheses": true}}
+{"id": "mix_0044", "type": "mix", "subtype": "mix_p0", "expression": "8 + 1 * 6", "answer": "14", "meta": {"a": 8, "b": 1, "c": 6, "has_parentheses": false}}
+{"id": "mix_0045", "type": "mix", "subtype": "mix_p0", "expression": "14 + 10 * 20", "answer": "214", "meta": {"a": 14, "b": 10, "c": 20, "has_parentheses": false}}
+{"id": "mix_0046", "type": "mix", "subtype": "mix_p0", "expression": "3 + 26 * 13", "answer": "341", "meta": {"a": 3, "b": 26, "c": 13, "has_parentheses": false}}
+{"id": "mix_0047", "type": "mix", "subtype": "mix_p2", "expression": "25 * 20 - 15", "answer": "485", "meta": {"a": 25, "b": 20, "c": 15, "has_parentheses": false}}
+{"id": "mix_0048", "type": "mix", "subtype": "mix_p1", "expression": "(21 + 2) * 3", "answer": "69", "meta": {"a": 21, "b": 2, "c": 3, "has_parentheses": true}}
+{"id": "mix_0049", "type": "mix", "subtype": "mix_p2", "expression": "3 * 10 - 17", "answer": "13", "meta": {"a": 3, "b": 10, "c": 17, "has_parentheses": false}}
+{"id": "eq_0000", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "4x + 40 = 100\nx", "answer": "15", "meta": {"a": 4, "b": 40, "c": 100, "x": 15, "append_x_line": true}}
+{"id": "eq_0001", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-4x + 11 = 59\nx", "answer": "-12", "meta": {"a": -4, "b": 11, "c": 59, "x": -12, "append_x_line": true}}
+{"id": "eq_0002", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-3x - 27 = -117\nx", "answer": "30", "meta": {"a": -3, "b": -27, "c": -117, "x": 30, "append_x_line": true}}
+{"id": "eq_0003", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "4x - 45 = 127\nx", "answer": "43", "meta": {"a": 4, "b": -45, "c": 127, "x": 43, "append_x_line": true}}
+{"id": "eq_0004", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "x - 7 = -28\nx", "answer": "-21", "meta": {"a": 1, "b": -7, "c": -28, "x": -21, "append_x_line": true}}
+{"id": "eq_0005", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-5x + 17 = -58\nx", "answer": "15", "meta": {"a": -5, "b": 17, "c": -58, "x": 15, "append_x_line": true}}
+{"id": "eq_0006", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "5x + 33 = 108\nx", "answer": "15", "meta": {"a": 5, "b": 33, "c": 108, "x": 15, "append_x_line": true}}
+{"id": "eq_0007", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-5x + 26 = 211\nx", "answer": "-37", "meta": {"a": -5, "b": 26, "c": 211, "x": -37, "append_x_line": true}}
+{"id": "eq_0008", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-x - 38 = -53\nx", "answer": "15", "meta": {"a": -1, "b": -38, "c": -53, "x": 15, "append_x_line": true}}
+{"id": "eq_0009", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-5x + 46 = 266\nx", "answer": "-44", "meta": {"a": -5, "b": 46, "c": 266, "x": -44, "append_x_line": true}}
+{"id": "eq_0010", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "4x + 29 = 169\nx", "answer": "35", "meta": {"a": 4, "b": 29, "c": 169, "x": 35, "append_x_line": true}}
+{"id": "eq_0011", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-4x - 6 = 94\nx", "answer": "-25", "meta": {"a": -4, "b": -6, "c": 94, "x": -25, "append_x_line": true}}
+{"id": "eq_0012", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-2x + 30 = 62\nx", "answer": "-16", "meta": {"a": -2, "b": 30, "c": 62, "x": -16, "append_x_line": true}}
+{"id": "eq_0013", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-4x - 15 = -191\nx", "answer": "44", "meta": {"a": -4, "b": -15, "c": -191, "x": 44, "append_x_line": true}}
+{"id": "eq_0014", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-5x - 4 = 46\nx", "answer": "-10", "meta": {"a": -5, "b": -4, "c": 46, "x": -10, "append_x_line": true}}
+{"id": "eq_0015", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-3x + 39 = 75\nx", "answer": "-12", "meta": {"a": -3, "b": 39, "c": 75, "x": -12, "append_x_line": true}}
+{"id": "eq_0016", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-3x + 39 = 141\nx", "answer": "-34", "meta": {"a": -3, "b": 39, "c": 141, "x": -34, "append_x_line": true}}
+{"id": "eq_0017", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "4x - 45 = -229\nx", "answer": "-46", "meta": {"a": 4, "b": -45, "c": -229, "x": -46, "append_x_line": true}}
+{"id": "eq_0018", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "5x + 5 = -245\nx", "answer": "-50", "meta": {"a": 5, "b": 5, "c": -245, "x": -50, "append_x_line": true}}
+{"id": "eq_0019", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "2x - 5 = -77\nx", "answer": "-36", "meta": {"a": 2, "b": -5, "c": -77, "x": -36, "append_x_line": true}}
+{"id": "eq_0020", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "x + 12 = -32\nx", "answer": "-44", "meta": {"a": 1, "b": 12, "c": -32, "x": -44, "append_x_line": true}}
+{"id": "eq_0021", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-5x + 46 = 211\nx", "answer": "-33", "meta": {"a": -5, "b": 46, "c": 211, "x": -33, "append_x_line": true}}
+{"id": "eq_0022", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-x - 43 = -75\nx", "answer": "32", "meta": {"a": -1, "b": -43, "c": -75, "x": 32, "append_x_line": true}}
+{"id": "eq_0023", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "4x + 3 = 171\nx", "answer": "42", "meta": {"a": 4, "b": 3, "c": 171, "x": 42, "append_x_line": true}}
+{"id": "eq_0024", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "3x - 24 = -24\nx", "answer": "0", "meta": {"a": 3, "b": -24, "c": -24, "x": 0, "append_x_line": true}}
+{"id": "eq_0025", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "3x + 37 = 16\nx", "answer": "-7", "meta": {"a": 3, "b": 37, "c": 16, "x": -7, "append_x_line": true}}
+{"id": "eq_0026", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-2x + 33 = -47\nx", "answer": "40", "meta": {"a": -2, "b": 33, "c": -47, "x": 40, "append_x_line": true}}
+{"id": "eq_0027", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "x + 30 = 55\nx", "answer": "25", "meta": {"a": 1, "b": 30, "c": 55, "x": 25, "append_x_line": true}}
+{"id": "eq_0028", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-4x + 45 = 245\nx", "answer": "-50", "meta": {"a": -4, "b": 45, "c": 245, "x": -50, "append_x_line": true}}
+{"id": "eq_0029", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "2x + 31 = -23\nx", "answer": "-27", "meta": {"a": 2, "b": 31, "c": -23, "x": -27, "append_x_line": true}}
+{"id": "eq_0030", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-4x - 34 = -122\nx", "answer": "22", "meta": {"a": -4, "b": -34, "c": -122, "x": 22, "append_x_line": true}}
+{"id": "eq_0031", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-5x - 22 = 223\nx", "answer": "-49", "meta": {"a": -5, "b": -22, "c": 223, "x": -49, "append_x_line": true}}
+{"id": "eq_0032", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-2x - 30 = -92\nx", "answer": "31", "meta": {"a": -2, "b": -30, "c": -92, "x": 31, "append_x_line": true}}
+{"id": "eq_0033", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-3x - 17 = -17\nx", "answer": "0", "meta": {"a": -3, "b": -17, "c": -17, "x": 0, "append_x_line": true}}
+{"id": "eq_0034", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "4x - 15 = -79\nx", "answer": "-16", "meta": {"a": 4, "b": -15, "c": -79, "x": -16, "append_x_line": true}}
+{"id": "eq_0035", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-4x + 48 = -148\nx", "answer": "49", "meta": {"a": -4, "b": 48, "c": -148, "x": 49, "append_x_line": true}}
+{"id": "eq_0036", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-3x - 19 = -139\nx", "answer": "40", "meta": {"a": -3, "b": -19, "c": -139, "x": 40, "append_x_line": true}}
+{"id": "eq_0037", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-5x - 46 = -221\nx", "answer": "35", "meta": {"a": -5, "b": -46, "c": -221, "x": 35, "append_x_line": true}}
+{"id": "eq_0038", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-5x + 18 = -152\nx", "answer": "34", "meta": {"a": -5, "b": 18, "c": -152, "x": 34, "append_x_line": true}}
+{"id": "eq_0039", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-4x + 12 = -72\nx", "answer": "21", "meta": {"a": -4, "b": 12, "c": -72, "x": 21, "append_x_line": true}}
+{"id": "eq_0040", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "4x + 17 = -11\nx", "answer": "-7", "meta": {"a": 4, "b": 17, "c": -11, "x": -7, "append_x_line": true}}
+{"id": "eq_0041", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-5x + 47 = 107\nx", "answer": "-12", "meta": {"a": -5, "b": 47, "c": 107, "x": -12, "append_x_line": true}}
+{"id": "eq_0042", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-3x + 44 = 188\nx", "answer": "-48", "meta": {"a": -3, "b": 44, "c": 188, "x": -48, "append_x_line": true}}
+{"id": "eq_0043", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "3x + 22 = -95\nx", "answer": "-39", "meta": {"a": 3, "b": 22, "c": -95, "x": -39, "append_x_line": true}}
+{"id": "eq_0044", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "5x + 46 = 131\nx", "answer": "17", "meta": {"a": 5, "b": 46, "c": 131, "x": 17, "append_x_line": true}}
+{"id": "eq_0045", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-5x + 17 = 107\nx", "answer": "-18", "meta": {"a": -5, "b": 17, "c": 107, "x": -18, "append_x_line": true}}
+{"id": "eq_0046", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "4x - 23 = 13\nx", "answer": "9", "meta": {"a": 4, "b": -23, "c": 13, "x": 9, "append_x_line": true}}
+{"id": "eq_0047", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "2x - 5 = -71\nx", "answer": "-33", "meta": {"a": 2, "b": -5, "c": -71, "x": -33, "append_x_line": true}}
+{"id": "eq_0048", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-x + 39 = 23\nx", "answer": "16", "meta": {"a": -1, "b": 39, "c": 23, "x": 16, "append_x_line": true}}
+{"id": "eq_0049", "type": "eq", "subtype": "eq_axpb_eq_c__xslot", "expression": "-x + 23 = -16\nx", "answer": "39", "meta": {"a": -1, "b": 23, "c": -16, "x": 39, "append_x_line": true}}
