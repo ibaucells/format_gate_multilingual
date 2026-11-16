@@ -18,8 +18,8 @@ Output: a single .parquet file (written incrementally via pyarrow).
 
 Usage:
   python compute_cosine_similarities.py \\
-    --model-path /gpfs/projects/bsc88/hf-models/Qwen3-0.6B-Base \\
-    --results-dir results_reextracted_fs \\
+    --model-path /path/to/hf-models/Qwen3-0.6B-Base \\
+    --results-dir results/raw/base_and_instruct \\
     --output cosine_sims_Qwen3-0.6B-Base.parquet
 
 Requires: transformers torch pandas pyarrow tqdm

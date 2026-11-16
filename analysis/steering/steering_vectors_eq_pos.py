@@ -33,7 +33,6 @@ print = functools.partial(print, flush=True)
 
 from format_gate_multilingual.evaluation.extractor import (
     extract_high_confidence_only,
-    normalize_unicode_digits,
     _find_gold_label_token_in_output,
     _is_gold_label_spurious,
     _SPURIOUS_CHECK_EXTRACTORS,
@@ -256,7 +255,7 @@ def filter_examples_by_features(examples, features):
     return filtered
 
 
-def build_eval_set(results, model, eval_features, eval_size):
+def build_eval_set(results, model, eval_features, eval_size, exclude_keys=None):
     lang = eval_features.get("language")
     prompt = eval_features.get("prompt")
     if not lang or not prompt:
@@ -266,8 +265,13 @@ def build_eval_set(results, model, eval_features, eval_size):
     except KeyError as e:
         raise KeyError(f"Missing results for model={model}, language={lang}, prompt={prompt}. KeyError: {e}")
     examples = filter_examples_by_features(examples, eval_features)
+    exclude_keys = exclude_keys or set()
     items = []
+    excluded = 0
     for key, rec in examples.items():
+        if key in exclude_keys:
+            excluded += 1
+            continue
         items.append({
             "key": key,
             "prompt_text_negative": rec["prompt_text"],
@@ -392,13 +396,25 @@ def load_dataset(models, args, saved_test_keys=None):
         print(f"[Dataset] Final split -> train: {len(train)}  test: {len(test)}  reserve: {len(reserve)}")
 
         if args.eval_features is not None:
-            test = build_eval_set(results, models[0], args.eval_features, args.test_size)
+            test = build_eval_set(results, models[0], args.eval_features, args.test_size,
+                                   exclude_keys={x["key"] for x in train})
             reserve = []
         elif saved_test_keys is not None:
             key_to_item = {item["key"]: item for item in test_candidates}
             test = [key_to_item[k] for k in saved_test_keys if k in key_to_item]
             print(f"[Dataset] Restored test set from saved keys: {len(test)} examples")
             reserve = []
+
+        test_desc = (f"eval_features={args.eval_features}" if args.eval_features is not None
+                     else f"language={neg_lang} prompt={neg_prompt} (same slice as negative)")
+        print(f"[Dataset] === Summary ===")
+        print(f"[Dataset]   Model: {model}")
+        print(f"[Dataset]   Positive: language={pos_lang} prompt={pos_prompt} features={pos_features} -> {len(pos_map)} examples")
+        print(f"[Dataset]   Negative: language={neg_lang} prompt={neg_prompt} features={neg_features} -> {len(neg_map)} examples")
+        print(f"[Dataset]   Train: {len(train)} instances")
+        print(f"[Dataset]   Test:  {len(test)} instances ({test_desc})")
+        print(f"[Dataset]   Reserve: {len(reserve)} instances")
+
         return {"mode": "one_model_pos_vs_neg", "train": train, "test": test, "reserve": reserve}
 
     model_a, model_b = models[0], models[1]
@@ -455,13 +471,26 @@ def load_dataset(models, args, saved_test_keys=None):
     print(f"[Dataset] Final split -> train: {len(train)}  test: {len(test)}  reserve: {len(reserve)}")
 
     if args.eval_features is not None:
-        test = build_eval_set(results, model_a, args.eval_features, args.test_size)
+        test = build_eval_set(results, model_a, args.eval_features, args.test_size,
+                               exclude_keys={x["key"] for x in train})
         reserve = []
     elif saved_test_keys is not None:
         key_to_item = {item["key"]: item for item in test_candidates}
         test = [key_to_item[k] for k in saved_test_keys if k in key_to_item]
         print(f"[Dataset] Restored test set from saved keys: {len(test)} examples")
         reserve = []
+
+    test_desc = (f"eval_features={args.eval_features}" if args.eval_features is not None
+                 else f"language={lang} prompt={prompt} (same slice as model B / negative)")
+    print(f"[Dataset] === Summary ===")
+    print(f"[Dataset]   Model A (positive): {model_a}   Model B (negative): {model_b}")
+    print(f"[Dataset]   language={lang} prompt={prompt}")
+    print(f"[Dataset]   Positive features={pos_record_features} -> {len(a_map)} examples")
+    print(f"[Dataset]   Negative features={neg_record_features} -> {len(b_map)} examples")
+    print(f"[Dataset]   Train: {len(train)} instances")
+    print(f"[Dataset]   Test:  {len(test)} instances ({test_desc})")
+    print(f"[Dataset]   Reserve: {len(reserve)} instances")
+
     return {"mode": "two_models_compare", "train": train, "test": test, "reserve": reserve}
 
 def to_inputs(tokenizer, model, text: str):
@@ -486,6 +515,8 @@ def get_equal_token_index(tokenizer, input_ids):
     toks = tokenizer.convert_ids_to_tokens(input_ids[0].tolist())
     eq_positions = [i for i, t in enumerate(toks) if "=" in t]
     if not eq_positions:
+        preview = tokenizer.decode(input_ids[0], skip_special_tokens=True)[:80]
+        print(f"[EqIdx] WARNING: no '=' token found in prompt ({input_ids.shape[1]} tokens); preview: {preview!r}")
         return None
     return eq_positions[-1]
 
@@ -521,6 +552,11 @@ def get_steering_vector(train_dataset, models_loaded):
         p_inputs = to_inputs(tokenizer_pos, model_pos, p_text)
         p_hs = get_hidden_states_from_inputs(model_pos, p_inputs)
         p_eq_idx = get_equal_token_index(tokenizer_pos, p_inputs.input_ids)
+        if p_eq_idx is None:
+            raise RuntimeError(
+                f"[SteeringVec] No '=' token found in positive prompt for train example "
+                f"{i} (key={item.get('key')}) — aborting."
+            )
         p_v = extract_hidden_at_index(p_hs, p_eq_idx)
         for layer_num in range(p_v.shape[0]):
             pos_activations[layer_num].append(p_v[layer_num])
@@ -528,6 +564,11 @@ def get_steering_vector(train_dataset, models_loaded):
         n_inputs = to_inputs(tokenizer_neg, model_neg, n_text)
         n_hs = get_hidden_states_from_inputs(model_neg, n_inputs)
         n_eq_idx = get_equal_token_index(tokenizer_neg, n_inputs.input_ids)
+        if n_eq_idx is None:
+            raise RuntimeError(
+                f"[SteeringVec] No '=' token found in negative prompt for train example "
+                f"{i} (key={item.get('key')}) — aborting."
+            )
         n_v = extract_hidden_at_index(n_hs, n_eq_idx)
         for layer_num in range(n_v.shape[0]):
             neg_activations[layer_num].append(n_v[layer_num])
@@ -600,6 +641,13 @@ def make_caa_hook(vec, coeff, eq_idx):
     return hook
 
 def register_caa_hooks(model, steering_vecs, coeff, eq_idx):
+    """
+    steering_vecs is keyed by hidden_states index: key k = hidden_states[k] = the
+    residual stream *going into* decoder layer k (k=0 is the raw embedding output,
+    before any decoder layer runs). A forward_hook on layers[i] fires *after* layer i
+    runs, i.e. it sees hidden_states[i+1] — so to inject steering_vecs[k] at the point
+    it was actually measured, hook layers[k-1], not layers[k].
+    """
     layers = get_decoder_layers(model)
     if layers is None:
         print("[Hook] ERROR: no decoder layers found — no hooks registered, steering will have no effect")
@@ -607,12 +655,18 @@ def register_caa_hooks(model, steering_vecs, coeff, eq_idx):
     module_names = {id(m): name for name, m in model.named_modules()}
     handles = []
     for layer_idx, vec in steering_vecs.items():
-        if layer_idx < 0 or layer_idx >= len(layers):
-            print(f"[Hook] WARNING: layer_idx={layer_idx} out of range [0, {len(layers)}), skipping")
+        target_idx = layer_idx - 1
+        if target_idx < 0:
+            print(f"[Hook] WARNING: layer_idx=0 is the embedding output (before any decoder layer) — "
+                  f"no decoder-layer hook point corresponds to it, skipping")
             continue
-        layer = layers[layer_idx]
-        full_name = module_names.get(id(layer), f"<unknown>[{layer_idx}]")
-        print(f"[Hook] Hooking layer {layer_idx}: {full_name} ({type(layer).__name__})")
+        if target_idx >= len(layers):
+            print(f"[Hook] WARNING: layer_idx={layer_idx} out of range [1, {len(layers)}], skipping")
+            continue
+        layer = layers[target_idx]
+        full_name = module_names.get(id(layer), f"<unknown>[{target_idx}]")
+        print(f"[Hook] steering_vecs[{layer_idx}] (residual stream after decoder block {target_idx}) "
+              f"-> hooking decoder block {target_idx}: {full_name} ({type(layer).__name__})")
         h = layer.register_forward_hook(make_caa_hook(vec, coeff, eq_idx))
         handles.append(h)
     print(f"[Hook] Registered {len(handles)} hook(s) for layers {list(steering_vecs.keys())} at eq_idx={eq_idx}")
@@ -641,89 +695,11 @@ def generate_with_steering(model, tokenizer, prompt, steering_vecs, coeff, max_n
             h.remove()
 
 
-def generate_with_steering_batched(model, tokenizer, prompts, steering_vecs, coeff, max_new_tokens=512, batch_size=8):
-    # NOTE: batch steering applies at the last token position (not '=') because
-    # each prompt in a left-padded batch has a different absolute eq position.
-    # This function is not called by eval_dataset; it is kept for completeness.
-    orig_padding_side = tokenizer.padding_side
-    tokenizer.padding_side = "left"
-    if tokenizer.pad_token_id is None:
-        tokenizer.pad_token = tokenizer.eos_token
-
-    completions = []
-    for batch_start in range(0, len(prompts), batch_size):
-        batch_prompts = prompts[batch_start: batch_start + batch_size]
-
-        inputs = tokenizer(
-            batch_prompts,
-            return_tensors="pt",
-            padding=True,
-            truncation=False,
-        )
-        inputs.pop("token_type_ids", None)
-        inputs = {k: v.to(model.device) for k, v in inputs.items()}
-
-        # Fallback: steer at last position for batched mode — inline hook
-        def _make_last_pos_hook(vec, coeff):
-            def hook(module, inputs, output):
-                if isinstance(output, tuple):
-                    hidden, rest = output[0], output[1:]
-                    is_tuple = True
-                else:
-                    hidden, rest = output, ()
-                    is_tuple = False
-                if hidden.ndim == 3:
-                    v = vec.to(device=hidden.device, dtype=hidden.dtype)
-                    hidden = hidden.clone()
-                    hidden[:, -1, :] = hidden[:, -1, :] + coeff * v
-                return (hidden,) + rest if is_tuple else hidden
-            return hook
-
-        handles = []
-        if coeff != 0:
-            layers = get_decoder_layers(model)
-            if layers is not None:
-                for layer_idx, vec in steering_vecs.items():
-                    if 0 <= layer_idx < len(layers):
-                        h = layers[layer_idx].register_forward_hook(_make_last_pos_hook(vec, coeff))
-                        handles.append(h)
-
-        try:
-            gen_ids = model.generate(
-                **inputs,
-                do_sample=False,
-                max_new_tokens=max_new_tokens,
-                pad_token_id=tokenizer.pad_token_id,
-                eos_token_id=tokenizer.eos_token_id,
-            )
-        finally:
-            for h in handles:
-                h.remove()
-
-        padded_len = inputs["input_ids"].shape[1]
-        batch_len = gen_ids.shape[0]
-        for i in range(batch_len):
-            new_ids = gen_ids[i, padded_len:]
-            completion = tokenizer.decode(
-                new_ids,
-                skip_special_tokens=True,
-                clean_up_tokenization_spaces=False,
-            )
-            completions.append(completion)
-
-    tokenizer.padding_side = orig_padding_side
-    return completions
-
 def eval_dataset(model, tokenizer, test, steering_vecs=None, coeff=0.0, eval_side="negative"):
     n_test = len(test)
     steered = steering_vecs is not None and coeff != 0.0
     prompt_key = f"prompt_text_{eval_side}"
     print(f"[Eval] Evaluating {n_test} examples | steered={steered} coeff={coeff} eval_side={eval_side}")
-
-    def _normalize_answer_token(token):
-        token = normalize_unicode_digits(str(token or "").strip())
-        token = token.replace("−", "-").replace("–", "-").replace("—", "-")
-        return token
 
     active_vecs = steering_vecs if steered else {}
     active_coeff = coeff if steered else 0.0
@@ -769,52 +745,85 @@ def eval_dataset(model, tokenizer, test, steering_vecs=None, coeff=0.0, eval_sid
     print(f"[Eval] Done. Accuracy: {acc:.4f} ({correct}/{n_test})")
     return acc, outputs
 
-def replace_contaminated_baseline(model, tokenizer, test, base_outputs, reserve, eval_side):
+def replace_contaminated_baseline(model, tokenizer, test, base_outputs, reserve, eval_side, check_other_side=True):
     """
     After a baseline (coeff=0) run, swap out any test example that fails either check:
       - eval_side scored wrong (neg should be 0, pos should be 1)
-      - other side scored wrong
-    Reserve candidates are accepted only if they pass both checks.
+      - other side scored wrong (only checked when check_other_side=True)
+    Reserve candidates are accepted only if they pass the active check(s). If no clean
+    replacement is found for a bad key, it is dropped rather than kept — every item in the
+    returned test set satisfies the check(s), so the returned test set may be smaller than
+    the requested size.
     Returns updated (test, base_outputs).
+
+    check_other_side must be False in 2-model comparison mode: "other side" belongs to
+    the model that was never used for generation here (main() always generates with
+    model B), so requiring it to reproduce model A's recorded answer isn't a contamination
+    check — model B is expected to differ from model A, that's the whole point of comparing
+    them. Only the 1-model case (same model, different prompt condition) can reasonably be
+    expected to reproduce its own recorded behavior.
     """
     other_side = "positive" if eval_side == "negative" else "negative"
     main_want  = 0 if eval_side == "negative" else 1
     other_want = 1 if eval_side == "negative" else 0
 
-    _, other_outputs = eval_dataset(model, tokenizer, test, steering_vecs=None, coeff=0.0, eval_side=other_side)
+    main_bad = {o["key"] for o in base_outputs if o["correct"] != main_want}
 
-    main_bad  = {o["key"] for o in base_outputs   if o["correct"] != main_want}
-    other_bad = {o["key"] for o in other_outputs  if o["correct"] != other_want}
-    bad_keys  = main_bad | other_bad
+    if check_other_side:
+        _, other_outputs = eval_dataset(model, tokenizer, test, steering_vecs=None, coeff=0.0, eval_side=other_side)
+        other_bad = {o["key"] for o in other_outputs if o["correct"] != other_want}
+    else:
+        other_bad = set()
+
+    bad_keys = main_bad | other_bad
 
     if not bad_keys:
-        print(f"[Baseline] All examples pass both checks ({eval_side}={main_want}, {other_side}={other_want}).")
+        if check_other_side:
+            print(f"[Baseline] All examples pass both checks ({eval_side}={main_want}, {other_side}={other_want}).")
+        else:
+            print(f"[Baseline] All examples pass the {eval_side}={main_want} check "
+                  f"(other-side check skipped: 2-model comparison).")
         return test, base_outputs
 
-    print(f"[Baseline] {len(bad_keys)} bad example(s): "
-          f"{len(main_bad)} {eval_side}!={main_want}, {len(other_bad)} {other_side}!={other_want} "
-          f"— searching reserve pool ({len(reserve)} candidates) for replacements...")
+    if check_other_side:
+        print(f"[Baseline] {len(bad_keys)} bad example(s): "
+              f"{len(main_bad)} {eval_side}!={main_want}, {len(other_bad)} {other_side}!={other_want} "
+              f"— searching reserve pool ({len(reserve)} candidates) for replacements...")
+    else:
+        print(f"[Baseline] {len(bad_keys)} bad example(s): {len(main_bad)} {eval_side}!={main_want} "
+              f"(other-side check skipped: 2-model comparison) "
+              f"— searching reserve pool ({len(reserve)} candidates) for replacements...")
 
     reserve_iter = iter(reserve)
     test_by_key  = {ex["key"]: ex for ex in test}
     main_out_by_key = {o["key"]: o for o in base_outputs}
 
+    n_replaced = 0
+    n_dropped = 0
     for bad_key in list(bad_keys):
         replaced = False
         for candidate in reserve_iter:
-            _, cand_main  = eval_dataset(model, tokenizer, [candidate], steering_vecs=None, coeff=0.0, eval_side=eval_side)
-            _, cand_other = eval_dataset(model, tokenizer, [candidate], steering_vecs=None, coeff=0.0, eval_side=other_side)
-            if cand_main[0]["correct"] == main_want and cand_other[0]["correct"] == other_want:
+            _, cand_main = eval_dataset(model, tokenizer, [candidate], steering_vecs=None, coeff=0.0, eval_side=eval_side)
+            other_ok = True
+            if check_other_side:
+                _, cand_other = eval_dataset(model, tokenizer, [candidate], steering_vecs=None, coeff=0.0, eval_side=other_side)
+                other_ok = cand_other[0]["correct"] == other_want
+            if cand_main[0]["correct"] == main_want and other_ok:
                 print(f"[Baseline] Replacing key={bad_key} with key={candidate['key']}")
                 test_by_key.pop(bad_key)
                 main_out_by_key.pop(bad_key)
                 test_by_key[candidate["key"]] = candidate
                 main_out_by_key[candidate["key"]] = cand_main[0]
                 replaced = True
+                n_replaced += 1
                 break
         if not replaced:
-            print(f"[Baseline] WARNING: no clean replacement found for key={bad_key} — keeping original.")
+            print(f"[Baseline] WARNING: no clean replacement found for key={bad_key} — dropping it from the test set.")
+            test_by_key.pop(bad_key, None)
+            main_out_by_key.pop(bad_key, None)
+            n_dropped += 1
 
+    print(f"[Baseline] Done: {n_replaced} replaced, {n_dropped} dropped. Final test set size: {len(test_by_key)}.")
     return list(test_by_key.values()), list(main_out_by_key.values())
 
 
@@ -950,10 +959,16 @@ def main():
         if contaminated:
             print(f"[Main] WARNING: baseline accuracy is {base_acc} (expected {'0' if eval_side == 'negative' else '1'} for eval_side={eval_side}) — attempting to replace contaminated examples...")
             data_dic["test"], base_outputs = replace_contaminated_baseline(
-                model, tokenizer, data_dic["test"], base_outputs, data_dic.get("reserve", []), eval_side
+                model, tokenizer, data_dic["test"], base_outputs, data_dic.get("reserve", []), eval_side,
+                check_other_side=(len(models_loaded) == 1 and args.eval_features is None),
             )
             base_acc = sum(o["correct"] for o in base_outputs) / max(1, len(base_outputs))
             print(f"[Main] Baseline accuracy after replacement: {base_acc}")
+            if not data_dic["test"]:
+                raise RuntimeError(
+                    "[Main] All test examples were dropped as contaminated and no clean reserve "
+                    "replacements were found — nothing left to evaluate. Aborting."
+                )
         save_outputs(output_path, base_outputs, layer=None, coeff=0)
 
     coeffs = args.coeffs
@@ -970,7 +985,8 @@ def main():
                 continue
             one_layer_steering_vecs = {num_layer: steering_vecs[num_layer]}
             model, tokenizer = models_loaded[1] if 1 in models_loaded.keys() else models_loaded[0]
-            print(f"\n[Main] --- Layer {num_layer} | coeff={coeff} ---")
+            print(f"\n[Main] --- steering_vecs[{num_layer}] (residual stream after decoder block {num_layer - 1}) "
+                  f"| coeff={coeff} ---")
             acc, outputs = eval_dataset(model, tokenizer, data_dic["test"], steering_vecs=one_layer_steering_vecs, coeff=coeff, eval_side=eval_side)
             save_outputs(output_path, outputs, layer=num_layer, coeff=coeff)
             print("###############################")

@@ -1,0 +1,8 @@
+model,language,prompt,n,accuracy
+gemma-3-4b-pt,ar,long_numeric,600,0.13333333333333333
+gemma-3-4b-pt,ca,answer,600,0.8
+gemma-3-4b-pt,de,long_numeric,600,0.17166666666666666
+gemma-3-4b-pt,empty,answer,600,0.6966666666666667
+gemma-3-4b-pt,es,determine,600,0.5
+gemma-3-4b-pt,fake,answer,600,0.5883333333333334
+gemma-3-4b-pt,zh,solve,600,0.73

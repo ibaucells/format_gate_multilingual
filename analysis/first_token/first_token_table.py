@@ -102,8 +102,8 @@ def main():
     )
     parser.add_argument(
         "--results-dir",
-        default="results_reextracted_definitive_v8",
-        help="Root results directory (default: results_reextracted_definitive_v8).",
+        default="results/raw/base_and_instruct",
+        help="Root results directory (default: results/raw/base_and_instruct).",
     )
     parser.add_argument(
         "--output", default=None,

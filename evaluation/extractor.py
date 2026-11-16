@@ -2050,12 +2050,12 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument(
         "--in-dir",
-        default="results_reextracted_no_gold",
-        help="Input results root (existing JSONLs).",
+        default="results",
+        help="Input results root (existing JSONLs, as written by evaluation/run_eval.py).",
     )
     ap.add_argument(
         "--out-dir",
-        default="results_reextracted_high_confidence_only",
+        default="results/raw/base_and_instruct",
         help="Output root (new JSONLs, does NOT overwrite input).",
     )
     ap.add_argument("--models", default="", help="Optional comma-separated model folder name filters.")

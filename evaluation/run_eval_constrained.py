@@ -6,7 +6,7 @@ to a small set of tokens: space, negative sign, integers (single- or
 multi-digit, e.g. "5", "146", " 42"), and EOS.
 
 Prompts are read directly from an existing results folder
-(results_reextracted/<model_slug>/<lang>/<variant>.jsonl)
+(results/raw/base_and_instruct/<model>/<lang>/<variant>.jsonl)
 via the `prompt_text` field, so no prompt re-generation is needed.
 
 Only the constrained output is saved, but correctness is not assessed here.
@@ -186,7 +186,7 @@ def main():
         "--results_dir", required=True,
         help=(
             "Path to a single model's results folder "
-            "(e.g. results_reextracted_definitive_v8/<model_slug>). "
+            "(e.g. results/raw/base_and_instruct/<model>). "
             "Expected structure: <results_dir>/<lang>/<variant>.jsonl"
         ),
     )

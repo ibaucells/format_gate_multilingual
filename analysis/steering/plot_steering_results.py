@@ -149,7 +149,8 @@ def main():
     ax.xaxis.set_major_formatter(mticker.FixedFormatter([str(l) for l in all_layers]))
     ax.tick_params(axis="x", rotation=45)
     if not args.save_legend_apart:
-        ax.legend(fontsize=14)
+        handles, labels = ax.get_legend_handles_labels()
+        ax.legend(fontsize=14, ncol=len(handles))
 
     plt.tight_layout()
     plt.savefig(args.output, dpi=150, bbox_inches="tight")
@@ -158,7 +159,8 @@ def main():
     if args.save_legend_apart:
         handles, labels = ax.get_legend_handles_labels()
         legend_fig = plt.figure()
-        leg = legend_fig.legend(handles=handles, labels=labels, loc="center", fontsize=14)
+        leg = legend_fig.legend(handles=handles, labels=labels, loc="center", fontsize=14,
+                                ncol=len(handles))
         stem, ext = args.output.rsplit(".", 1) if "." in args.output else (args.output, "png")
         legend_path = f"{stem}_legend.{ext}"
         legend_fig.savefig(legend_path, dpi=150, bbox_inches=leg.get_window_extent().transformed(legend_fig.dpi_scale_trans.inverted()))

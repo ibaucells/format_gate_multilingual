@@ -1,0 +1,8 @@
+model,language,prompt,n,answer_right,answer_wrong,no_answer,unknown,answer_right_pct,answer_wrong_pct,no_answer_pct,unknown_pct
+gemma-3-4b-pt,ar,long_numeric,600.0,33.0,67.0,500.0,0.0,0.055,0.1117,0.8333,0.0
+gemma-3-4b-pt,ca,answer,600.0,511.0,89.0,0.0,0.0,0.8517,0.1483,0.0,0.0
+gemma-3-4b-pt,de,long_numeric,600.0,24.0,75.0,501.0,0.0,0.04,0.125,0.835,0.0
+gemma-3-4b-pt,empty,answer,600.0,463.0,127.0,8.0,2.0,0.7717,0.2117,0.0133,0.0033
+gemma-3-4b-pt,es,determine,600.0,328.0,92.0,180.0,0.0,0.5467,0.1533,0.3,0.0
+gemma-3-4b-pt,fake,answer,600.0,445.0,153.0,1.0,1.0,0.7417,0.255,0.0017,0.0017
+gemma-3-4b-pt,zh,solve,600.0,526.0,58.0,12.0,4.0,0.8767,0.0967,0.02,0.0067

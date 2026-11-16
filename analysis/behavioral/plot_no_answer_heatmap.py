@@ -190,7 +190,7 @@ def draw_panel(matrix: pd.DataFrame, ax: plt.Axes, title: str,
         ax=ax,
         annot=annot,
         fmt="",
-        annot_kws={"size": 12},
+        annot_kws={"size": 7},
         cmap=cmap,
         vmin=0.0,
         vmax=1.0,
@@ -199,12 +199,11 @@ def draw_panel(matrix: pd.DataFrame, ax: plt.Axes, title: str,
         cbar=False,
         yticklabels=show_ylabel,
     )
-    # Larger, more readable text
-    ax.set_title(title, fontsize=20, pad=10)
-    ax.set_xlabel(xlabel, fontsize=18)
-    ax.set_ylabel("Language" if show_ylabel else "", fontsize=18)
-    ax.tick_params(axis="x", rotation=45, labelsize=16)
-    ax.tick_params(axis="y", rotation=0,  labelsize=16)
+    ax.set_title(title, fontsize=10, pad=8)
+    ax.set_xlabel(xlabel, fontsize=9)
+    ax.set_ylabel("Language" if show_ylabel else "", fontsize=9)
+    ax.tick_params(axis="x", rotation=45, labelsize=8)
+    ax.tick_params(axis="y", rotation=0,  labelsize=8)
 
 
 def make_figure(matrices: list, titles: list, out_path: Path, cmap: str,
@@ -251,7 +250,7 @@ def main():
     group.add_argument("--by-prompt", action="store_true",
                        help="Aggregate counts across all problem types; plot X=prompt, Y=language")
     parser.add_argument("--output", default=".",
-                        help="Output directory for the PNG (default: current dir)")
+                        help="Output directory for the PDF (default: current dir)")
     parser.add_argument("--also-accuracy", action="store_true",
                         help="Also save an accuracy (ANSWER-RIGHT rate) heatmap")
     args = parser.parse_args()
@@ -307,7 +306,7 @@ def main():
     make_figure(
         na_matrices,
         titles=na_titles,
-        out_path=out_dir / f"{safe_models}_{prompt_label}_no_answer_rate.png",
+        out_path=out_dir / f"{safe_models}_{prompt_label}_no_answer_rate.pdf",
         cmap="OrRd",
         xlabel=x_label,
     )
@@ -333,7 +332,7 @@ def main():
         make_figure(
             acc_matrices,
             titles=acc_titles,
-            out_path=out_dir / f"{safe_models}_{prompt_label}_accuracy.png",
+            out_path=out_dir / f"{safe_models}_{prompt_label}_accuracy.pdf",
             cmap="YlGn",
             xlabel=x_label,
         )

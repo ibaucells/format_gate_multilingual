@@ -18,6 +18,7 @@ results_constrained/
 results_extracted*/
 steering_outputs/
 steering_outputs_eq_pos/
+steering_vecs/
 steering_summaries/
 cosine_sims/
 cosine_sims_agg/

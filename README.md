@@ -54,31 +54,52 @@ python analysis/behavioral/summarize_problem_type.py "results/aggregated/base_an
 python analysis/behavioral/summarize_model_table.py --summarized-dir results/aggregated/base_and_instruct --out table.csv
 ```
 
-- To plot the heatmap where y axis are languages and x axis are prompts / problem types (Figure 5 in paper, "gemma-3-4b-pt_vs_Meta-Llama-3.2-3B_vs_Qwen3-1.7B-Base_by-prompt_no_answer_rate.png" in paper_figures):
+- To plot the No-answer heatmap with languages on the y axis and problem types on the x axis, accumulated over all prompt styles (Figure 5 in the paper, `gemma-3-4b-pt_vs_Meta-Llama-3.2-3B_vs_Qwen3-1.7B-Base_all-prompts_no_answer_rate.pdf` in paper_figures):
 ```bash
 python analysis/behavioral/plot_no_answer_heatmap.py \
     --csv results/aggregated/base_and_instruct/answer_types_by_type.csv \
     --model gemma-3-4b-pt Meta-Llama-3.2-3B Qwen3-1.7B-Base \
     --output paper_figures \
-    --by-prompt
+    --all-prompts
 ```
-Use `--by-prompt` for prompts on the x axis, or `--all-prompts` for problem types.
+Use `--all-prompts` for problem types on the x axis (as in the paper), or `--by-prompt` for prompt styles.
 
-- To create the scatter plot (Figure 1 in the paper, "accuracy_scatter_by_family.png" in paper_figures) of the accuracy distribution per (lang, prompt), do:
+- To create the scatter plot (Figure 1 in the paper, `accuracy_scatter_by_family.pdf` in paper_figures) of the accuracy distribution per (lang, prompt), do:
 ```bash
 python analysis/behavioral/plot_accuracy_scatter.py \
   --zs-results results/aggregated/base_and_instruct/accuracy_by_prompt.csv \
   --fs-results results/aggregated/fewshot/accuracy_by_prompt.csv \
-  --out-dir paper_figures
+  --out-dir paper_figures \
+  --format pdf
 ```
   
-- To create the bar plot with the answer type distribution (Figure 2 in the paper, "plot_answer_types.png" in paper_figures)
+- To create the bar plot with the answer type distribution (Figure 2 in the paper, `plot_answer_types.pdf` in paper_figures). Omit `--models` to plot all 15 model families.
 ```bash
 python analysis/behavioral/plot_answer_types.py \
   --zs-summarized-dir results/aggregated/base_and_instruct \
   --fs-summarized-dir results/aggregated/fewshot \
-  --output paper_figures/plot_answer_types.png
+  --models Gemma-3-4B Llama-3.2-3B Qwen3-1.7B \
+  --output paper_figures/plot_answer_types \
+  --format pdf
 ```
+
+### Robustness analyses
+- **Stricter extractor.** `evaluation/extractor_baseline.py` accepts an answer only if the output *starts* with a number, and compares it with the gold answer. It is a lower bound for `evaluation/extractor.py`, which searches the whole output. It writes the same schema, so the same summarization script applies:
+```bash
+python evaluation/extractor_baseline.py --in-dir results/raw/base_and_instruct --out-dir results/raw/base_and_instruct_baseline
+python evaluation/extractor_baseline.py --in-dir results/raw/fewshot --out-dir results/raw/fewshot_baseline
+python evaluation/extractor_baseline.py --in-dir results/raw/constrained_decoding --out-dir results/raw/constrained_decoding_baseline
+python analysis/behavioral/summarize_results.py --results-dir results/raw/base_and_instruct_baseline --out-dir results/aggregated_baseline/base_and_instruct --skip-consistency
+```
+(and likewise for `fewshot` and `constrained`). Aggregated results are in `results/aggregated_baseline/`.
+
+- **Seed and sampling robustness.** Gemma-3-4b-pt is re-evaluated zero-shot on 7 (language, prompt) pairs spanning high, mid and low accuracy (`de`/`ar` long_numeric, `zh` solve, `ca` answer, `es` determine, `empty` and `fake` answer), with greedy decoding (seeds 123 and 2024) and with sampling (temperature 0.7, top_p 1; seeds 42, 123 and 2024). The main results use greedy decoding with seed 42.
+```bash
+HF_MODELS=/path/to/hf-models QOS=<qos> ACCOUNT=<account> bash evaluation/launch/submit_reeval_gemma3_4b_pt.sh
+python evaluation/extractor.py --in-dir results/raw/reeval_gemma-3-4b-pt/<config> --out-dir results/raw/reeval_gemma-3-4b-pt_extracted/<config>
+python analysis/behavioral/summarize_results.py --results-dir results/raw/reeval_gemma-3-4b-pt_extracted/<config> --out-dir results/aggregated_reeval/<config> --skip-consistency
+```
+Aggregated results per configuration are in `results/aggregated_reeval/`.
 
 
 
@@ -146,46 +167,47 @@ python analysis/logit_lens/plot_layer_token_frequencies.py \
 
 
 #### Steering
+Steering vectors are the difference of mean residual-stream activations at the `=` position between a positive condition (correct answers) and a negative one (No-answer), computed at every layer on 100 matched problem ids. They are evaluated on a held-out set of (up to) 100 different problem ids, adding the vector at a single layer either only at the `=` position (`steering_vectors_eq_pos.py`) or at every generation step (`steering_vectors.py`). Unsteered baselines are run first, and test instances that do not have the expected baseline label are replaced from a reserve pool or dropped.
 
-- The following is the script to create a steering vector based on the given positive (POS) and negative (NEG) features of results and evaluate on negative features instances. The steering vector is computed on 100 instances and the evaluation run on other 100 instances. This is an example on how to run the script for applying the steering vector at all generation positions. Results are saved by default on "steering_outputs" folder.
-```bash
-python analysis/steering/steering_vectors.py \
-  --model_base_dir /path/to/hf-models \
-  --results_dir results/raw/base_and_instruct \
-  --fs_results_dir results/raw/fewshot \
-  --output_dir steering_outputs \
-  --vec_dir steering_outputs \
-  --models "gemma-3-4b-pt" \
-  --common_features "language=es,prompt=answer" \
-  --positive_features "answer_type=ANSWER-C" \
-  --negative_features "answer_type=ANSWER-I"
-```
-- To do the same but only at the "=" position; results are saved by default on "steering_outputs_eq_pos" folder.
+- Single experiment, at the `=` position (here: Base case, (ca,ans)–(es,ans), evaluated on (es,ans)):
 ```bash
 python analysis/steering/steering_vectors_eq_pos.py \
   --model_base_dir /path/to/hf-models \
   --results_dir results/raw/base_and_instruct \
   --fs_results_dir results/raw/fewshot \
-  --output_dir steering_outputs_eq_pos \
-  --vec_dir steering_outputs \
-  --models "gemma-3-4b-pt" \
-  --common_features "language=es,prompt=answer" \
-  --positive_features "answer_type=ANSWER-C" \
-  --negative_features "answer_type=ANSWER-I"
+  --vec_dir steering_vecs \
+  --output_dir steering_outputs_eq_pos/gemma_base_ca-es \
+  --models gemma-3-4b-pt \
+  --common_features "prompt=answer" \
+  --positive_features "language=ca,answer_type=ANSWER-C" \
+  --negative_features "language=es,answer_type=NO-ANSWER" \
+  --eval_side negative --coeffs 1 --layers "$(seq -s, 1 33)"
 ```
-- The bash script `run_steering_vectors.sh` can be used to run several jobs of steering vectors.
-- The following script summarizes the results of several steering vector jobs.
+  `steering_vectors.py` takes the same arguments and steers at all generation steps. Other options: `--eval_features` (evaluate on a different (language, prompt) condition), `--eval_side positive` with `--coeffs -1` (reverse direction) or `--coeffs 1` (sanity check on already-correct inputs), `few-shot` as a positive feature (FS vector), and two comma-separated `--models` (IT vector: instruct model as positive, base model as negative).
+
+- All experiments in the paper (Table 4, Figure 4, Tables 28–31): `analysis/steering/run_steering_vectors.sh` submits one single-GPU Slurm job per configuration and mode (32 configurations × {`=` position, all positions}):
 ```bash
-python analysis/steering/summarize_steering_outputs.py --steering-dir steering_outputs --out-dir steering_summaries
+ACCOUNT=<account> QOS=<qos> HF_MODELS=/path/to/hf-models bash analysis/steering/run_steering_vectors.sh [eq|all|both] [gemma|llama|both]
 ```
-- To plot the results as in Figure 4 in the paper (folder steering within paper_figures)
+
+- Summarize the outputs (one row per job × layer × coefficient with answer-type counts; also writes `all_steering_summaries.xlsx` with a per-layer accuracy sheet, if `openpyxl` is installed):
 ```bash
-python analysis/steering/plot_steering_results.py neg.csv pos.csv --extra extra.csv -o out.png
+python analysis/steering/summarize_steering_outputs.py --steering-dir steering_outputs_eq_pos --out-dir steering_summaries/eq_pos
+python analysis/steering/summarize_steering_outputs.py --steering-dir steering_outputs --out-dir steering_summaries/all_pos
 ```
-Here `neg.csv` and `pos.csv` point to the CSV output of executing a steering vector in the positive direction (coeff 1) and in the negative direction (coeff -1 and evaluation set is the correct-feature set). `--extra` can point to an extra CSV, for example the all-position negative steering vector.
+
+- Plot Figure 4 (`paper_figures/steering/`): `neg.csv` is the positive-steering run (coeff 1 on No-answer inputs), `pos.csv` the reverse run (coeff −1 on already-correct inputs), and `--extra` the all-positions reverse run:
+```bash
+python analysis/steering/plot_steering_results.py \
+  steering_summaries/eq_pos/gemma_base_ca-es__<...>_summary.csv \
+  steering_summaries/eq_pos/gemma_reverse_ca-es__<...>_summary.csv \
+  --extra steering_summaries/all_pos/gemma_reverse_ca-es__<...>_summary.csv \
+  -o paper_figures/steering/gemma_steering.pdf --save_legend_apart
+python analysis/steering/make_steering_legend.py -o paper_figures/steering/steering_legend.pdf
+```
 
 ### Results
-Divided into raw results and aggregated summaries, each split into base_and_instruct, constrained_decoding, and fewshot. The raw files are organized by model, then language, then a JSONL file per prompt type. Due to their size (~4.5 GB), **raw results are hosted on OSF: https://osf.io/ymuvw**. The aggregated results (CSV files, created with the analysis/behavioral scripts) are included directly in `results/aggregated/`.
+Divided into raw results and aggregated summaries, each split into base_and_instruct, constrained_decoding, and fewshot. The robustness analyses add `*_baseline` (stricter extractor) and `reeval_gemma-3-4b-pt` (seed/sampling) folders, and the raw steering outputs are under `steering/`. The raw files are organized by model, then language, then a JSONL file per prompt type. Due to their size (~4.5 GB), **raw results are hosted on OSF: https://osf.io/ymuvw**. The aggregated results (CSV files, created with the analysis/behavioral scripts) are included directly in `results/aggregated/`.
 
 ## Data Description
 
@@ -195,7 +217,7 @@ Divided into raw results and aggregated summaries, each split into base_and_inst
 | JSONL | `.jsonl` | Benchmark dataset, few-shot examples, raw evaluation results (one JSON object per line) |
 | CSV | `.csv` | Aggregated metrics, behavioral summaries, first-token and logit-lens analysis outputs |
 | Parquet | `.parquet` | Cosine similarity analysis outputs (generated by analysis scripts, not stored in the repository) |
-| PNG | `.png` | Paper figures (`paper_figures/`) |
+| PDF / PNG | `.pdf`, `.png` | Paper figures (`paper_figures/`) |
 
 ### Benchmark Dataset (`data/`)
 - `simple_math_dataset.jsonl` — 600 arithmetic problem instances.

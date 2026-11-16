@@ -44,6 +44,12 @@ def main():
         required=True,
         help="Output directory for plot",
     )
+    ap.add_argument(
+        "--format",
+        default="png",
+        choices=["png", "pdf"],
+        help="Output image format: png (default) or pdf (vector)",
+    )
     args = ap.parse_args()
 
     import os
@@ -169,7 +175,7 @@ def main():
                        framealpha=0.8)
 
     plt.tight_layout()
-    out_path_pm = f"{args.out_dir}/accuracy_scatter_by_family.png"
+    out_path_pm = f"{args.out_dir}/accuracy_scatter_by_family.{args.format}"
     plt.savefig(out_path_pm, dpi=150, bbox_inches="tight")
     print(f"  Saved: {out_path_pm}")
     plt.close()

@@ -355,6 +355,68 @@ def _build_colour_map(tokens):
     return colour_map
 
 
+def small_caps_text(ax, x, y, text, fontsize=12, small_scale=0.75, **kwargs):
+    """
+    Render `text` in a fake small-caps style: first letter of each word
+    at normal size, remaining letters uppercase at a smaller size.
+    Uses only matplotlib (no LaTeX/extra packages).
+
+    Honors a `transform` kwarg (e.g. ax.transAxes) for positioning outside
+    data coordinates; defaults to ax.transData like ax.text() does.
+    Returns (final_x, texts): the final x position (same coordinate space
+    as `x`) and the list of Text artists created, so callers can
+    reposition them later (e.g. to center the whole label).
+    """
+    transform = kwargs.get("transform", ax.transData)
+    small_fontsize = fontsize * small_scale
+    ax.figure.canvas.draw()  # ensure a renderer exists before measuring text
+    renderer = ax.figure.canvas.get_renderer()
+
+    cur_x = x
+    texts = []
+    for word in text.split(" "):
+        if not word:
+            continue
+        first, rest = word[0].upper(), word[1:].upper()
+
+        t1 = ax.text(cur_x, y, first, fontsize=fontsize, **kwargs)
+        texts.append(t1)
+        ax.figure.canvas.draw()
+        bbox1 = t1.get_window_extent(renderer=renderer)
+        bbox1_data = bbox1.transformed(transform.inverted())
+        cur_x = bbox1_data.x1
+
+        if rest:
+            t2 = ax.text(cur_x, y, rest, fontsize=small_fontsize, **kwargs)
+            texts.append(t2)
+            ax.figure.canvas.draw()
+            bbox2 = t2.get_window_extent(renderer=renderer)
+            bbox2_data = bbox2.transformed(transform.inverted())
+            cur_x = bbox2_data.x1
+
+        cur_x += (bbox1_data.x1 - bbox1_data.x0) * 0.3
+
+    return cur_x, texts
+
+
+def draw_centered_small_caps_title(ax, text, y=1.03, fontsize=20, color="#000000") -> None:
+    """Draw `text` as a small-caps label, horizontally centered above `ax`
+    (axes-fraction coordinates)."""
+    transform = ax.transAxes
+    _, texts = small_caps_text(ax, 0.0, y, text, fontsize=fontsize,
+                               transform=transform, ha="left", va="bottom", color=color)
+    ax.figure.canvas.draw()
+    renderer = ax.figure.canvas.get_renderer()
+    xs = [t.get_window_extent(renderer=renderer).transformed(transform.inverted())
+          for t in texts]
+    xmin = min(bb.x0 for bb in xs)
+    xmax = max(bb.x1 for bb in xs)
+    shift = 0.5 - (xmin + xmax) / 2
+    for t in texts:
+        tx, ty = t.get_position()
+        t.set_position((tx + shift, ty))
+
+
 def _display_label(tok):
     if str(tok) == "OTHER":
         return "OTHER"
@@ -415,6 +477,9 @@ def plot_area(layers, df_pct, dominant_pct, stacked: bool, title: str,
     ax.xaxis.set_major_locator(mticker.MaxNLocator(integer=True, nbins=20))
     ax.yaxis.set_major_formatter(mticker.FormatStrFormatter("%.1f%%"))
     ax.tick_params(axis="both", labelsize=18)
+
+    ax.spines[["top", "right"]].set_visible(False)
+    ax.spines[["left", "bottom"]].set_color("#333333")
 
     if show_legend:
         ax.legend(
@@ -511,6 +576,8 @@ def plot_split(answer_path: Path, no_answer_path: Path, top_n: int, rank_by: str
     plot_area(layers_n, df_n, dom_n, stacked=stacked,
               title=f"{title_base} — NO-ANSWER", ax=ax2, show_legend=False,
               colour_map=shared_colour_map, overlay_label=lbl_n)
+    draw_centered_small_caps_title(ax1, "Answer")
+    draw_centered_small_caps_title(ax2, "No-answer")
 
     # Build legend from the shared color map (one entry per token, in order)
     import matplotlib.patches as mpatches
@@ -653,6 +720,7 @@ def main():
             "Save the two panels as separate image files (same width, no legend): "
             "ANSWER_FILE NO_ANSWER_FILE [LEGEND_FILE]. "
             "If a third path is given, the legend is saved there as a standalone image. "
+            "Format (PNG/PDF/SVG) is inferred from each file's extension. "
             "Only valid with --split-folder."
         ),
     )
