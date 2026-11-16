@@ -207,7 +207,7 @@ python analysis/steering/make_steering_legend.py -o paper_figures/steering/steer
 ```
 
 ### Results
-Divided into raw results and aggregated summaries, each split into base_and_instruct, constrained_decoding, and fewshot. The robustness analyses add `*_baseline` (stricter extractor) and `reeval_gemma-3-4b-pt` (seed/sampling) folders, and the raw steering outputs are under `steering/`. The raw files are organized by model, then language, then a JSONL file per prompt type. Due to their size (~4.5 GB), **raw results are hosted on OSF: https://osf.io/ymuvw**. The aggregated results (CSV files, created with the analysis/behavioral scripts) are included directly in `results/aggregated/`.
+Divided into raw results and aggregated summaries, each split into base_and_instruct, constrained_decoding, and fewshot. The raw steering outputs and the seed/sampling re-evaluation of Gemma-3-4b-pt are provided as `.tar.gz` archives alongside the raw results on OSF; the stricter-extractor (`*_baseline`) results are not hosted and can be regenerated from the raw results with `evaluation/extractor_baseline.py`. The raw files are organized by model, then language, then a JSONL file per prompt type. Due to their size (~4.5 GB), **raw results are hosted on OSF: https://osf.io/ymuvw**. The aggregated results (CSV files, created with the analysis/behavioral scripts) are included directly in `results/aggregated/`.
 
 ## Data Description
 
@@ -242,6 +242,13 @@ They are organized as `{split}/{model}/{language}/{prompt}.jsonl`, where:
 - **model**: HuggingFace model name
 - **language**: language code (see table below)
 - **prompt**: prompt variant (`answer`, `compute`, `determine`, `long_numeric`, `solve`)
+
+The same OSF folder also contains three archives:
+- `steering_eq_pos.tar.gz`: raw outputs of the steering experiments with the vector added only at the "=" token (one folder per experiment).
+- `steering_all_pos.tar.gz`: the same steering experiments with the vector added at all token positions.
+- `reeval_gemma-3-4b-pt.tar.gz`: Gemma-3-4b-pt re-evaluated on 7 (language, prompt) pairs with greedy decoding (seeds 123, 2024) and sampling at T=0.7 (seeds 42, 123, 2024), organized as `{config}/gemma-3-4b-pt/{language}/{prompt}.jsonl`.
+
+Both steering archives include `steering/job_name_mapping.tsv`, which maps each experiment folder to its configuration.
 
 Each record extends the benchmark schema with evaluation fields:
 
